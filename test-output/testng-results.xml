@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="62329" started-at="2020-04-14T07:21:38 EET" finished-at="2020-04-14T07:22:41 EET">
+    <groups>
+    </groups>
+    <test name="chromeTest1-3" duration-ms="62329" started-at="2020-04-14T07:21:38 EET" finished-at="2020-04-14T07:22:41 EET">
+      <class name="remoteTestin.DockerValidatio.chromeTest2">
+        <test-method status="PASS" signature="test2()[pri:0, instance:remoteTestin.DockerValidatio.chromeTest2@3701eaf6]" name="test2" duration-ms="44782" started-at="2020-04-14T07:21:50 EET" finished-at="2020-04-14T07:22:34 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- remoteTestin.DockerValidatio.chromeTest2 -->
+      <class name="remoteTestin.DockerValidatio.chromeTest1">
+        <test-method status="PASS" signature="StartDockerScale()[pri:0, instance:remoteTestin.DockerValidatio.chromeTest1@5c5a1b69]" name="StartDockerScale" is-config="true" duration-ms="11241" started-at="2020-04-14T07:21:38 EET" finished-at="2020-04-14T07:21:50 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDockerScale -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:remoteTestin.DockerValidatio.chromeTest1@5c5a1b69]" name="test1" duration-ms="48057" started-at="2020-04-14T07:21:50 EET" finished-at="2020-04-14T07:22:38 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="StopDockerScale()[pri:0, instance:remoteTestin.DockerValidatio.chromeTest1@5c5a1b69]" name="StopDockerScale" is-config="true" duration-ms="3003" started-at="2020-04-14T07:22:38 EET" finished-at="2020-04-14T07:22:41 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StopDockerScale -->
+      </class> <!-- remoteTestin.DockerValidatio.chromeTest1 -->
+    </test> <!-- chromeTest1-3 -->
+  </suite> <!-- Suite -->
+</testng-results>
