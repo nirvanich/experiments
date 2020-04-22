@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PositiveTests {
+public class NegativeTests {
 
 	@Test
-	public void loginTest() {
-		System.out.println("Starting LoginTest..");
+	public void incorrectUsernameTest() {
+		System.out.println("Starting incorrectUsernameTest..");
 
 //		Create driver
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
@@ -19,16 +19,16 @@ public class PositiveTests {
 
 //		Maximize browser window
 		driver.manage().window().maximize();
-		
 
 //		open test page
 		String url = "https://qa2.dev.crxmarkets.com/crx-web";
-		driver.get(url);
+		driver.navigate().to(url);
 		System.out.println("Page is opened.");
 
 //		enter user name
 		WebElement username = driver.findElement(By.id("loginForm:username"));
-		username.sendKeys("admin@crx.lu");
+		username.sendKeys("IncorrectUsername");
+
 
 //		enter password
 		WebElement password = driver.findElement(By.xpath("//input[@id='loginForm:password']"));
@@ -41,19 +41,14 @@ public class PositiveTests {
 
 //		verifications:
 //		url
-		String expectedUrl = "https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home";
+		String expectedUrl = "https://login.qa2.dev.crxmarkets.com/login?error=INCORRECT_CREDENTIALS";
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual page url is not the same as expected");
 
-//		logout button is visible 
-		WebElement logOutButton = driver.findElement(By.xpath("//a[@id='mainMenu:crxLogoutItem']"));
-		Assert.assertTrue(logOutButton.isDisplayed(), "Logout button is not visible");
-
-//		Successful login message form[name='j_idt62'] > h1
-		WebElement successMessage = driver.findElement(By.cssSelector("form[name='j_idt62'] > h1"));
-		String expectedMessage = "CRX home";
-		String actualMessage = successMessage.getText();
-//		Assert.assertEquals(actualMessage, expectedMessage, "Actual message is not the same as expected");
+//		Successful incorrect user message 
+		WebElement errorMessage = driver.findElement(By.xpath("//div[@class='error-msg-div']"));
+		String expectedMessage = "Authentication failed, please try again.";
+		String actualMessage = errorMessage.getText();
 		Assert.assertTrue(actualMessage.contains(expectedMessage), "Actual message is not the same as expected");
 
 //		Close browser
