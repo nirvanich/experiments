@@ -1,7 +1,5 @@
 package com.crxmarkets.dev.qa2;
 
-import javax.xml.xpath.XPath;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
