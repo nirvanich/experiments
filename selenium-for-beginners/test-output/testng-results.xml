@@ -1,79 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="NegativeTestsSuite" duration-ms="52438" started-at="2020-04-23T11:34:31 EET" finished-at="2020-04-23T11:35:23 EET">
+  <suite name="Exceptions Test Suite" duration-ms="15855" started-at="2020-04-25T07:25:22 EET" finished-at="2020-04-25T07:25:38 EET">
     <groups>
-      <group name="positiveTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.LoginTests@5a8806ef]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-      </group> <!-- positiveTests -->
-      <group name="smokeTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.LoginTests@5a8806ef]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@3b088d51]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@4d41cee]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-      </group> <!-- smokeTests -->
-      <group name="negativeTests">
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@3b088d51]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@4d41cee]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.LoginTests"/>
-      </group> <!-- negativeTests -->
     </groups>
-    <test name="PositiveTests" duration-ms="18395" started-at="2020-04-23T11:34:31 EET" finished-at="2020-04-23T11:34:49 EET">
-      <class name="com.crxmarkets.dev.qa2.LoginTests">
-        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.LoginTests@5a8806ef]" name="PositiveLoginTest" duration-ms="18352" started-at="2020-04-23T11:34:31 EET" finished-at="2020-04-23T11:34:49 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PositiveLoginTest -->
-      </class> <!-- com.crxmarkets.dev.qa2.LoginTests -->
-    </test> <!-- PositiveTests -->
-    <test name="NegativeUsernameTests" duration-ms="10869" started-at="2020-04-23T11:34:49 EET" finished-at="2020-04-23T11:35:00 EET">
-      <class name="com.crxmarkets.dev.qa2.LoginTests">
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@3b088d51]" name="negativeLoginTest" duration-ms="10865" started-at="2020-04-23T11:34:49 EET" finished-at="2020-04-23T11:35:00 EET">
+    <test name="Exceptions Test" duration-ms="15855" started-at="2020-04-25T07:25:22 EET" finished-at="2020-04-25T07:25:38 EET">
+      <class name="com.crxmarkets.dev.qa2.ExceptionsTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@614ddd49]" name="setUp" is-config="true" duration-ms="5856" started-at="2020-04-25T07:25:22 EET" finished-at="2020-04-25T07:25:28 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[IncorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd12]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed, please try again.]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-      </class> <!-- com.crxmarkets.dev.qa2.LoginTests -->
-    </test> <!-- NegativeUsernameTests -->
-    <test name="NegativePasswordTests" duration-ms="23131" started-at="2020-04-23T11:35:00 EET" finished-at="2020-04-23T11:35:23 EET">
-      <class name="com.crxmarkets.dev.qa2.LoginTests">
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.LoginTests@4d41cee]" name="negativeLoginTest" duration-ms="23128" started-at="2020-04-23T11:35:00 EET" finished-at="2020-04-23T11:35:23 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@crx.lu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="disabledElementTest()[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@614ddd49]" name="disabledElementTest" duration-ms="9323" started-at="2020-04-25T07:25:28 EET" finished-at="2020-04-25T07:25:38 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-      </class> <!-- com.crxmarkets.dev.qa2.LoginTests -->
-    </test> <!-- NegativePasswordTests -->
-  </suite> <!-- NegativeTestsSuite -->
+        </test-method> <!-- disabledElementTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@614ddd49]" name="tearDown" is-config="true" duration-ms="645" started-at="2020-04-25T07:25:38 EET" finished-at="2020-04-25T07:25:38 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crxmarkets.dev.qa2.ExceptionsTests -->
+    </test> <!-- Exceptions Test -->
+  </suite> <!-- Exceptions Test Suite -->
 </testng-results>

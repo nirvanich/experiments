@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crxmarkets.dev.qa2.NegativeTests">
+      <class name="com.crxmarkets.dev.qa2.ExceptionsTests">
         <methods>
-          <include name="negativeLoginTest"/>
+          <include name="setUp"/>
+          <include name="noSuchElementTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crxmarkets.dev.qa2.NegativeTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.ExceptionsTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
