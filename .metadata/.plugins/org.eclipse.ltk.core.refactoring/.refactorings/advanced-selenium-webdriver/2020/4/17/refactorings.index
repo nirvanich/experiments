@@ -1,0 +1,17 @@
+1587440582614	Extract method 'sleep'
+1587614144807	Copy file
+1587628395608	Rename local variable 'password'
+1587630377325	Rename type 'PositiveTests'
+1587630406716	Delete element
+1587630496689	Rename resource 'NegativeTests.xml'
+1587630546050	Delete element
+1587698556742	Extract method 'tearDown'
+1587699800709	Copy file
+1587702191937	Copy file
+1587702204111	Delete element
+1587702224747	Copy compilation unit
+1587702294117	Delete element
+1587702299704	Delete element
+1587711387782	Copy file
+1587711549904	Rename type 'ExceptionsTest'
+1587718220571	Move method

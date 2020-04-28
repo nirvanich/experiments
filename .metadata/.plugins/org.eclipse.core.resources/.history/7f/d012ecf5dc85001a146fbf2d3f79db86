@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeTestsSuite" verbose="1">
+
+
+	<test name="PositiveTests">
+		<parameter name="browser" value="chorome" />
+		<groups>
+			<run>
+				<include name="positiveTests"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.LoginTests" />
+		</classes>
+	</test>
+
+	<test name="NegativeUsernameTests">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="IncorrectUsername" />
+		<parameter name="password" value="P@ssw0rd12" />
+		<parameter name="expectedMessage"
+			value="Authentication failed, please try again." />
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.LoginTests">
+				<methods>
+					<include name="negativeLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="NegativePasswordTests">
+		<parameter name="browser" value="firefox" />
+		<parameter name="username" value="admin@crx.lu" />
+		<parameter name="password" value="P@ssw0rd123" />
+		<parameter name="expectedMessage"
+			value="Authentication failed" />
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.LoginTests">
+				<methods>
+					<include name="negativeLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
