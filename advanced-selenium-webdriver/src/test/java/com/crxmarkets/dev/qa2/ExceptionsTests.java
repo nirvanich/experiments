@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.crxmarkets.dev.qa2.base.BaseTest;
+import com.crxmarkets.dev.qa2.base.TestUtilities;
 
-public class ExceptionsTests extends BaseTest {
+public class ExceptionsTests extends TestUtilities {
 
 	// implicit wait
 	// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -119,14 +119,6 @@ public class ExceptionsTests extends BaseTest {
 //		
 //		wait.until(ExpectedConditions.textToBePresentInElement(enableButton, "Enable"));
 		Assert.assertEquals(textField.getAttribute("value"), "Text");
-	}
-
-	private void sleep(long m) {
-		try {
-			Thread.sleep(m);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 	}
 
 }

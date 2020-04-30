@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Exceptions Test Suite" duration-ms="13353" started-at="2020-04-28T04:32:51Z" finished-at="2020-04-28T04:33:04Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="13018" started-at="2020-04-30T04:58:56Z" finished-at="2020-04-30T04:59:09Z">
     <groups>
+      <group name="positiveTests">
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@ae45eb6]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+      </group> <!-- positiveTests -->
+      <group name="smokeTests">
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@ae45eb6]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+      </group> <!-- smokeTests -->
     </groups>
-    <test name="Exceptions Test" duration-ms="13353" started-at="2020-04-28T04:32:51Z" finished-at="2020-04-28T04:33:04Z">
-      <class name="com.crxmarkets.dev.qa2.ExceptionsTests">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@6295d394]" name="setUp" is-config="true" duration-ms="6895" started-at="2020-04-28T04:32:51Z" finished-at="2020-04-28T04:32:57Z">
+    <test name="PositiveLoginTest" duration-ms="13018" started-at="2020-04-30T04:58:56Z" finished-at="2020-04-30T04:59:09Z">
+      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@ae45eb6]" name="setUp" is-config="true" duration-ms="6252" started-at="2020-04-30T04:58:56Z" finished-at="2020-04-30T04:59:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fe7c640]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="disabledElementTest()[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@6295d394]" name="disabledElementTest" duration-ms="5448" started-at="2020-04-28T04:32:57Z" finished-at="2020-04-28T04:33:03Z">
+        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@ae45eb6]" name="PositiveLoginTest" duration-ms="6097" started-at="2020-04-30T04:59:02Z" finished-at="2020-04-30T04:59:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- disabledElementTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.ExceptionsTests@6295d394]" name="tearDown" is-config="true" duration-ms="991" started-at="2020-04-28T04:33:03Z" finished-at="2020-04-28T04:33:04Z">
+        </test-method> <!-- PositiveLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@ae45eb6]" name="tearDown" is-config="true" duration-ms="646" started-at="2020-04-30T04:59:08Z" finished-at="2020-04-30T04:59:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.ExceptionsTests -->
-    </test> <!-- Exceptions Test -->
-  </suite> <!-- Exceptions Test Suite -->
+      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
+    </test> <!-- PositiveLoginTest -->
+  </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>

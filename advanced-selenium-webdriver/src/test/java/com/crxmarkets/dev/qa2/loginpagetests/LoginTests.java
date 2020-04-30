@@ -2,57 +2,41 @@ package com.crxmarkets.dev.qa2.loginpagetests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.crxmarkets.dev.qa2.base.BaseTest;
+import com.crxmarkets.dev.qa2.base.TestUtilities;
+import com.crxmarkets.dev.qa2.pages.LogInPageObject;
+import com.crxmarkets.dev.qa2.pages.SecureAreaPage;
 
-public class LoginTests extends BaseTest {
-	
+public class LoginTests extends TestUtilities {
+
 	@Test(priority = 1, groups = { "positiveTests", "smokeTests" })
 	public void PositiveLoginTest() {
 
-		System.out.println("Starting loginTest..");
+		log.info("Starting login Test");
 
 //		open test page
-		String url = "https://qa2.dev.crxmarkets.com/crx-web";
-		driver.get(url);
-		System.out.println("Page is opened.");
+		LogInPageObject logInPage = new LogInPageObject(driver, log);
+		logInPage.openPage();
 
-//		enter user name
-		WebElement username = driver.findElement(By.id("loginForm:username"));
-		username.sendKeys("admin@crx.lu");
-
-//		enter password
-		WebElement password = driver.findElement(By.xpath("//input[@id='loginForm:password']"));
-		password.sendKeys("P@ssw0rd12");
-
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		
-//		click login button
-		WebElement logInButton = driver.findElement(By.id("submitBtn"));
-		wait.until(ExpectedConditions.elementToBeClickable(logInButton));
-		logInButton.click();
+//		execute logIn
+		SecureAreaPage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
 
 //		verifications:
 
 		// URL
-		String expectedUrl = "https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home";
-		String actualUrl = driver.getCurrentUrl();
-		Assert.assertEquals(actualUrl, expectedUrl, "Actual page url is not the same as expected");
+		Assert.assertEquals(homepage.getCurrentUrl(), homepage.getPageUrl(),
+				"Actual page url is not the same as expected");
 
 //		logout button is visible 
-		WebElement logOutButton = driver.findElement(By.xpath("//a[@id='mainMenu:crxLogoutItem']"));
-		Assert.assertTrue(logOutButton.isDisplayed(), "Logout button is not visible");
+		Assert.assertTrue(homepage.logOutButtonVisible(), "Logout button is not visible");
 
 //		Successful login message 
-		WebElement successMessage = driver.findElement(By.cssSelector("form[name='j_idt62'] > h1"));
 		String expectedMessage = "CRX home";
-		String actualMessage = successMessage.getText();
-		Assert.assertTrue(actualMessage.contains(expectedMessage), "Actual message is not the same as expected");
+		String actualMessage = homepage.getSuccessMessage();
+		Assert.assertTrue(actualMessage.contains(expectedMessage), "Actual message is not the same as expected\nExpected message: [" + expectedMessage + "]\nActual message: [" + actualMessage + "]");
 
 	}
 
@@ -60,12 +44,12 @@ public class LoginTests extends BaseTest {
 	@Test(priority = 2, groups = { "negativeTests", "smokeTests" })
 	public void negativeLoginTest(String username, String password, String expectedMessage) {
 
-		System.out.println("Starting negativeLoginTest with credentials: " + username + ":" + password);
+		log.info("Starting negativeLoginTest with credentials: " + username + ":" + password);
 
 //		open test page
 		String url = "https://qa2.dev.crxmarkets.com/crx-web";
 		driver.navigate().to(url);
-		System.out.println("Page is opened.");
+		log.info("Page is opened.");
 
 //		enter user name
 		WebElement usernameElement = driver.findElement(By.id("loginForm:username"));

@@ -17,4 +17,5 @@
 <fullyQualifiedTypeName name="javax.xml.xpath.XPath"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.base.BaseTest"/>
 </qualifiedTypeNameHistroy>

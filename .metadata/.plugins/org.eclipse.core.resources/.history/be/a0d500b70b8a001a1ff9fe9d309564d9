@@ -1,0 +1,9 @@
+package com.crxmarkets.dev.qa2.pages;
+
+public class SecureAreaPage {
+
+	public SecureAreaPage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

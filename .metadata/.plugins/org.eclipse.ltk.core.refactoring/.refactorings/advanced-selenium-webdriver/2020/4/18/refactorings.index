@@ -2,3 +2,7 @@
 1588046375169	Delete element
 1588048276017	Rename resource 'NegativeTests.xml'
 1588048286300	Rename resource 'LoginTests.xml'
+1588130510910	Rename resource 'NegativeLoginTests.xml'
+1588130519513	Rename resource 'PositiveLoginTests.xml'
+1588132359101	Delete element
+1588132381507	Rename resource 'NewFile.xml'

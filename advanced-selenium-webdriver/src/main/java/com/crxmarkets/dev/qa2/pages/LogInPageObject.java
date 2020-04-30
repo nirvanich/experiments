@@ -1,0 +1,33 @@
+package com.crxmarkets.dev.qa2.pages;
+
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LogInPageObject extends BasePageObject {
+
+	private String pageUrl = "https://qa2.dev.crxmarkets.com/crx-web";
+
+	private By usernameLocator = By.id("loginForm:username");
+	private By passwordLocator = By.xpath("//input[@id='loginForm:password']");
+	private By logiInButtonLocator = By.id("submitBtn");
+
+	public LogInPageObject(WebDriver driver, Logger log) {
+		super(driver, log);
+	}
+
+	// Open LogInPage with it's URL
+	public void openPage() {
+		log.info("Opening page: " + pageUrl);
+		openUrl(pageUrl);
+		log.info("Page is opened!");
+	}
+
+	public SecureAreaPage logIn(String username, String password) {
+		log.info("Executing Login with username [" + username + "] and password [" + password + "]");
+		type(username, usernameLocator);
+		type(password, passwordLocator);
+		click(logiInButtonLocator);
+		return new SecureAreaPage(driver, log);
+	}
+}

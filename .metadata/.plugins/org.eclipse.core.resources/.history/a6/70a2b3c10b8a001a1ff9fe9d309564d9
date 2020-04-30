@@ -1,0 +1,5 @@
+package com.crxmarkets.dev.qa2.pages;
+
+public class LogInPageObject {
+
+}
