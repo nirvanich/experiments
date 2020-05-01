@@ -13,6 +13,8 @@ public class LoginTests extends TestUtilities {
 	@Test(priority = 1, groups = { "positiveTests", "smokeTests" })
 	public void PositiveLoginTest() {
 
+		log.info("Starting login Test");
+
 //		open test page
 		LogInPageObject logInPage = new LogInPageObject(driver, log);
 		logInPage.openPage();
@@ -21,7 +23,8 @@ public class LoginTests extends TestUtilities {
 		SecureAreaPage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
 
 //		verifications:
-//		 URL
+
+		// URL
 		Assert.assertEquals(homepage.getCurrentUrl(), homepage.getPageUrl(),
 				"Actual page url is not the same as expected");
 
@@ -47,8 +50,6 @@ public class LoginTests extends TestUtilities {
 
 //		execute log in
 		logInPage.logIn(username, password);
-		
-		logInPage.waitForErrorMessage();
 
 //		verifications:
 //		URL

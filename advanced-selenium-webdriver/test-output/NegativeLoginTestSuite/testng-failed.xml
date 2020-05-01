@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTestSuite]" parallel="tests">
-  <test thread-count="4" name="NegativePasswordTest-CH(failed)" parallel="tests">
+  <test thread-count="4" name="NegativePasswordTest-FF(failed)" parallel="tests">
     <parameter name="password" value="P@ssw0rd123"/>
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <parameter name="expectedMessage" value="Authentication failed"/>
     <parameter name="username" value="admin@crx.lu"/>
     <classes>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- NegativePasswordTest-CH(failed) -->
+  </test> <!-- NegativePasswordTest-FF(failed) -->
 </suite> <!-- Failed suite [NegativeLoginTestSuite] -->

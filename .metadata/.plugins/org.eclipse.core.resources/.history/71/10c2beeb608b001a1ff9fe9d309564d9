@@ -12,8 +12,7 @@ public class LogInPageObject extends BasePageObject {
 	private By usernameLocator = By.id("loginForm:username");
 	private By passwordLocator = By.xpath("//input[@id='loginForm:password']");
 	private By logiInButtonLocator = By.id("submitBtn");
-	private By errorMessage = By.xpath("//div[@class='error-msg-div']");
-	
+
 	public LogInPageObject(WebDriver driver, Logger log) {
 		super(driver, log);
 	}
@@ -26,14 +25,6 @@ public class LogInPageObject extends BasePageObject {
 	}
 	public String getErrorPageUrl() {
 		return errorPageUrl;
-	}
-	
-	public String getErrorMessage() {
-		return find(errorMessage).getText();
-	}
-	
-	public void waitForErrorMessage() {
-		waitForVisibilityOf(errorMessage, 5);
 	}
 
 	public SecureAreaPage logIn(String username, String password) {

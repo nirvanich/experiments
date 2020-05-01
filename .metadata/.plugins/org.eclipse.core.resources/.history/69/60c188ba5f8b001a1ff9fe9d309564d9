@@ -7,13 +7,11 @@ import org.openqa.selenium.WebDriver;
 public class LogInPageObject extends BasePageObject {
 
 	private String pageUrl = "https://qa2.dev.crxmarkets.com/crx-web";
-	private String errorPageUrl = "https://login-qa2.dev.crxmarkets.com/login?error";
 
 	private By usernameLocator = By.id("loginForm:username");
 	private By passwordLocator = By.xpath("//input[@id='loginForm:password']");
 	private By logiInButtonLocator = By.id("submitBtn");
-	private By errorMessage = By.xpath("//div[@class='error-msg-div']");
-	
+
 	public LogInPageObject(WebDriver driver, Logger log) {
 		super(driver, log);
 	}
@@ -23,17 +21,6 @@ public class LogInPageObject extends BasePageObject {
 		log.info("Opening page: " + pageUrl);
 		openUrl(pageUrl);
 		log.info("Page is opened!");
-	}
-	public String getErrorPageUrl() {
-		return errorPageUrl;
-	}
-	
-	public String getErrorMessage() {
-		return find(errorMessage).getText();
-	}
-	
-	public void waitForErrorMessage() {
-		waitForVisibilityOf(errorMessage, 5);
 	}
 
 	public SecureAreaPage logIn(String username, String password) {

@@ -47,8 +47,6 @@ public class LoginTests extends TestUtilities {
 
 //		execute log in
 		logInPage.logIn(username, password);
-		
-		logInPage.waitForErrorMessage();
 
 //		verifications:
 //		URL

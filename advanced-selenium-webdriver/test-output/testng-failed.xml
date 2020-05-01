@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
-  <test thread-count="5" name="PositiveLoginTest(failed)">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTestSuite]" parallel="tests">
+  <test thread-count="4" name="NegativePasswordTest-FF(failed)" parallel="tests">
+    <parameter name="password" value="P@ssw0rd123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="expectedMessage" value="Authentication failed"/>
+    <parameter name="username" value="admin@crx.lu"/>
     <classes>
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>
+          <include name="negativeLoginTest" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="PositiveLoginTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- PositiveLoginTest(failed) -->
-</suite> <!-- Failed suite [PositiveLoginTestSuite] -->
+  </test> <!-- NegativePasswordTest-FF(failed) -->
+</suite> <!-- Failed suite [NegativeLoginTestSuite] -->
