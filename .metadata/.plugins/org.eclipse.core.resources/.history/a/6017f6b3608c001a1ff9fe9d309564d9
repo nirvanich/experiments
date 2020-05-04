@@ -1,0 +1,9 @@
+package com.crxmarkets.dev.qa2.pages;
+
+public class OnboardingPage {
+
+	public OnboardingPage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

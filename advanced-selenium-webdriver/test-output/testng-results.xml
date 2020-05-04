@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="NegativeLoginTestSuite" duration-ms="14688" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:12Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="19212" started-at="2020-05-04T03:15:27Z" finished-at="2020-05-04T03:15:46Z">
     <groups>
-      <group name="smokeTests">
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@27efef64]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@13deb50e]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@14bf9759]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6500df86]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-      </group> <!-- smokeTests -->
-      <group name="negativeTests">
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@27efef64]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@13deb50e]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@14bf9759]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-        <method signature="LoginTests.negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6500df86]" name="negativeLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
-      </group> <!-- negativeTests -->
     </groups>
-    <test name="NegativePasswordTest-CH" duration-ms="13956" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:11Z">
-      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@14bf9759]" name="setUp" is-config="true" duration-ms="6482" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:03Z">
+    <test name="checkingCrxActionRequired" duration-ms="19212" started-at="2020-05-04T03:15:27Z" finished-at="2020-05-04T03:15:46Z">
+      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@ae45eb6]" name="setUp" is-config="true" duration-ms="6955" started-at="2020-05-04T03:15:27Z" finished-at="2020-05-04T03:15:34Z">
           <params>
             <param index="0">
               <value>
@@ -28,174 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7d907bac]]>
+                <![CDATA[org.testng.TestRunner@71984c3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@14bf9759]" name="negativeLoginTest" duration-ms="6392" started-at="2020-05-01T04:23:03Z" finished-at="2020-05-01T04:23:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@crx.lu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@ae45eb6]" name="searchingCrxActionRequired" duration-ms="11550" started-at="2020-05-04T03:15:34Z" finished-at="2020-05-04T03:15:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@14bf9759]" name="tearDown" is-config="true" duration-ms="1060" started-at="2020-05-01T04:23:10Z" finished-at="2020-05-01T04:23:11Z">
+        </test-method> <!-- searchingCrxActionRequired -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@ae45eb6]" name="tearDown" is-config="true" duration-ms="685" started-at="2020-05-04T03:15:45Z" finished-at="2020-05-04T03:15:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- NegativePasswordTest-CH -->
-    <test name="NegativeUsernameTest-FF" duration-ms="14200" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:11Z">
-      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@13deb50e]" name="setUp" is-config="true" duration-ms="5989" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@6325a3ee]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@13deb50e]" name="negativeLoginTest" duration-ms="6518" started-at="2020-05-01T04:23:03Z" finished-at="2020-05-01T04:23:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IncorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd12]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed, please try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@13deb50e]" name="tearDown" is-config="true" duration-ms="1673" started-at="2020-05-01T04:23:09Z" finished-at="2020-05-01T04:23:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- NegativeUsernameTest-FF -->
-    <test name="NegativePasswordTest-FF" duration-ms="14213" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:11Z">
-      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6500df86]" name="setUp" is-config="true" duration-ms="5989" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@3a5ed7a6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6500df86]" name="negativeLoginTest" duration-ms="6868" started-at="2020-05-01T04:23:03Z" finished-at="2020-05-01T04:23:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@crx.lu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6500df86]" name="tearDown" is-config="true" duration-ms="1336" started-at="2020-05-01T04:23:10Z" finished-at="2020-05-01T04:23:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- NegativePasswordTest-FF -->
-    <test name="NegativeUsernameTest-CH" duration-ms="14687" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:12Z">
-      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@27efef64]" name="setUp" is-config="true" duration-ms="6640" started-at="2020-05-01T04:22:57Z" finished-at="2020-05-01T04:23:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@7791a895]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@27efef64]" name="negativeLoginTest" duration-ms="6519" started-at="2020-05-01T04:23:04Z" finished-at="2020-05-01T04:23:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IncorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[P@ssw0rd12]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authentication failed, please try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@27efef64]" name="tearDown" is-config="true" duration-ms="1508" started-at="2020-05-01T04:23:10Z" finished-at="2020-05-01T04:23:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- NegativeUsernameTest-CH -->
-  </suite> <!-- NegativeLoginTestSuite -->
+      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
+    </test> <!-- checkingCrxActionRequired -->
+  </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>

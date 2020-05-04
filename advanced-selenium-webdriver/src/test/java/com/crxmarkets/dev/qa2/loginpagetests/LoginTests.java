@@ -5,8 +5,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crxmarkets.dev.qa2.base.TestUtilities;
-import com.crxmarkets.dev.qa2.pages.LogInPageObject;
-import com.crxmarkets.dev.qa2.pages.SecureAreaPage;
+import com.crxmarkets.dev.qa2.pages.LogInPage;
+import com.crxmarkets.dev.qa2.pages.HomePage;
 
 public class LoginTests extends TestUtilities {
 
@@ -14,11 +14,11 @@ public class LoginTests extends TestUtilities {
 	public void PositiveLoginTest() {
 
 //		open test page
-		LogInPageObject logInPage = new LogInPageObject(driver, log);
+		LogInPage logInPage = new LogInPage(driver, log);
 		logInPage.openPage();
 
 //		execute log in
-		SecureAreaPage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
+		HomePage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
 
 //		verifications:
 //		 URL
@@ -42,7 +42,7 @@ public class LoginTests extends TestUtilities {
 	public void negativeLoginTest(String username, String password, String expectedMessage) {
 
 //		open test page
-		LogInPageObject logInPage = new LogInPageObject(driver, log);
+		LogInPage logInPage = new LogInPage(driver, log);
 		logInPage.openPage();
 
 //		execute log in
