@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
-  <test thread-count="5" name="checkingCrxActionRequired(failed)">
+  <test thread-count="5" name="settingPlannedAuctionDateToToday(failed)">
     <classes>
-      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
+      <class name="com.crxmarkets.dev.qa2.AuctionBundlingTests">
         <methods>
           <include name="setUp"/>
-          <include name="searchingCrxActionRequired"/>
+          <include name="settingPlannedAuctionDateToToday"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.AuctionBundlingTests -->
     </classes>
-  </test> <!-- checkingCrxActionRequired(failed) -->
+  </test> <!-- settingPlannedAuctionDateToToday(failed) -->
 </suite> <!-- Failed suite [PositiveLoginTestSuite] -->

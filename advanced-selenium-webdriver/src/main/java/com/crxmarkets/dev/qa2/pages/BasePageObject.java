@@ -1,6 +1,8 @@
 package com.crxmarkets.dev.qa2.pages;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -30,6 +32,16 @@ public class BasePageObject {
 	/** Get the current page URL from the browser */
 	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
+	}
+	
+	/** Get the current page title */
+	public String getCurrentPageTitle() {
+		return driver.getTitle();
+	}
+	
+	/** Get the current page HTML sourse */
+	public String getCurrentPageSource() {
+		return driver.getPageSource();
 	}
 
 	/** Find element using given locator */
@@ -89,5 +101,22 @@ public class BasePageObject {
 			}
 			attempts++;
 		}
+	}
+	
+	public void switchToWindowWithTitle(String expectedTitle) {
+		String firstWindow = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		Iterator<String> windowsIterator = allWindows.iterator();
+		
+		while (windowsIterator.hasNext()) {
+			String windowHandle = windowsIterator.next().toString();
+			if (!windowHandle.equals(firstWindow)) {
+				driver.switchTo().window(windowHandle);
+				if (getCurrentPageTitle().contains(expectedTitle)) {
+					break;
+				}
+			}
+		}
+		
 	}
 }

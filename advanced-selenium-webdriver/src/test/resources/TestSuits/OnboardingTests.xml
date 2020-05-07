@@ -9,7 +9,7 @@
 		<classes>
 			<class name="com.crxmarkets.dev.qa2.OnboardingTests">
 				<methods>
-					<include name="searchingCrxActionRequired"></include>
+					<include name="verifyManageOnboardingPage"></include>
 				</methods>
 			</class>
 		</classes>

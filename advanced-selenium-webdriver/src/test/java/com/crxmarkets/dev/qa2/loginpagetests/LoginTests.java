@@ -22,7 +22,7 @@ public class LoginTests extends TestUtilities {
 
 //		verifications:
 //		 URL
-		Assert.assertEquals(homepage.getCurrentUrl(), homepage.getPageUrl(),
+		Assert.assertEquals(homepage.getCurrentUrl(), homepage.getHomePageUrl(),
 				"Actual page url is not the same as expected");
 
 //		logout button is visible 
@@ -30,7 +30,7 @@ public class LoginTests extends TestUtilities {
 
 //		Successful login message 
 		String expectedMessage = "CRX home";
-		String actualMessage = homepage.getSuccessMessage();
+		String actualMessage = homepage.getSuccessLoginMessage();
 		Assert.assertTrue(actualMessage.contains(expectedMessage),
 				"Actual message is not the same as expected\nExpected message: [" + expectedMessage
 						+ "]\nActual message: [" + actualMessage + "]");

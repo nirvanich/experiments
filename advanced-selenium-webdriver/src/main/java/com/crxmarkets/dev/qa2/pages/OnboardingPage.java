@@ -12,13 +12,16 @@ public class OnboardingPage extends HomePage {
 
 	private String pageUrl = "https://qa2.dev.crxmarkets.com/crx-web/app/onboarding/admin-onboarding";
 
-	private By crxActionRequiredCheckbox = By.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:crxActionRequiredFilter']/div[2]");
+	private By crxActionRequiredCheckbox = By
+			.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:crxActionRequiredFilter']/div[2]");
 	private By crxActionRequiredCheckboxChecked = By.cssSelector(".ui-c.ui-chkbox-icon.ui-icon.ui-icon-check");
 	private By buyerDropdown = By.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter']");
-	private By btCompanySelector = By.xpath("//*[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter_panel']/div[2]/ul/li[7]/div");
+	private By btCompanySelector = By.xpath(
+			"//*[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter_panel']/div[2]/ul/li[7]/div");
 	private By searchButton = By.xpath("//button[@id='onboardingKycTabView:suppliersOnboardingFilterForm:j_idt100']");
 	private By filterKey = By.xpath("//span[@class='ui-panel-title']//span[@class='filterKey']");
 	private By filterValue = By.xpath("//span[@class='ui-panel-title']//span[@class='filterValue']");
+	private By anyRowWithRolexSupplier = By.xpath("//*[contains(text(),'Rolex')]");
 
 	public OnboardingPage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -27,9 +30,11 @@ public class OnboardingPage extends HomePage {
 	public void checkingCrxActionRequired() {
 		click(crxActionRequiredCheckbox);
 	}
+
 	public void clickBuyerDropdown() {
 		click(buyerDropdown);
 	}
+
 	public void selectBtCompanyFromDropdown() {
 		click(btCompanySelector);
 	}
@@ -57,15 +62,15 @@ public class OnboardingPage extends HomePage {
 		return filterResultsList;
 
 	}
-	
+
 	public boolean isCrxActionRequiredCheckboxChecked() {
-		if (find(crxActionRequiredCheckboxChecked).isDisplayed()){
+		if (find(crxActionRequiredCheckboxChecked).isDisplayed()) {
 			return true;
 		}
-		
+
 		return false;
 	}
-	
+
 	public boolean isFilterApplied(List<String> list, String filter) {
 		for (String result : list) {
 			if (result.contains(filter)) {
@@ -74,4 +79,17 @@ public class OnboardingPage extends HomePage {
 		}
 		return false;
 	}
+	
+	public void clickOnRolexSupplier() {
+		log.info("Opening Manage Rolex Onboarding page");
+		click(anyRowWithRolexSupplier);
+	}
+	
+	public ManageOnboardingPage switchToManageOnboardingPage() {
+		log.info("Switching to Manage Onboarding page");
+		switchToWindowWithTitle("Manage");
+		return new ManageOnboardingPage(driver, log);
+	}
+	
+
 }
