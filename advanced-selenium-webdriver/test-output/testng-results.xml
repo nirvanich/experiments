@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="17302" started-at="2020-05-07T05:52:46Z" finished-at="2020-05-07T05:53:03Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="32862" started-at="2020-05-08T03:34:47Z" finished-at="2020-05-08T03:35:20Z">
     <groups>
     </groups>
-    <test name="settingPlannedAuctionDateToToday" duration-ms="17302" started-at="2020-05-07T05:52:46Z" finished-at="2020-05-07T05:53:03Z">
-      <class name="com.crxmarkets.dev.qa2.AuctionBundlingTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.AuctionBundlingTests@ae45eb6]" name="setUp" is-config="true" duration-ms="7145" started-at="2020-05-07T05:52:46Z" finished-at="2020-05-07T05:52:53Z">
+    <test name="checkingCrxActionRequired" duration-ms="30355" started-at="2020-05-08T03:34:47Z" finished-at="2020-05-08T03:35:17Z">
+      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@27efef64]" name="setUp" is-config="true" duration-ms="4991" started-at="2020-05-08T03:34:47Z" finished-at="2020-05-08T03:34:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c3708b3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@27efef64]" name="searchingCrxActionRequired" duration-ms="24206" started-at="2020-05-08T03:34:52Z" finished-at="2020-05-08T03:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingCrxActionRequired -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@27efef64]" name="tearDown" is-config="true" duration-ms="1140" started-at="2020-05-08T03:35:16Z" finished-at="2020-05-08T03:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
+    </test> <!-- checkingCrxActionRequired -->
+    <test name="verifyManageOnboardingPage" duration-ms="32862" started-at="2020-05-08T03:34:47Z" finished-at="2020-05-08T03:35:20Z">
+      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@13deb50e]" name="setUp" is-config="true" duration-ms="6329" started-at="2020-05-08T03:34:47Z" finished-at="2020-05-08T03:34:53Z">
           <params>
             <param index="0">
               <value>
@@ -16,22 +44,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5316e95f]]>
+                <![CDATA[org.testng.TestRunner@6f1fba17]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="settingPlannedAuctionDateToToday()[pri:0, instance:com.crxmarkets.dev.qa2.AuctionBundlingTests@ae45eb6]" name="settingPlannedAuctionDateToToday" duration-ms="9438" started-at="2020-05-07T05:52:53Z" finished-at="2020-05-07T05:53:03Z">
+        <test-method status="PASS" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@13deb50e]" name="verifyManageOnboardingPage" duration-ms="25797" started-at="2020-05-08T03:34:53Z" finished-at="2020-05-08T03:35:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- settingPlannedAuctionDateToToday -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.AuctionBundlingTests@ae45eb6]" name="tearDown" is-config="true" duration-ms="691" started-at="2020-05-07T05:53:03Z" finished-at="2020-05-07T05:53:03Z">
+        </test-method> <!-- verifyManageOnboardingPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@13deb50e]" name="tearDown" is-config="true" duration-ms="718" started-at="2020-05-08T03:35:19Z" finished-at="2020-05-08T03:35:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.AuctionBundlingTests -->
-    </test> <!-- settingPlannedAuctionDateToToday -->
+      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
+    </test> <!-- verifyManageOnboardingPage -->
   </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>

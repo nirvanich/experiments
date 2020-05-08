@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -43,6 +44,10 @@ public class OnboardingPage extends HomePage {
 		click(searchButton);
 	}
 
+	public void searchByEnter() {
+		pressKey(searchButton, Keys.ENTER);
+	}
+
 	public String getOnboardingPageUrl() {
 		return pageUrl;
 	}
@@ -79,17 +84,16 @@ public class OnboardingPage extends HomePage {
 		}
 		return false;
 	}
-	
+
 	public void clickOnRolexSupplier() {
 		log.info("Opening Manage Rolex Onboarding page");
 		click(anyRowWithRolexSupplier);
 	}
-	
+
 	public ManageOnboardingPage switchToManageOnboardingPage() {
 		log.info("Switching to Manage Onboarding page");
 		switchToWindowWithTitle("Manage");
 		return new ManageOnboardingPage(driver, log);
 	}
-	
 
 }

@@ -11,7 +11,7 @@ import com.crxmarkets.dev.qa2.pages.OnboardingPage;
 
 public class OnboardingTests extends TestUtilities {
 
-	//@Test
+	@Test
 	public void searchingCrxActionRequired() {
 		log.info("Starting checking CRX Action Required checkbox");
 
@@ -57,7 +57,7 @@ public class OnboardingTests extends TestUtilities {
 	}
 	@Test
 	public void verifyManageOnboardingPage() {
-		log.info("Starting checking CRX Action Required checkbox");
+		log.info("Starting test transition to Manage Onboarding Page");
 
 		// open main page
 		LogInPage loginPage = new LogInPage(driver, log);
@@ -79,7 +79,8 @@ public class OnboardingTests extends TestUtilities {
 		onboardingPage.selectBtCompanyFromDropdown();
 
 		// clicking Search button
-		onboardingPage.clickSearchButton();
+		//onboardingPage.clickSearchButton();
+		onboardingPage.searchByEnter();
 		onboardingPage.waitForFilterResults();
 
 		// Verify checkbox checked & filter applied

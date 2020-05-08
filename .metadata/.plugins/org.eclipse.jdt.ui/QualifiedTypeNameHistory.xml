@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.base.TestUtilities"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.LogInPage"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.HomePage"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.CTX_RESTRICT_SCOPE"/>
 <fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.OnboardingPage"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -36,4 +35,11 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.HomePage"/>
+<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.AuctionBundlingTests"/>
+<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.AuctionBundlingPage"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.ManageOnboardingPage"/>
 </qualifiedTypeNameHistroy>

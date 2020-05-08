@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-PositiveLoginTestSuite">
-                    <span>C:\Gitstuff\advanced-selenium-webdriver\src\test\resources\TestSuits\AuctionBundlingTests.xml</span>
+                    <span>C:\Gitstuff\advanced-selenium-webdriver\src\test\resources\TestSuits\OnboardingTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-PositiveLoginTestSuite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-PositiveLoginTestSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PositiveLoginTestSuite" title="com.crxmarkets.dev.qa2.AuctionBundlingTests" hash-for-method="settingPlannedAuctionDateToToday">settingPlannedAuctionDateToToday</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-PositiveLoginTestSuite" title="com.crxmarkets.dev.qa2.OnboardingTests" hash-for-method="searchingCrxActionRequired">searchingCrxActionRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PositiveLoginTestSuite" title="com.crxmarkets.dev.qa2.OnboardingTests" hash-for-method="verifyManageOnboardingPage">verifyManageOnboardingPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-PositiveLoginTestSuite -->
@@ -120,14 +125,21 @@
           <div class="suite-PositiveLoginTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.crxmarkets.dev.qa2.AuctionBundlingTests</span>
+              <span class="class-name">com.crxmarkets.dev.qa2.OnboardingTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="settingPlannedAuctionDateToToday">
-                  </a> <!-- settingPlannedAuctionDateToToday -->
-                  <span class="method-name">settingPlannedAuctionDateToToday</span>
+                  <a name="searchingCrxActionRequired">
+                  </a> <!-- searchingCrxActionRequired -->
+                  <span class="method-name">searchingCrxActionRequired</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyManageOnboardingPage">
+                  </a> <!-- verifyManageOnboardingPage -->
+                  <span class="method-name">verifyManageOnboardingPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,22 +147,33 @@
         </div> <!-- panel PositiveLoginTestSuite -->
         <div panel-name="test-xml-PositiveLoginTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Gitstuff\advanced-selenium-webdriver\src\test\resources\TestSuits\AuctionBundlingTests.xml</span>
+            <span class="header-content">C:\Gitstuff\advanced-selenium-webdriver\src\test\resources\TestSuits\OnboardingTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PositiveLoginTestSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;settingPlannedAuctionDateToToday&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PositiveLoginTestSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;checkingCrxActionRequired&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.crxmarkets.dev.qa2.AuctionBundlingTests&quot;&gt;
+      &lt;class name=&quot;com.crxmarkets.dev.qa2.OnboardingTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;settingPlannedAuctionDateToToday&quot;/&gt;
+          &lt;include name=&quot;searchingCrxActionRequired&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.crxmarkets.dev.qa2.AuctionBundlingTests --&gt;
+      &lt;/class&gt; &lt;!-- com.crxmarkets.dev.qa2.OnboardingTests --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- settingPlannedAuctionDateToToday --&gt;
+  &lt;/test&gt; &lt;!-- checkingCrxActionRequired --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;verifyManageOnboardingPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.crxmarkets.dev.qa2.OnboardingTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyManageOnboardingPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.crxmarkets.dev.qa2.OnboardingTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- verifyManageOnboardingPage --&gt;
 &lt;/suite&gt; &lt;!-- PositiveLoginTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +185,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">settingPlannedAuctionDateToToday (1 class)</span>
+                <span class="test-name">checkingCrxActionRequired (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">verifyManageOnboardingPage (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +214,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'settingPlannedAuctionDateToToday')
-data.setCell(0, 2, 'com.crxmarkets.dev.qa2.AuctionBundlingTests')
-data.setCell(0, 3, 9438);
+data.setCell(0, 1, 'verifyManageOnboardingPage')
+data.setCell(0, 2, 'com.crxmarkets.dev.qa2.OnboardingTests')
+data.setCell(0, 3, 25797);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchingCrxActionRequired')
+data.setCell(1, 2, 'com.crxmarkets.dev.qa2.OnboardingTests')
+data.setCell(1, 3, 24206);
 window.suiteTableData['PositiveLoginTestSuite']= { tableData: data, tableDiv: 'times-div-PositiveLoginTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-PositiveLoginTestSuite">
               </div> <!-- times-div-PositiveLoginTestSuite -->
             </div> <!-- times-div -->
@@ -212,9 +242,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-PositiveLoginTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.crxmarkets.dev.qa2.OnboardingTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyManageOnboardingPage</span>
+                <br/>
+                <span class="ignored-method-name">searchingCrxActionRequired</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-PositiveLoginTestSuite" class="panel">
@@ -223,18 +262,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.crxmarkets.dev.qa2.AuctionBundlingTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.crxmarkets.dev.qa2.OnboardingTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, org.testng.TestRunner@5316e95f)</span>
+                <span class="method-name">setUp(firefox, org.testng.TestRunner@6c3708b3)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, org.testng.TestRunner@6f1fba17)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">settingPlannedAuctionDateToToday</span>
-                <span class="method-start">7145 ms</span>
+                <span class="method-name">searchingCrxActionRequired</span>
+                <span class="method-start">4991 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyManageOnboardingPage</span>
+                <span class="method-start">6329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16585 ms</span>
+                <span class="method-start">29198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32127 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,9 +6,11 @@ import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,17 +30,17 @@ public class BasePageObject {
 	protected void openUrl(String url) {
 		driver.get(url);
 	}
-	
+
 	/** Get the current page URL from the browser */
 	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
 	}
-	
+
 	/** Get the current page title */
 	public String getCurrentPageTitle() {
 		return driver.getTitle();
 	}
-	
+
 	/** Get the current page HTML sourse */
 	public String getCurrentPageSource() {
 		return driver.getPageSource();
@@ -48,8 +50,8 @@ public class BasePageObject {
 	protected WebElement find(By locator) {
 		return driver.findElement(locator);
 	}
-	
-	protected List<WebElement> findAll(By locator){
+
+	protected List<WebElement> findAll(By locator) {
 		return driver.findElements(locator);
 	}
 
@@ -90,6 +92,7 @@ public class BasePageObject {
 			attempts++;
 		}
 	}
+
 	protected void waitForCickability(By locator, Integer... timeOutInSeconds) {
 		int attempts = 0;
 		while (attempts < 2) {
@@ -102,12 +105,15 @@ public class BasePageObject {
 			attempts++;
 		}
 	}
-	
+
+	/**
+	 * Switch to a browser tab by particular Title
+	 */
 	public void switchToWindowWithTitle(String expectedTitle) {
 		String firstWindow = driver.getWindowHandle();
 		Set<String> allWindows = driver.getWindowHandles();
 		Iterator<String> windowsIterator = allWindows.iterator();
-		
+
 		while (windowsIterator.hasNext()) {
 			String windowHandle = windowsIterator.next().toString();
 			if (!windowHandle.equals(firstWindow)) {
@@ -117,6 +123,19 @@ public class BasePageObject {
 				}
 			}
 		}
-		
+
+	}
+
+	/** Press key on given locator when its visible */
+	protected void pressKey(By locator, Keys key) {
+		waitForVisibilityOf(locator, 5);
+		find(locator).sendKeys(key);
+	}
+
+	/** Press key using Action class */
+	protected void pressKeyWithActions(Keys key) {
+		log.info("Pressing " + key.name() + " using Actions class");
+		Actions action = new Actions(driver);
+		action.sendKeys(key).build().perform();
 	}
 }

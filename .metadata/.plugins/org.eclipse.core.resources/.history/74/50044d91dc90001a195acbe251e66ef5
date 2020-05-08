@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PositiveLoginTestSuite" verbose="1">
+
+
+	<test name="checkingCrxActionRequired">
+
+		<!-- <groups> <run> <include name="positiveTests"></include> </run> </groups> -->
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.OnboardingTests">
+				<methods>
+					<include name="verifyManageOnboardingPage"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

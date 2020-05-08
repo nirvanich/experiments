@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
-  <test thread-count="5" name="settingPlannedAuctionDateToToday(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]" parallel="tests">
+  <test thread-count="2" name="verifyManageOnboardingPage(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.crxmarkets.dev.qa2.AuctionBundlingTests">
+      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
         <methods>
+          <include name="verifyManageOnboardingPage"/>
           <include name="setUp"/>
-          <include name="settingPlannedAuctionDateToToday"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crxmarkets.dev.qa2.AuctionBundlingTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
     </classes>
-  </test> <!-- settingPlannedAuctionDateToToday(failed) -->
+  </test> <!-- verifyManageOnboardingPage(failed) -->
 </suite> <!-- Failed suite [PositiveLoginTestSuite] -->

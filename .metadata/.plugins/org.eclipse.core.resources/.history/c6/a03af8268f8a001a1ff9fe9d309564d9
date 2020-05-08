@@ -1,9 +1,0 @@
-package com.crxmarkets.dev.qa2.pages;
-
-public class BasePageObject {
-
-	public BasePageObject() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
