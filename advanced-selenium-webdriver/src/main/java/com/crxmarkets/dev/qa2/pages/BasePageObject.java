@@ -4,8 +4,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import javax.swing.text.Document;
+
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -137,5 +140,14 @@ public class BasePageObject {
 		log.info("Pressing " + key.name() + " using Actions class");
 		Actions action = new Actions(driver);
 		action.sendKeys(key).build().perform();
+	}
+	
+	/** Type into element using Action class */
+	protected void typeWithActions(String text, By locator) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementById('onboardingKycTabView:supplierOnboardingTabView:uploadForm:j_idt113_input').setAttribute('aria-hidden', 'false');");
+		find(locator).sendKeys(text);
+		js.executeScript("document.getElementById('onboardingKycTabView:supplierOnboardingTabView:uploadForm:j_idt113_input').setAttribute('aria-hidden', 'true');");
+		
 	}
 }

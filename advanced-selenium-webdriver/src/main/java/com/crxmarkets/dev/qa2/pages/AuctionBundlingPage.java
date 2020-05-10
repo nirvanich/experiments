@@ -2,7 +2,6 @@ package com.crxmarkets.dev.qa2.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class AuctionBundlingPage extends HomePage {
@@ -12,7 +11,7 @@ public class AuctionBundlingPage extends HomePage {
 	private By vattenfallButton = By.xpath("//button[@id='buyersSelector:selectBuyerBtn10604']");
 	private By plannedAuctionDateCalendarButton = By.xpath("//*[@id='bundlesDetailsForm:bundlesTable:0:auctionDate']/button");
 	private By todaysDate = By.xpath("//*[contains(@class, 'ui-datepicker-today')]");
-	private By changingPlannedAuctionDateConfirmationDialog = By.xpath("//*[@id='commonConfirmationDialog']");
+	//private By changingPlannedAuctionDateConfirmationDialog = By.xpath("//*[@id='commonConfirmationDialog']");
 	private By changingPlannedAuctionDateYesButton = By.xpath("//*[@id='commonConfirmationDialogForm:commonConfirmationDialogConfirmButton']");
 	private By auctionDateInput = By.xpath("//*[@id='bundlesDetailsForm:bundlesTable:0:auctionDate_input']");
 	private By systemClock = By.xpath("//*[@id='crxSystemClock']");

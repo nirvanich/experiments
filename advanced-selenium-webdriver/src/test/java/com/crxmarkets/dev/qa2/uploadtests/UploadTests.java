@@ -24,11 +24,23 @@ public class UploadTests extends TestUtilities {
 		OnboardingPage onboardingPage = homepage.openOnboardingPage();
 		
 		// click upload new proposals button
+		onboardingPage.clickUploadNewProposalsButton();
+				
 		// open buyers drop down
-		// select buyer from the dropdown
+		onboardingPage.clickUploadFormBuyerInput();
+		sleep(500);
+		// select ASUS buyer from the dropdown
+		onboardingPage.selectAsusFromUploadDropdown();
+		sleep(500);
 		// click choose file button
+		//onboardingPage.clickChooseFileButton();
+		
 		// send file location
+		onboardingPage.selectFile("Proposals.Import1.xlsx");
+		sleep(5000);
 		// click upload button
+		onboardingPage.clickuploadProposalsButton();
+		sleep(5000);
 		//verify growl message
 		// apply filter to see newly onboarded supplier
 		// check onboarding processes in the table
