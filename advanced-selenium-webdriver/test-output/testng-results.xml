@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="25793" started-at="2020-05-10T04:32:48Z" finished-at="2020-05-10T04:33:14Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="30446" started-at="2020-05-10T08:48:53Z" finished-at="2020-05-10T08:49:23Z">
     <groups>
     </groups>
-    <test name="Upload New supplier Proposal" duration-ms="25793" started-at="2020-05-10T04:32:48Z" finished-at="2020-05-10T04:33:14Z">
+    <test name="Upload New supplier Proposal" duration-ms="30446" started-at="2020-05-10T08:48:53Z" finished-at="2020-05-10T08:49:23Z">
       <class name="com.crxmarkets.dev.qa2.uploadtests.UploadTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="setUp" is-config="true" duration-ms="6296" started-at="2020-05-10T04:32:48Z" finished-at="2020-05-10T04:32:54Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="setUp" is-config="true" duration-ms="6275" started-at="2020-05-10T08:48:53Z" finished-at="2020-05-10T08:48:59Z">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UploadSupplierProposalTest()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="UploadSupplierProposalTest" duration-ms="18815" started-at="2020-05-10T04:32:54Z" finished-at="2020-05-10T04:33:13Z">
+        <test-method status="PASS" signature="UploadSupplierProposalTest()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="UploadSupplierProposalTest" duration-ms="23481" started-at="2020-05-10T08:48:59Z" finished-at="2020-05-10T08:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadSupplierProposalTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="tearDown" is-config="true" duration-ms="665" started-at="2020-05-10T04:33:13Z" finished-at="2020-05-10T04:33:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="tearDown" is-config="true" duration-ms="670" started-at="2020-05-10T08:49:23Z" finished-at="2020-05-10T08:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

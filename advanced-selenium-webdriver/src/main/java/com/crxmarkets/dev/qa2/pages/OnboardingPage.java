@@ -17,18 +17,19 @@ public class OnboardingPage extends HomePage {
 			.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:crxActionRequiredFilter']/div[2]");
 	private By crxActionRequiredCheckboxChecked = By.cssSelector(".ui-c.ui-chkbox-icon.ui-icon.ui-icon-check");
 	private By buyerDropdown = By.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter']");
-	private By btCompanySelector = By.xpath(
-			"//*[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter_panel']/div[2]/ul/li[7]/div");
+	private String buyerSelectorFilter = "//*[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter_panel']";
 	private By searchButton = By.xpath("//button[@id='onboardingKycTabView:suppliersOnboardingFilterForm:j_idt100']");
 	private By filterKey = By.xpath("//span[@class='ui-panel-title']//span[@class='filterKey']");
 	private By filterValue = By.xpath("//span[@class='ui-panel-title']//span[@class='filterValue']");
 	private By anyRowWithRolexSupplier = By.xpath("//*[contains(text(),'Rolex')]");
 	private By uploadNewProposalsButton = By.xpath("//button/*[contains(text(),'Upload New Proposals')]");
 	private By uploadFormBuyerInput = By.xpath("//div[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:buyerInput']");
-	private By asusSelectorInUploadForm = By.xpath("//*[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:buyerInput_items']/*[contains(text(),'ASUS')]");
+	private String buyerSelectorInUploadForm = "//*[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:buyerInput_items']";
 	private By chooseFileButton = By.xpath("//span[@role='button']");
 	private By uploadProposalsButton = By.xpath("//button[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:uploadButton']");
 	private By inputFile = By.xpath("//input[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:j_idt113_input']");
+	private By SupplierSearchString = By.xpath("//input[@id='onboardingKycTabView:suppliersOnboardingFilterForm:searchTextFilter']");
+	
 	
 	public OnboardingPage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -50,14 +51,20 @@ public class OnboardingPage extends HomePage {
 		click(chooseFileButton);
 	}
 
-	public void selectBtCompanyFromDropdown() {
-		click(btCompanySelector);
+	public void selectBuyerCompanyFromDropdown(String buyer) {
+		By buyerSelector = By.xpath(buyerSelectorFilter + "//*[contains(text(),'" + buyer + "')]");
+		click(buyerSelector);
 	}
 	
-	public void selectAsusFromUploadDropdown() {
-		click(asusSelectorInUploadForm);
+	public void selectBuyerFromUploadDropdown(String buyer) {
+		By buyerSelector = By.xpath(buyerSelectorInUploadForm + "/*[contains(text(),'" + buyer + "')]");
+		click(buyerSelector);
 	}
-
+	
+	public void inputSupplierSearchString(String supplier) {
+		type(supplier, SupplierSearchString);		
+	}
+	
 	public void clickSearchButton() {
 		click(searchButton);
 	}
@@ -92,6 +99,15 @@ public class OnboardingPage extends HomePage {
 		}
 		return filterResultsList;
 
+	}
+	
+	public int countFilterResults(String buyer, String supplier) {
+		String xpathForChecks =
+				  "//*[@id='onboardingKycTabView:supplierOnboardingTabView:suppliersOnboardingFormId:supplierOnboardingSummaryTable_data']"
+				  + "/*[contains(.,'" + buyer + "') and contains(.,'" + supplier + "')]";
+		List<WebElement> filterResultsRows = findAll(By.xpath(xpathForChecks));
+		int count = filterResultsRows.size();
+		return count;
 	}
 
 	public boolean isCrxActionRequiredCheckboxChecked() {

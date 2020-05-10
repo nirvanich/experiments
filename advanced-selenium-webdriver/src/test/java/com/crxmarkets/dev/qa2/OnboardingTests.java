@@ -31,8 +31,8 @@ public class OnboardingTests extends TestUtilities {
 		// Open Buyers dropdown
 		onboardingPage.clickBuyerDropdown();
 
-		// Select BT Buyer
-		onboardingPage.selectBtCompanyFromDropdown();
+		// Select Buyer from the filter
+		onboardingPage.selectBuyerCompanyFromDropdown("11111");
 
 		// clicking Search button
 		onboardingPage.clickSearchButton();
@@ -48,8 +48,8 @@ public class OnboardingTests extends TestUtilities {
 		Assert.assertTrue(onboardingPage.isFilterApplied(onboardingPage.getFilterResults(), "CRX Action Required yes"),
 				"CRX Action Required filter is not applied");
 
-		Assert.assertTrue(onboardingPage.isFilterApplied(onboardingPage.getFilterResults(), "Buyer BT Company"),
-				"BT Company filter is not applied");
+		Assert.assertTrue(onboardingPage.isFilterApplied(onboardingPage.getFilterResults(), "Buyer 11111"),
+				"11111 filter is not applied");
 
 		Assert.assertTrue(onboardingPage.isCrxActionRequiredCheckboxChecked(),
 				"CRX Action Required checkbox is not checked");
@@ -76,7 +76,7 @@ public class OnboardingTests extends TestUtilities {
 		onboardingPage.clickBuyerDropdown();
 
 		// Select BT Buyer
-		onboardingPage.selectBtCompanyFromDropdown();
+		onboardingPage.selectBuyerCompanyFromDropdown("BT Company");
 
 		// clicking Search button
 		//onboardingPage.clickSearchButton();

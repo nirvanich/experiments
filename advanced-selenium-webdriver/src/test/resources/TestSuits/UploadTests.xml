@@ -6,6 +6,7 @@
 
 	<test name="Upload New supplier Proposal">
 		<parameter name="browser" value="chrome"></parameter>
+		
 		<!-- <groups> <run> <include name="positiveTests"></include> </run> </groups> -->
 		<classes>
 			<class name="com.crxmarkets.dev.qa2.uploadtests.UploadTests">
