@@ -142,7 +142,7 @@ public class OnboardingPage extends HomePage {
 		log.info("Selecting '" + fileName + "' file from Files folder");
 		String filePath = "C:\\Gitstuff\\advanced-selenium-webdriver\\src\\main\\resources\\Proposals.Import1.xlsx";
 		//String filePath = System.getProperty("user.dir") + "//src//main//resources//" + fileName;
-		jsTypeToUploadField(filePath, inputFile);
+		typeWithActions(filePath, inputFile);
 		log.info("File " + filePath + " selected");
 	}
 }

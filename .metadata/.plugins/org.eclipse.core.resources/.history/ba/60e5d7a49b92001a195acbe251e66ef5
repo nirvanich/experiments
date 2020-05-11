@@ -46,10 +46,10 @@ public class UploadTests extends TestUtilities {
 		  onboardingPage.clickuploadProposalsButton();
 		  sleep(4000);
 		 
-		  //verify growl message
-		
-		  
-		  // apply filter to see newly onboarded supplier
+		//verify growl message
+		// apply filter to see newly onboarded supplier
+		// check onboarding processes in the table
+
 			// Open Buyers dropdown
 			onboardingPage.clickBuyerDropdown();
 	
@@ -63,7 +63,6 @@ public class UploadTests extends TestUtilities {
 			onboardingPage.clickSearchButton();
 			onboardingPage.waitForFilterResults();
 			
-			// check onboarding processes in the table
 			System.out.println(onboardingPage.countFilterResults("vattenfall", "MultiProductTestSupplier1"));
 	}
 

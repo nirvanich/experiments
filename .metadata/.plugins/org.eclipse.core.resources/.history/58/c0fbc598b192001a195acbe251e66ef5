@@ -27,7 +27,7 @@ public class OnboardingPage extends HomePage {
 	private String buyerSelectorInUploadForm = "//*[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:buyerInput_items']";
 	private By chooseFileButton = By.xpath("//span[@role='button']");
 	private By uploadProposalsButton = By.xpath("//button[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:uploadButton']");
-	private By inputFile = By.xpath("//input[@type='file']");
+	private By inputFile = By.xpath("//input[@id='onboardingKycTabView:supplierOnboardingTabView:uploadForm:j_idt113_input']");
 	private By SupplierSearchString = By.xpath("//input[@id='onboardingKycTabView:suppliersOnboardingFilterForm:searchTextFilter']");
 	
 	
@@ -142,7 +142,7 @@ public class OnboardingPage extends HomePage {
 		log.info("Selecting '" + fileName + "' file from Files folder");
 		String filePath = "C:\\Gitstuff\\advanced-selenium-webdriver\\src\\main\\resources\\Proposals.Import1.xlsx";
 		//String filePath = System.getProperty("user.dir") + "//src//main//resources//" + fileName;
-		jsTypeToUploadField(filePath, inputFile);
+		typeWithActions(filePath, inputFile);
 		log.info("File " + filePath + " selected");
 	}
 }

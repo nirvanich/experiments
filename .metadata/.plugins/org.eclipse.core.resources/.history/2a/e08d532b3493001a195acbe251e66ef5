@@ -141,7 +141,7 @@ public class BasePageObject {
 	}
 
 	/** Type into element using Action class */
-	protected void jsTypeToUploadField(String text, By locator) {
+	protected void typeWithActions(String text, By locator) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript(
 				"document.evaluate(\"//input[@type='file']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.setAttribute('aria-hidden', 'false')");
