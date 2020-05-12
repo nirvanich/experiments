@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="30206" started-at="2020-05-10T11:50:42Z" finished-at="2020-05-10T11:51:12Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="58720" started-at="2020-05-12T04:13:59Z" finished-at="2020-05-12T04:14:58Z">
     <groups>
     </groups>
-    <test name="Upload New supplier Proposal" duration-ms="30206" started-at="2020-05-10T11:50:42Z" finished-at="2020-05-10T11:51:12Z">
+    <test name="Upload New supplier Proposal" duration-ms="58720" started-at="2020-05-12T04:13:59Z" finished-at="2020-05-12T04:14:58Z">
       <class name="com.crxmarkets.dev.qa2.uploadtests.UploadTests">
-        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="setUp" is-config="true" duration-ms="6327" started-at="2020-05-10T11:50:42Z" finished-at="2020-05-10T11:50:48Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="setUp" is-config="true" duration-ms="6277" started-at="2020-05-12T04:13:59Z" finished-at="2020-05-12T04:14:06Z">
           <params>
             <param index="0">
               <value>
@@ -16,18 +16,66 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@370736d9]]>
+                <![CDATA[org.testng.TestRunner@63753b6d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UploadSupplierProposalTest()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="UploadSupplierProposalTest" duration-ms="23192" started-at="2020-05-10T11:50:48Z" finished-at="2020-05-10T11:51:12Z">
+        <test-method status="PASS" signature="UploadSupplierProposalTest(int, java.lang.String)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="UploadSupplierProposalTest" duration-ms="23168" started-at="2020-05-12T04:14:06Z" data-provider="files" finished-at="2020-05-12T04:14:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proposals.Import1.xlsx]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadSupplierProposalTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@27efef64]" name="tearDown" is-config="true" duration-ms="669" started-at="2020-05-10T11:51:12Z" finished-at="2020-05-10T11:51:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-05-12T04:14:29Z" finished-at="2020-05-12T04:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="setUp" is-config="true" duration-ms="5151" started-at="2020-05-12T04:14:29Z" finished-at="2020-05-12T04:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@63753b6d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UploadSupplierProposalTest(int, java.lang.String)[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="UploadSupplierProposalTest" duration-ms="22768" started-at="2020-05-12T04:14:35Z" data-provider="files" finished-at="2020-05-12T04:14:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Proposals.Import2.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadSupplierProposalTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.uploadtests.UploadTests@47c62251]" name="tearDown" is-config="true" duration-ms="661" started-at="2020-05-12T04:14:57Z" finished-at="2020-05-12T04:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,9 +1,0 @@
-package com.crxmarkets.dev.qa2;
-
-public class OnboardingTests {
-
-	public OnboardingTests() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

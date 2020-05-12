@@ -6,7 +6,6 @@ import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -140,14 +139,9 @@ public class BasePageObject {
 		action.sendKeys(key).build().perform();
 	}
 
-	/** Type into element using Action class */
-	protected void jsTypeToUploadField(String text, By locator) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript(
-				"document.evaluate(\"//input[@type='file']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.setAttribute('aria-hidden', 'false')");
-		find(locator).sendKeys(text);
-		js.executeScript(
-				"document.evaluate(\"//input[@type='file']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.setAttribute('aria-hidden', 'true')");
-
+	/** Perform mouse hover over element */
+	protected void hoverOverElement(WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
 	}
 }

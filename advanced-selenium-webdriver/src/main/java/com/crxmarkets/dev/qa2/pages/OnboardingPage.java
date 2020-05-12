@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +19,7 @@ public class OnboardingPage extends HomePage {
 	private By crxActionRequiredCheckboxChecked = By.cssSelector(".ui-c.ui-chkbox-icon.ui-icon.ui-icon-check");
 	private By buyerDropdown = By.xpath("//div[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter']");
 	private String buyerSelectorFilter = "//*[@id='onboardingKycTabView:suppliersOnboardingFilterForm:buyerFilter_panel']";
-	private By searchButton = By.xpath("//button[@id='onboardingKycTabView:suppliersOnboardingFilterForm:j_idt100']");
+	private By searchButton = By.xpath("//button[contains(.,'Search')]");
 	private By filterKey = By.xpath("//span[@class='ui-panel-title']//span[@class='filterKey']");
 	private By filterValue = By.xpath("//span[@class='ui-panel-title']//span[@class='filterValue']");
 	private By anyRowWithRolexSupplier = By.xpath("//*[contains(text(),'Rolex')]");
@@ -40,10 +41,12 @@ public class OnboardingPage extends HomePage {
 	}
 
 	public void clickBuyerDropdown() {
+		log.info("Clicking on buyer dropdown in the filter section");
 		click(buyerDropdown);
 	}
 	
-	public void clickuploadProposalsButton() {
+	public void clickUploadProposalsButton() {
+		log.info("Clicking Upload Proposals button");
 		click(uploadProposalsButton);
 	}
 	
@@ -52,28 +55,34 @@ public class OnboardingPage extends HomePage {
 	}
 
 	public void selectBuyerCompanyFromDropdown(String buyer) {
+		log.info("Selecting '" + buyer + "' from the filter dropdown");
 		By buyerSelector = By.xpath(buyerSelectorFilter + "//*[contains(text(),'" + buyer + "')]");
 		click(buyerSelector);
 	}
 	
 	public void selectBuyerFromUploadDropdown(String buyer) {
+		log.info("Selecting '" + buyer + "' from the dropdown");
 		By buyerSelector = By.xpath(buyerSelectorInUploadForm + "/*[contains(text(),'" + buyer + "')]");
 		click(buyerSelector);
 	}
 	
 	public void inputSupplierSearchString(String supplier) {
+		log.info("Typing '" + supplier + "' into Supplier Search String");
 		type(supplier, SupplierSearchString);		
 	}
 	
 	public void clickSearchButton() {
+		log.info("Clicking Search button");
 		click(searchButton);
 	}
 	
 	public void clickUploadNewProposalsButton() {
+		log.info("Clicking Upload New Proposals button");
 		click(uploadNewProposalsButton);
 	}
 
 	public void clickUploadFormBuyerInput() {
+		log.info("Open Buyer selector in the Upload New Proposals popup");
 		click(uploadFormBuyerInput);
 	}
 	
@@ -138,10 +147,21 @@ public class OnboardingPage extends HomePage {
 		return new ManageOnboardingPage(driver, log);
 	}
 	
+	/** Type into hidden element via JS */
+	protected void jsTypeToUploadField(String text, By locator) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript(
+				"document.evaluate(\"//input[@type='file']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.setAttribute('aria-hidden', 'false')");
+		find(locator).sendKeys(text);
+		js.executeScript(
+				"document.evaluate(\"//input[@type='file']\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.setAttribute('aria-hidden', 'true')");
+
+	}
+	
 	public void selectFile(String fileName) {
 		log.info("Selecting '" + fileName + "' file from Files folder");
-		String filePath = "C:\\Gitstuff\\advanced-selenium-webdriver\\src\\main\\resources\\Proposals.Import1.xlsx";
-		//String filePath = System.getProperty("user.dir") + "//src//main//resources//" + fileName;
+		//String filePath = "C:\\Gitstuff\\advanced-selenium-webdriver\\src\\main\\resources\\files\\Proposals.Import1.xlsx";
+		String filePath = System.getProperty("user.dir") + "//src//main//resources//files//" + fileName;
 		jsTypeToUploadField(filePath, inputFile);
 		log.info("File " + filePath + " selected");
 	}

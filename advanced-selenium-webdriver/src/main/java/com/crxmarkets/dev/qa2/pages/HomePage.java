@@ -8,7 +8,7 @@ public class HomePage extends BasePageObject {
 
 	private String homePageUrl = "https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home";
 	private By logOutButton = By.xpath("//a[@id='mainMenu:crxLogoutItem']");
-	private By message = By.cssSelector("form[name='j_idt62'] > h1");
+	private By message = By.xpath("//*[contains(text(),'CRX home')]");
 	private By onboardingButton = By.xpath("//a[@id='mainMenu:crxSuppliersOnboardingItem']");
 	private By auctionBundlingButton = By.xpath("//a[@id='mainMenu:crxAttemptBundlingItem']");
 
@@ -32,7 +32,9 @@ public class HomePage extends BasePageObject {
 	public OnboardingPage openOnboardingPage() {
 		log.info("Opening Onboarding page");
 		click(onboardingButton);
+		log.info("Onboarding Page is opened!");
 		return new OnboardingPage(driver, log);
+		
 	}
 	
 	public AuctionBundlingPage openAuctionBundlingPage() {
