@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]" parallel="tests">
-  <test thread-count="2" name="Upload New supplier Proposal(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTestSuite]" parallel="methods" data-provider-thread-count="5">
+  <test thread-count="5" name="NegativeLoginTest-CH(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.crxmarkets.dev.qa2.uploadtests.UploadTests">
+      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>
+          <include name="negativeLoginTest" invocation-numbers="4"/>
           <include name="setUp"/>
-          <include name="UploadSupplierProposalTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crxmarkets.dev.qa2.uploadtests.UploadTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- Upload New supplier Proposal(failed) -->
-</suite> <!-- Failed suite [PositiveLoginTestSuite] -->
+  </test> <!-- NegativeLoginTest-CH(failed) -->
+</suite> <!-- Failed suite [NegativeLoginTestSuite] -->

@@ -1,7 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="NegativeLoginTestSuite" verbose="1" parallel="tests" thread-count="4">
-
+<suite name="NegativeLoginTestSuite" verbose="1" parallel="methods" thread-count="5" data-provider-thread-count="5">
+	
+	<test name="NegativeLoginTest-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
+				<methods>
+					<include name="negativeLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!--
 	<test name="NegativeUsernameTest-CH">
 		<parameter name="username" value="IncorrectUsername" />
 		<parameter name="password" value="P@ssw0rd12" />
@@ -61,5 +73,6 @@
 			</class>
 		</classes>
 	</test>
+	-->
 
 </suite>

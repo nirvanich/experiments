@@ -1,12 +1,15 @@
 package com.crxmarkets.dev.qa2.loginpagetests;
 
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import java.util.Map;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.crxmarkets.dev.qa2.base.CsvDataProviders;
 import com.crxmarkets.dev.qa2.base.TestUtilities;
-import com.crxmarkets.dev.qa2.pages.LogInPage;
 import com.crxmarkets.dev.qa2.pages.HomePage;
+import com.crxmarkets.dev.qa2.pages.LogInPage;
 
 public class LoginTests extends TestUtilities {
 
@@ -37,10 +40,20 @@ public class LoginTests extends TestUtilities {
 
 	}
 
-	@Parameters({ "username", "password", "expectedMessage" })
-	@Test(priority = 2, groups = { "negativeTests", "smokeTests" })
-	public void negativeLoginTest(String username, String password, String expectedMessage) {
-
+	
+	@Test(priority = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
+	public void negativeLoginTest(Map<String, String> testData) {
+		
+		SoftAssert softAssert = new SoftAssert();
+//		Data
+		String no = testData.get("no");
+		String username = testData.get("username");
+		String password = testData.get("password");
+		String expectedMessage = testData.get("expectedMessage");
+		String description = testData.get("description");
+		
+		log.info("Starting negativeLoginTest #" + no + " for " + description);
+		
 //		open test page
 		LogInPage logInPage = new LogInPage(driver, log);
 		logInPage.openPage();
@@ -52,13 +65,13 @@ public class LoginTests extends TestUtilities {
 
 //		verifications:
 //		URL
-		Assert.assertTrue(logInPage.getCurrentUrl().contains(logInPage.getErrorPageUrl()),
+		softAssert.assertTrue(logInPage.getCurrentUrl().contains(logInPage.getErrorPageUrl()),
 				"Actual page url is not the same as expected");
-
+		
 //		Successful incorrect user message 
 		Assert.assertTrue(logInPage.getErrorMessage().contains(expectedMessage),
 				"Actual error message is not the same as expected");
-
+		
 	}
 
 }

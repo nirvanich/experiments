@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTestSuite]" parallel="tests">
-  <test thread-count="4" name="NegativePasswordTest-CH(failed)" parallel="tests">
-    <parameter name="password" value="P@ssw0rd123"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTestSuite]" parallel="methods" data-provider-thread-count="5">
+  <test thread-count="5" name="NegativeLoginTest-CH(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
-    <parameter name="expectedMessage" value="Authentication failed"/>
-    <parameter name="username" value="admin@crx.lu"/>
     <classes>
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>
-          <include name="negativeLoginTest" invocation-numbers="0"/>
+          <include name="negativeLoginTest" invocation-numbers="4"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- NegativePasswordTest-CH(failed) -->
+  </test> <!-- NegativeLoginTest-CH(failed) -->
 </suite> <!-- Failed suite [NegativeLoginTestSuite] -->

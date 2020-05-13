@@ -46,4 +46,5 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="javax.swing.text.Document"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 </qualifiedTypeNameHistroy>
