@@ -19,9 +19,10 @@ public class LoginTests extends TestUtilities {
 //		open test page
 		LogInPage logInPage = new LogInPage(driver, log);
 		logInPage.openPage();
-
+		takeScreenshot("LoginPage opened");
 //		execute log in
 		HomePage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
+		takeScreenshot("HomePage opened");
 
 //		verifications:
 //		 URL
