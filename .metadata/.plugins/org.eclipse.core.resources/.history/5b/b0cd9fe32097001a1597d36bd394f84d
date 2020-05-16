@@ -1,9 +1,7 @@
 package com.crxmarkets.dev.qa2.loginpagetests;
 
-import java.util.List;
 import java.util.Map;
 
-import org.openqa.selenium.logging.LogEntry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -18,8 +16,6 @@ public class LoginTests extends TestUtilities {
 	@Test(priority = 1, groups = { "positiveTests", "smokeTests" })
 	public void PositiveLoginTest() {
 
-		SoftAssert softAssert = new SoftAssert();
-		
 //		open test page
 		LogInPage logInPage = new LogInPage(driver, log);
 		logInPage.openPage();
@@ -43,16 +39,7 @@ public class LoginTests extends TestUtilities {
 				"Actual message is not the same as expected\nExpected message: [" + expectedMessage
 						+ "]\nActual message: [" + actualMessage + "]");
 
-//		Get logs
 		List<LogEntry> logs = getBrowserLogs();
-		
-//		Verifying there are no Java Script Errors in the console
-		for (LogEntry logEntry : logs) {
-			if (logEntry.getLevel().toString().equals("SEVERE")) {
-				softAssert.fail("Severe error: " + logEntry.getMessage());
-			}
-		}
-		softAssert.assertAll();
 	}
 
 	

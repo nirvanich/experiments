@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="38427" started-at="2020-05-14T03:44:07Z" finished-at="2020-05-14T03:44:45Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="15414" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:22Z">
     <groups>
       <group name="positiveTests">
         <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
@@ -11,9 +11,9 @@
         <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test name="PositiveLoginTest" duration-ms="38427" started-at="2020-05-14T03:44:07Z" finished-at="2020-05-14T03:44:45Z">
+    <test name="PositiveLoginTest" duration-ms="15414" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:22Z">
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="setUp" is-config="true" duration-ms="6559" started-at="2020-05-14T03:44:07Z" finished-at="2020-05-14T03:44:13Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="setUp" is-config="true" duration-ms="6805" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:14Z">
           <params>
             <param index="0">
               <value>
@@ -27,18 +27,18 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@1522d8a0]]>
+                <![CDATA[org.testng.TestRunner@66b7550d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" duration-ms="31200" started-at="2020-05-14T03:44:13Z" finished-at="2020-05-14T03:44:45Z">
+        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" duration-ms="7909" started-at="2020-05-16T03:00:14Z" finished-at="2020-05-16T03:00:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PositiveLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="tearDown" is-config="true" duration-ms="646" started-at="2020-05-14T03:44:45Z" finished-at="2020-05-14T03:44:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="tearDown" is-config="true" duration-ms="675" started-at="2020-05-16T03:00:22Z" finished-at="2020-05-16T03:00:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
