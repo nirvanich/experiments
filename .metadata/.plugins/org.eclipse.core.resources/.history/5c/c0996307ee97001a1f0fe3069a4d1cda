@@ -2,6 +2,11 @@
 
 <suite name="PositiveLoginTestSuite" verbose="1">
 
+	<listeners>
+		<listener
+			class-name="com.crxmarkets.dev.qa2.base.TestListener"></listener>
+	</listeners>
+
 	<test name="LoginTests">
 
 		<classes>

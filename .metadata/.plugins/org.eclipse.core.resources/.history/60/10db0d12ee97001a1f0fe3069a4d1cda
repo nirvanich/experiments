@@ -15,6 +15,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 @Listeners({ com.crxmarkets.dev.qa2.base.TestListener.class })
+
 public class BaseTest {
 
 	protected WebDriver driver;
