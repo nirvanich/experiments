@@ -13,7 +13,6 @@ public class OnboardingTests extends TestUtilities {
 
 	@Test
 	public void searchingCrxActionRequired() {
-		log.info("Starting checking CRX Action Required checkbox");
 
 		// open main page
 		LogInPage loginPage = new LogInPage(driver, log);
@@ -57,7 +56,6 @@ public class OnboardingTests extends TestUtilities {
 	}
 	@Test
 	public void verifyManageOnboardingPage() {
-		log.info("Starting test transition to Manage Onboarding Page");
 
 		// open main page
 		LogInPage loginPage = new LogInPage(driver, log);

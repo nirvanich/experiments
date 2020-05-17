@@ -1,9 +1,0 @@
-package com.crxmarkets.dev.qa2.uploadtests;
-
-public class UploadTests {
-
-	public UploadTests() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

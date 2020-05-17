@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="15414" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:22Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="51705" started-at="2020-05-17T03:08:44Z" finished-at="2020-05-17T03:09:36Z">
     <groups>
       <group name="positiveTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- positiveTests -->
       <group name="smokeTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test name="PositiveLoginTest" duration-ms="15414" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:22Z">
+    <test name="LoginTests" duration-ms="14470" started-at="2020-05-17T03:08:44Z" finished-at="2020-05-17T03:08:59Z">
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="setUp" is-config="true" duration-ms="6805" started-at="2020-05-16T03:00:07Z" finished-at="2020-05-16T03:00:14Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="setUp" is-config="true" duration-ms="5875" started-at="2020-05-17T03:08:45Z" finished-at="2020-05-17T03:08:51Z">
           <params>
             <param index="0">
               <value>
@@ -27,22 +27,84 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@66b7550d]]>
+                <![CDATA[org.testng.TestRunner@11ce2e22]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="PositiveLoginTest" duration-ms="7909" started-at="2020-05-16T03:00:14Z" finished-at="2020-05-16T03:00:22Z">
+        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" duration-ms="7537" started-at="2020-05-17T03:08:51Z" finished-at="2020-05-17T03:08:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PositiveLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@685cb137]" name="tearDown" is-config="true" duration-ms="675" started-at="2020-05-16T03:00:22Z" finished-at="2020-05-16T03:00:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-05-17T03:08:58Z" finished-at="2020-05-17T03:08:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- PositiveLoginTest -->
+    </test> <!-- LoginTests -->
+    <test name="OnboardingTests" duration-ms="37214" started-at="2020-05-17T03:08:59Z" finished-at="2020-05-17T03:09:36Z">
+      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="setUp" is-config="true" duration-ms="5191" started-at="2020-05-17T03:08:59Z" finished-at="2020-05-17T03:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@63a5d002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="verifyManageOnboardingPage" duration-ms="13418" started-at="2020-05-17T03:09:04Z" finished-at="2020-05-17T03:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManageOnboardingPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="tearDown" is-config="true" duration-ms="671" started-at="2020-05-17T03:09:18Z" finished-at="2020-05-17T03:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="setUp" is-config="true" duration-ms="5184" started-at="2020-05-17T03:09:18Z" finished-at="2020-05-17T03:09:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@63a5d002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="searchingCrxActionRequired" duration-ms="12077" started-at="2020-05-17T03:09:23Z" finished-at="2020-05-17T03:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchingCrxActionRequired -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-05-17T03:09:35Z" finished-at="2020-05-17T03:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
+    </test> <!-- OnboardingTests -->
   </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>

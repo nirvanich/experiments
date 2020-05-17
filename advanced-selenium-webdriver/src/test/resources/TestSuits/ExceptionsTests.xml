@@ -2,14 +2,19 @@
 
 <suite name="Exceptions Test Suite" verbose="1">
 
+	<listeners>
+		<listener class-name="com.crxmarkets.dev.qa2.base.TestListener"></listener>
+	</listeners>
+
+	
 	<test name="Exceptions Test">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.crxmarkets.dev.qa2.ExceptionsTests">
 				<methods>
 
-					<include name="disabledElementTest"></include>
-
+<!-- 					<include name="disabledElementTest"></include>
+ -->
 				</methods>
 			</class>
 		</classes>

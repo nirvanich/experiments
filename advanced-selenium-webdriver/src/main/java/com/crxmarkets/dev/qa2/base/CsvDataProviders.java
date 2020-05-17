@@ -18,7 +18,7 @@ import com.opencsv.exceptions.CsvValidationException;
 
 public class CsvDataProviders {
 
-	@DataProvider(name = "csvReader", indices = { 4 })
+	@DataProvider(name = "csvReader")
 	public static Iterator<Object[]> csvReader(Method method) throws CsvValidationException {
 		List<Object[]> list = new ArrayList<Object[]>();
 		String pathname = "src" + File.separator + "test" + File.separator + "resources" + File.separator
