@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]" parallel="tests">
-  <test thread-count="2" name="Upload New supplier Proposal(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
+  <test thread-count="5" name="PositiveLoginTest-WithProfile(failed)">
+    <parameter name="chromeProfile" value="ChromeProfile"/>
     <classes>
-      <class name="com.crxmarkets.dev.qa2.uploadtests.UploadTests">
+      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>
           <include name="setUp"/>
-          <include name="UploadSupplierProposalTest"/>
+          <include name="PositiveLoginTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crxmarkets.dev.qa2.uploadtests.UploadTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- Upload New supplier Proposal(failed) -->
+  </test> <!-- PositiveLoginTest-WithProfile(failed) -->
 </suite> <!-- Failed suite [PositiveLoginTestSuite] -->

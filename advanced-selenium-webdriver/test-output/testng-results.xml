@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="51705" started-at="2020-05-17T03:08:44Z" finished-at="2020-05-17T03:09:36Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="26364" started-at="2020-05-18T07:56:38Z" finished-at="2020-05-18T07:57:05Z">
     <groups>
       <group name="positiveTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5622fdf]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5bcab519]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- positiveTests -->
       <group name="smokeTests">
-        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5622fdf]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5bcab519]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test name="LoginTests" duration-ms="14470" started-at="2020-05-17T03:08:44Z" finished-at="2020-05-17T03:08:59Z">
+    <test name="PositiveLoginTest-WithProfile" duration-ms="12560" started-at="2020-05-18T07:56:38Z" finished-at="2020-05-18T07:56:51Z">
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="setUp" is-config="true" duration-ms="5875" started-at="2020-05-17T03:08:45Z" finished-at="2020-05-17T03:08:51Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5622fdf]" name="setUp" is-config="true" duration-ms="6118" started-at="2020-05-18T07:56:39Z" finished-at="2020-05-18T07:56:45Z">
           <params>
             <param index="0">
               <value>
@@ -27,30 +29,73 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@11ce2e22]]>
+                <![CDATA[ChromeProfile]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@350ec41e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="PositiveLoginTest" duration-ms="7537" started-at="2020-05-17T03:08:51Z" finished-at="2020-05-17T03:08:58Z">
+        <test-method status="FAIL" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5622fdf]" name="PositiveLoginTest" duration-ms="5465" started-at="2020-05-18T07:56:45Z" finished-at="2020-05-18T07:56:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Severe error: chrome-extension://nejjhhjbbdlbnpfhbclcilanmofmgdlk/index.html 0:0 Uncaught SyntaxError: Unexpected token < in JSON at position 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Severe error: chrome-extension://nejjhhjbbdlbnpfhbclcilanmofmgdlk/index.html 0:0 Uncaught SyntaxError: Unexpected token < in JSON at position 0
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.crxmarkets.dev.qa2.loginpagetests.LoginTests.PositiveLoginTest(LoginTests.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PositiveLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@6d4b1c02]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-05-17T03:08:58Z" finished-at="2020-05-17T03:08:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5622fdf]" name="tearDown" is-config="true" duration-ms="579" started-at="2020-05-18T07:56:50Z" finished-at="2020-05-18T07:56:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
-    </test> <!-- LoginTests -->
-    <test name="OnboardingTests" duration-ms="37214" started-at="2020-05-17T03:08:59Z" finished-at="2020-05-17T03:09:36Z">
-      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="setUp" is-config="true" duration-ms="5191" started-at="2020-05-17T03:08:59Z" finished-at="2020-05-17T03:09:04Z">
+    </test> <!-- PositiveLoginTest-WithProfile -->
+    <test name="PositiveLoginTest-WithOutProfile" duration-ms="13789" started-at="2020-05-18T07:56:51Z" finished-at="2020-05-18T07:57:05Z">
+      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5bcab519]" name="setUp" is-config="true" duration-ms="5162" started-at="2020-05-18T07:56:51Z" finished-at="2020-05-18T07:56:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage()]]>
+                <![CDATA[public void com.crxmarkets.dev.qa2.loginpagetests.LoginTests.PositiveLoginTest()]]>
               </value>
             </param>
             <param index="1">
@@ -59,52 +104,26 @@
               </value>
             </param>
             <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
               <value>
-                <![CDATA[org.testng.TestRunner@63a5d002]]>
+                <![CDATA[org.testng.TestRunner@165b2f7f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="verifyManageOnboardingPage" duration-ms="13418" started-at="2020-05-17T03:09:04Z" finished-at="2020-05-17T03:09:18Z">
+        <test-method status="PASS" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5bcab519]" name="PositiveLoginTest" duration-ms="7914" started-at="2020-05-18T07:56:56Z" finished-at="2020-05-18T07:57:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyManageOnboardingPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="tearDown" is-config="true" duration-ms="671" started-at="2020-05-17T03:09:18Z" finished-at="2020-05-17T03:09:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="setUp" is-config="true" duration-ms="5184" started-at="2020-05-17T03:09:18Z" finished-at="2020-05-17T03:09:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@63a5d002]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="searchingCrxActionRequired" duration-ms="12077" started-at="2020-05-17T03:09:23Z" finished-at="2020-05-17T03:09:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchingCrxActionRequired -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@3fee9989]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-05-17T03:09:35Z" finished-at="2020-05-17T03:09:36Z">
+        </test-method> <!-- PositiveLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@5bcab519]" name="tearDown" is-config="true" duration-ms="709" started-at="2020-05-18T07:57:04Z" finished-at="2020-05-18T07:57:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
-    </test> <!-- OnboardingTests -->
+      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
+    </test> <!-- PositiveLoginTest-WithOutProfile -->
   </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>

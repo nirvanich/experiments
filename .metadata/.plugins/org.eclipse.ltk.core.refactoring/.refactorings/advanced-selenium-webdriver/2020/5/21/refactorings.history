@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;advanced-selenium-webdriver/src/main/resources/profiles&apos; to &apos;Profiles&apos;" description="Rename resource &apos;profiles&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/profiles" name="Profiles" stamp="1589773520152" updateReferences="true"/>
+</session>
