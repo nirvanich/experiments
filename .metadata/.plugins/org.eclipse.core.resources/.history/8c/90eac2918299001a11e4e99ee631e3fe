@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PositiveLoginTestSuite" verbose="1">
+	
+	<test name="PositiveLoginTest">
+<parameter name="deviceName" value="Pixel 2 XL"></parameter>
+		<!-- <groups> <run> <include name="positiveTests"></include> </run> </groups> -->
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
+				<methods>
+					<include name="PositiveLoginTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

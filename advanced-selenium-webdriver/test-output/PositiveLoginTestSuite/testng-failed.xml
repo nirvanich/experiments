@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
-  <test thread-count="5" name="PositiveLoginTest-WithProfile(failed)">
-    <parameter name="chromeProfile" value="ChromeProfile"/>
+  <test thread-count="5" name="PositiveLoginTest(failed)">
+    <parameter name="deviceName" value="iPhone X"/>
     <classes>
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
     </classes>
-  </test> <!-- PositiveLoginTest-WithProfile(failed) -->
+  </test> <!-- PositiveLoginTest(failed) -->
 </suite> <!-- Failed suite [PositiveLoginTestSuite] -->

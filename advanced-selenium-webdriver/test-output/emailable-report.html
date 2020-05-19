@@ -8,18 +8,40 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">PositiveLoginTestSuite</th></tr>
-<tr><td><a href="#t0">PositiveLoginTest-WithProfile</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12 560</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">PositiveLoginTest-WithOutProfile</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">13 789</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">26 349</th><th colspan="2"></th></tr>
+<tr><th colspan="7">OnboardingTestSuite</th></tr>
+<tr><td><a href="#t0">checkingCrxActionRequired-Android</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16 646</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">verifyManageOnboardingPage-iOS</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">22 710</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">39 356</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PositiveLoginTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLoginTest-WithProfile &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crxmarkets.dev.qa2.loginpagetests.LoginTests</td><td><a href="#m0">PositiveLoginTest</a></td><td rowspan="1">1589788605160</td><td rowspan="1">5465</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">PositiveLoginTest-WithOutProfile &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crxmarkets.dev.qa2.loginpagetests.LoginTests</td><td><a href="#m1">PositiveLoginTest</a></td><td rowspan="1">1589788616386</td><td rowspan="1">7914</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OnboardingTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">checkingCrxActionRequired-Android &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crxmarkets.dev.qa2.OnboardingTests</td><td><a href="#m0">searchingCrxActionRequired</a></td><td rowspan="1">1589861538572</td><td rowspan="1">9365</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">verifyManageOnboardingPage-iOS &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crxmarkets.dev.qa2.OnboardingTests</td><td><a href="#m1">verifyManageOnboardingPage</a></td><td rowspan="1">1589861538570</td><td rowspan="1">15366</td></tr></tbody>
 </table>
-<h2>PositiveLoginTest-WithProfile</h2><h3 id="m0">com.crxmarkets.dev.qa2.loginpagetests.LoginTests#PositiveLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Severe error: chrome-extension://nejjhhjbbdlbnpfhbclcilanmofmgdlk/index.html 0:0 Uncaught SyntaxError: Unexpected token &lt; in JSON at position 0
-	at com.crxmarkets.dev.qa2.loginpagetests.LoginTests.PositiveLoginTest(LoginTests.java:55)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>PositiveLoginTest-WithOutProfile</h2><h3 id="m1">com.crxmarkets.dev.qa2.loginpagetests.LoginTests#PositiveLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>checkingCrxActionRequired-Android</h2><h3 id="m0">com.crxmarkets.dev.qa2.OnboardingTests#searchingCrxActionRequired</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id=&apos;mainMenu:crxSuppliersOnboardingItem&apos;] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.crxmarkets.dev.qa2.pages.BasePageObject.waitFor(BasePageObject.java:77)
+	at com.crxmarkets.dev.qa2.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
+	at com.crxmarkets.dev.qa2.pages.BasePageObject.click(BasePageObject.java:61)
+	at com.crxmarkets.dev.qa2.pages.HomePage.openOnboardingPage(HomePage.java:34)
+	at com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired(OnboardingTests.java:25)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[@id=&apos;mainMenu:crxSuppliersOnboardingItem&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-U08CU62&apos;, ip: &apos;192.168.1.35&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 25 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>verifyManageOnboardingPage-iOS</h2><h3 id="m1">com.crxmarkets.dev.qa2.OnboardingTests#verifyManageOnboardingPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

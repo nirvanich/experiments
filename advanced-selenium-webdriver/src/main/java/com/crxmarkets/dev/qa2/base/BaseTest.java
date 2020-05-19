@@ -1,7 +1,5 @@
 package com.crxmarkets.dev.qa2.base;
 
-
-
 import java.lang.reflect.Method;
 
 import org.apache.logging.log4j.LogManager;
@@ -19,33 +17,36 @@ public class BaseTest {
 
 	protected WebDriver driver;
 	protected Logger log;
-	
+
 	protected String testSuiteName;
 	protected String testName;
 	protected String testMethodName;
 
-	@Parameters({ "browser" , "chromeProfile" })
+	@Parameters({ "browser", "chromeProfile", "deviceName" })
 	@BeforeMethod(alwaysRun = true)
-	public void setUp(Method method, @Optional("chrome") String browser, @Optional String profile, ITestContext ctx) {
+	public void setUp(Method method, @Optional("chrome") String browser, @Optional String profile,
+			@Optional String deviceName, ITestContext ctx) {
 		String testName = ctx.getCurrentXmlTest().getName();
 		log = LogManager.getLogger(testName);
-		
+
 		BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
-		if (profile != null) {
+		if (deviceName != null) {
+			driver = factory.createChromeWithMobileEmulation(deviceName);
+		}
+		else if (profile != null) {
 			driver = factory.createChromeWithProfile(profile);
-		} else {
+		}
+		else {
 			driver = factory.createDriver();
-		} 
-		
+		}
 
 		// Maximize browser window
 		driver.manage().window().maximize();
 
-		
 		this.testSuiteName = ctx.getSuite().getName();
 		this.testName = testName;
 		this.testMethodName = method.getName();
-		
+
 		// implicit wait
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
