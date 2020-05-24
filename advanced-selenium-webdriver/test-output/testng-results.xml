@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="OnboardingTestSuite" duration-ms="22710" started-at="2020-05-19T04:12:12Z" finished-at="2020-05-19T04:12:34Z">
+  <suite name="OnboardingTestSuite" duration-ms="23675" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:25Z">
     <groups>
     </groups>
-    <test name="checkingCrxActionRequired-Android" duration-ms="16646" started-at="2020-05-19T04:12:12Z" finished-at="2020-05-19T04:12:28Z">
+    <test name="verifyManageOnboardingPage-iOS" duration-ms="21247" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:22Z">
       <class name="com.crxmarkets.dev.qa2.OnboardingTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="setUp" is-config="true" duration-ms="6281" started-at="2020-05-19T04:12:12Z" finished-at="2020-05-19T04:12:18Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="setUp" is-config="true" duration-ms="6337" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired()]]>
+                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage()]]>
               </value>
             </param>
             <param index="1">
@@ -24,7 +24,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Pixel 2 XL]]>
+                <![CDATA[iPhone X]]>
               </value>
             </param>
             <param index="4">
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="searchingCrxActionRequired" duration-ms="9365" started-at="2020-05-19T04:12:18Z" finished-at="2020-05-19T04:12:27Z">
+        <test-method status="FAIL" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="verifyManageOnboardingPage" duration-ms="13723" started-at="2020-05-19T08:22:08Z" finished-at="2020-05-19T08:22:22Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id='mainMenu:crxSuppliersOnboardingItem'] (tried for 5 second(s) with 500 milliseconds interval)]]>
@@ -49,7 +49,7 @@ at com.crxmarkets.dev.qa2.pages.BasePageObject.waitFor(BasePageObject.java:77)
 at com.crxmarkets.dev.qa2.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
 at com.crxmarkets.dev.qa2.pages.BasePageObject.click(BasePageObject.java:61)
 at com.crxmarkets.dev.qa2.pages.HomePage.openOnboardingPage(HomePage.java:34)
-at com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired(OnboardingTests.java:25)
+at com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage(OnboardingTests.java:68)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,20 +88,20 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchingCrxActionRequired -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="tearDown" is-config="true" duration-ms="721" started-at="2020-05-19T04:12:27Z" finished-at="2020-05-19T04:12:28Z">
+        </test-method> <!-- verifyManageOnboardingPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="tearDown" is-config="true" duration-ms="878" started-at="2020-05-19T08:22:22Z" finished-at="2020-05-19T08:22:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
-    </test> <!-- checkingCrxActionRequired-Android -->
-    <test name="verifyManageOnboardingPage-iOS" duration-ms="22710" started-at="2020-05-19T04:12:12Z" finished-at="2020-05-19T04:12:34Z">
+    </test> <!-- verifyManageOnboardingPage-iOS -->
+    <test name="checkingCrxActionRequired-Android" duration-ms="23675" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:25Z">
       <class name="com.crxmarkets.dev.qa2.OnboardingTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="setUp" is-config="true" duration-ms="6151" started-at="2020-05-19T04:12:12Z" finished-at="2020-05-19T04:12:18Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="setUp" is-config="true" duration-ms="6078" started-at="2020-05-19T08:22:02Z" finished-at="2020-05-19T08:22:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage()]]>
+                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired()]]>
               </value>
             </param>
             <param index="1">
@@ -114,7 +114,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
             </param>
             <param index="3">
               <value>
-                <![CDATA[iPhone X]]>
+                <![CDATA[Pixel 2 XL]]>
               </value>
             </param>
             <param index="4">
@@ -126,15 +126,15 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="verifyManageOnboardingPage" duration-ms="15366" started-at="2020-05-19T04:12:18Z" finished-at="2020-05-19T04:12:33Z">
+        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="searchingCrxActionRequired" duration-ms="16443" started-at="2020-05-19T08:22:08Z" finished-at="2020-05-19T08:22:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyManageOnboardingPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="tearDown" is-config="true" duration-ms="793" started-at="2020-05-19T04:12:33Z" finished-at="2020-05-19T04:12:34Z">
+        </test-method> <!-- searchingCrxActionRequired -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="tearDown" is-config="true" duration-ms="723" started-at="2020-05-19T08:22:24Z" finished-at="2020-05-19T08:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
-    </test> <!-- verifyManageOnboardingPage-iOS -->
+    </test> <!-- checkingCrxActionRequired-Android -->
   </suite> <!-- OnboardingTestSuite -->
 </testng-results>
