@@ -38,11 +38,12 @@ public class Basics {
 	System.out.println(place_id);
 	
 	// update place
+	String newAddress = "88 Summer time, USA";
 	
 	given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 	.body("{\r\n" + 
 			"\"place_id\":\"" + place_id + "\",\r\n" + 
-			"\"address\":\"88 Summer time, USA\",\r\n" + 
+			"\"address\":\""+ newAddress +"\",\r\n" + 
 			"\"key\":\"qaclick123\"\r\n" + 
 			"}\r\n" + 
 			"")
@@ -50,9 +51,15 @@ public class Basics {
 	
 	.then().log().all().assertThat().statusCode(200).body("msg",equalTo("Address successfully updated"));
 	
-	//verify
-	
-	
+	//Get Place
+	String getPlaceResponse = given().log().all().queryParam("key", "qaclick123")
+		.queryParam("place_id", place_id)
+		.when().get("maps/api/place/get/json")
+		.then().assertThat().log().all().statusCode(200).extract().response().asString();
+		
+	JsonPath js1 = new JsonPath(getPlaceResponse); 	
+	String actualAdress = js1.getString("address");
+	System.out.println("Expected address is: " + newAddress + " | actual address is: " + actualAdress);
 	
 	
 	
