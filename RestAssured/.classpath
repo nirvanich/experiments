@@ -123,5 +123,6 @@
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/RestAssured/spring-web-test-client-4.3.0-dist/spring-web-test-client-4.3.0-deps/spring-test-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/RestAssured/spring-web-test-client-4.3.0-dist/spring-web-test-client-4.3.0-deps/spring-web-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/RestAssured/spring-web-test-client-4.3.0-dist/spring-web-test-client-4.3.0-deps/spring-webflux-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/testng-7.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

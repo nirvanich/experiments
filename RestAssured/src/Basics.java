@@ -4,6 +4,9 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import org.testng.Assert;
+
+import files.ReUsableMethods;
 import files.payload;
 
 public class Basics {
@@ -14,16 +17,12 @@ public class Basics {
 /*	given
 	when
 	then*/
-//	Add place -> update place with new address -> Get Place to validate if New Address is present in the response
 
+	//	Add place 
 	RestAssured.baseURI = "https://rahulshettyacademy.com";
-	String response = 
-			
-	given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+	String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 	.body(payload.AddPlace())
-	
 	.when().post("maps/api/place/add/json")
-	
 	.then().log().all().assertThat().statusCode(200).body("scope", equalTo("APP"))
 	.header("server", "Apache/2.4.18 (Ubuntu)").extract().response().asString();
 	
@@ -48,7 +47,6 @@ public class Basics {
 			"}\r\n" + 
 			"")
 	.when().put("maps/api/place/update/json")
-	
 	.then().log().all().assertThat().statusCode(200).body("msg",equalTo("Address successfully updated"));
 	
 	//Get Place
@@ -57,11 +55,11 @@ public class Basics {
 		.when().get("maps/api/place/get/json")
 		.then().assertThat().log().all().statusCode(200).extract().response().asString();
 		
-	JsonPath js1 = new JsonPath(getPlaceResponse); 	
+	JsonPath js1 = ReUsableMethods.rawToJson(getPlaceResponse); 	
 	String actualAdress = js1.getString("address");
 	System.out.println("Expected address is: " + newAddress + " | actual address is: " + actualAdress);
 	
-	
+	Assert.assertEquals(actualAdress, newAddress);
 	
 	}
 
