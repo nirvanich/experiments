@@ -1,7 +1,10 @@
-package files;
 
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import files.ReUsableMethods;
+import files.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
@@ -9,13 +12,13 @@ import static io.restassured.RestAssured.*;
 
 public class DynamicJson {
 	
-	@Test
-	public void addBook()
+	@Test(dataProvider = "BooksData")
+	public void addBook(String name, String isbn, String aisle, String author)
 	{
 		RestAssured.baseURI = "http://216.10.245.166";
 		
 		String response = given().header("Content-Type", "application/json")
-			.body(payload.AddBook("OlexBook","adddedbook","1","Author Olex"))
+			.body(payload.AddBook(name, isbn, aisle, author))
 			.when().post("/Library/Addbook.php")
 			.then().assertThat().statusCode(200)
 			.extract().response().asString();
@@ -26,11 +29,11 @@ public class DynamicJson {
 		System.out.println("Book is successfully added. ID: " + id);
 	}
 	
-	@Test
-	public void deleteBook()
+	@Test(dataProvider = "BooksData")
+	public void deleteBook(String name, String isbn, String aisle, String author)
 	{
 		RestAssured.baseURI = "http://216.10.245.166";
-		String id = "adddedbook1";
+		String id = isbn+aisle;
 		String response = given().header("Content-Type", "application/json")
 			.body(payload.deleteBook(id))
 			.when().post("/Library/DeleteBook.php")
@@ -42,4 +45,17 @@ public class DynamicJson {
 		
 		System.out.println(id + " " + msg);
 	}
+	
+	
+	  @DataProvider(name = "BooksData")
+	  public Object[][] getData() 
+	  { 
+		 return new Object[][] {{"OlexBook","adddedbook","1","Author Olex"}, {"OlexBook","adddedbook","2","Author Olex"}, {"OlexBook","adddedbook","3","Author Olex"}}; 
+		  
+	  }
+	 
+
 }
+
+
+
