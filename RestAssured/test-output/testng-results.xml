@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2549" started-at="2020-05-31T07:15:23 EET" finished-at="2020-05-31T07:15:26 EET">
+  <suite name="Default suite" duration-ms="2477" started-at="2020-05-31T07:32:52 EET" finished-at="2020-05-31T07:32:54 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2549" started-at="2020-05-31T07:15:23 EET" finished-at="2020-05-31T07:15:26 EET">
+    <test name="Default test" duration-ms="2477" started-at="2020-05-31T07:32:52 EET" finished-at="2020-05-31T07:32:54 EET">
       <class name="JiraTest">
-        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@43bd930a]" name="createIssue" duration-ms="2512" started-at="2020-05-31T07:15:23 EET" data-provider="BooksData" finished-at="2020-05-31T07:15:26 EET">
+        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@43bd930a]" name="createIssue" duration-ms="2439" started-at="2020-05-31T07:32:52 EET" data-provider="BooksData" finished-at="2020-05-31T07:32:54 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Autocreated bug 1]]>
+                <![CDATA[Autocreated bug 2]]>
               </value>
             </param>
             <param index="1">

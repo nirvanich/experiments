@@ -10,12 +10,13 @@ import io.restassured.path.json.JsonPath;
 
 public class JiraTest {
 
+		
 		@Test(dataProvider = "BooksData")
 		public void createIssue(String summary, String description)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
 			
-			String response = given().header("Content-Type", "application/json").cookie("JSESSIONID","D48F258AD1B3CDF5DB193AFB9989F309")
+			String response = given().header("Content-Type", "application/json").cookie("JSESSIONID", ReUsableMethods.getSessionId())
 				.body(payload.createIssue(summary, description))
 				.when().post("/rest/api/2/issue")
 				.then().assertThat().statusCode(201)
@@ -50,7 +51,7 @@ public class JiraTest {
 		  @DataProvider(name = "BooksData")
 		  public Object[][] getData() 
 		  { 
-			 return new Object[][] {{"Autocreated bug 1","This issue is created automatically"}}; 
+			 return new Object[][] {{"Autocreated bug 2","This issue is created automatically"}}; 
 			  
 		  }
 		 
