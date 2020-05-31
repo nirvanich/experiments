@@ -76,4 +76,22 @@ public class payload {
 				"}";
 	}
 	
+	public static String createIssue(String summary, String description) 
+	{
+		return "{\r\n" + 
+				"    \"fields\": {\r\n" + 
+				"        \"project\": {\r\n" + 
+				"            \"key\": \"RAT\"\r\n" + 
+				"        },\r\n" + 
+				"        \"summary\": \"" + summary + "\",\r\n" + 
+				"        \"issuetype\": {\r\n" + 
+				"            \"name\": \"Bug\"\r\n" + 
+				"        },\r\n" + 
+				"        \"reporter\": {\r\n" + 
+				"            \"name\": \"nirvanich\"\r\n" + 
+				"        },\r\n" + 
+				"        \"description\": \"" + description + "\"\r\n" + 
+				"    }\r\n" + 
+				"}";
+	}
 }
