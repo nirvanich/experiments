@@ -1,5 +1,8 @@
 import static io.restassured.RestAssured.given;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,6 +13,8 @@ import io.restassured.path.json.JsonPath;
 
 public class JiraTest {
 
+		public String id;
+		public List<String> ListOfIds = new ArrayList<String>();
 		
 		@Test(dataProvider = "BooksData")
 		public void createIssue(String summary, String description)
@@ -23,38 +28,42 @@ public class JiraTest {
 				.extract().response().asString();
 			
 			JsonPath js = ReUsableMethods.rawToJson(response);
-			String id = js.get("id");
+			id = js.get("id");
 			String key = js.get("key");
-			
+			ListOfIds.add(id);
 			
 			System.out.println("Issue is successfully created. ID: " + id + ", issueKey is: " + key);
 		}
 		
-		//@Test(dataProvider = "BooksData")
-		public void deleteBook(String name, String isbn, String aisle, String author)
+		@Test(dataProvider = "ListOfIds")
+		public void deleteIssue(String id)
 		{
-			RestAssured.baseURI = "http://216.10.245.166";
-			String id = isbn+aisle;
-			String response = given().header("Content-Type", "application/json")
-				.body(payload.deleteBook(id))
-				.when().post("/Library/DeleteBook.php")
-				.then().assertThat().statusCode(200)
-				.extract().response().asString();
+			RestAssured.baseURI = "http://localhost:8085";
 			
-			JsonPath js = ReUsableMethods.rawToJson(response);
-			String msg = js.get("msg");
-			
-			System.out.println(id + " " + msg);
+			given().header("Content-Type", "application/json").cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.when().delete("/rest/api/2/issue/" + id)
+			.then().assertThat().statusCode(204)
+			.extract().response().asString();
+
+			System.out.println("Issue succssfully deleted. ID: " + id);
 		}
 		
 		
 		  @DataProvider(name = "BooksData")
 		  public Object[][] getData() 
 		  { 
-			 return new Object[][] {{"Autocreated bug 2","This issue is created automatically"}}; 
+			 return new Object[][] {{"Test issue 1","This issue is created automatically"},{"Test issue 2","This issue is created automatically"}}; 
 			  
 		  }
 		 
+		  @DataProvider(name = "ListOfIds")
+		  public Object[] getListOfIds() 
+		  { 
+			  Object[] listOfId;
+			    listOfId = ListOfIds.toArray();
+			  
+			 return listOfId; 			  
+		  }
 
 	
 }
