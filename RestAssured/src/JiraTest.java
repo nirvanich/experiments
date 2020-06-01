@@ -14,6 +14,7 @@ import io.restassured.path.json.JsonPath;
 public class JiraTest {
 
 		public String id;
+		public String key;
 		public List<String> ListOfIds = new ArrayList<String>();
 		
 		@Test(dataProvider = "BooksData")
@@ -29,19 +30,19 @@ public class JiraTest {
 			
 			JsonPath js = ReUsableMethods.rawToJson(response);
 			id = js.get("id");
-			String key = js.get("key");
-			ListOfIds.add(id);
+			key = js.get("key");
+			ListOfIds.add(key);
 			
 			System.out.println("Issue is successfully created. ID: " + id + ", issueKey is: " + key);
-			addComment(id, "Autocomment: id of this issue is: " + id);
+			addComment(key, "Autocomment: id of this issue is: " + id);
 		}
 		
 		
-		public void addComment(String idd, String comment)
+		public void addComment(String key, String comment)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
 			//String id = "10130";
-			given().header("Content-Type", "application/json").pathParam("id", idd).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			given().header("Content-Type", "application/json").pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
 			.body("{\r\n" + 
 					"    \"body\": \"" + comment + "\",\r\n" + 
 					"    \"visibility\": {\r\n" + 
@@ -49,24 +50,24 @@ public class JiraTest {
 					"        \"value\": \"Administrators\"\r\n" + 
 					"    }\r\n" + 
 					"}")
-			.when().post("/rest/api/2/issue/{id}/comment")
+			.when().post("/rest/api/2/issue/{key}/comment")
 			.then().assertThat().statusCode(201)
 			.extract().response().asString();
 
-			System.out.println("Comment to the Issue with ID: " + id + " is succssfully added.");
+			System.out.println("Comment to the Issue with key: " + key + " is succssfully added.");
 		}
 		
-		//@Test(dataProvider = "ListOfIds")
-		public void deleteIssue(String id)
+		@Test(dataProvider = "ListOfIds")
+		public void deleteIssue(String key)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
 			
-			given().header("Content-Type", "application/json").pathParam("id", id).cookie("JSESSIONID", ReUsableMethods.getSessionId())
-			.when().delete("/rest/api/2/issue/{id}")
+			given().header("Content-Type", "application/json").pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.when().delete("/rest/api/2/issue/{key}")
 			.then().assertThat().statusCode(204)
 			.extract().response().asString();
 
-			System.out.println("Issue succssfully deleted. ID: " + id);
+			System.out.println("Issue succssfully deleted. key: " + key);
 		}
 		
 		
