@@ -10,7 +10,7 @@ import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
 
-public class DynamicJson {
+public class DynamicJson { 
 	
 	@Test(dataProvider = "BooksData")
 	public void addBook(String name, String isbn, String aisle, String author)

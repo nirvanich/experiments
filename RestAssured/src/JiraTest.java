@@ -33,21 +33,44 @@ public class JiraTest {
 			ListOfIds.add(id);
 			
 			System.out.println("Issue is successfully created. ID: " + id + ", issueKey is: " + key);
+			addComment(id, "Autocomment: id of this issue is: " + id);
 		}
 		
-		@Test(dataProvider = "ListOfIds")
+		
+		public void addComment(String idd, String comment)
+		{
+			RestAssured.baseURI = "http://localhost:8085";
+			//String id = "10130";
+			given().header("Content-Type", "application/json").pathParam("id", idd).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.body("{\r\n" + 
+					"    \"body\": \"" + comment + "\",\r\n" + 
+					"    \"visibility\": {\r\n" + 
+					"        \"type\": \"role\",\r\n" + 
+					"        \"value\": \"Administrators\"\r\n" + 
+					"    }\r\n" + 
+					"}")
+			.when().post("/rest/api/2/issue/{id}/comment")
+			.then().assertThat().statusCode(201)
+			.extract().response().asString();
+
+			System.out.println("Comment to the Issue with ID: " + id + " is succssfully added.");
+		}
+		
+		//@Test(dataProvider = "ListOfIds")
 		public void deleteIssue(String id)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
 			
-			given().header("Content-Type", "application/json").cookie("JSESSIONID", ReUsableMethods.getSessionId())
-			.when().delete("/rest/api/2/issue/" + id)
+			given().header("Content-Type", "application/json").pathParam("id", id).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.when().delete("/rest/api/2/issue/{id}")
 			.then().assertThat().statusCode(204)
 			.extract().response().asString();
 
 			System.out.println("Issue succssfully deleted. ID: " + id);
 		}
 		
+		
+		 
 		
 		  @DataProvider(name = "BooksData")
 		  public Object[][] getData() 
@@ -64,7 +87,8 @@ public class JiraTest {
 			  
 			 return listOfId; 			  
 		  }
-
+		  
+		  
 	
 }
 

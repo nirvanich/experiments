@@ -5,7 +5,7 @@
     <classes>
       <class name="JiraTest">
         <methods>
-          <include name="deleteIssue"/>
+          <include name="addComment"/>
         </methods>
       </class> <!-- JiraTest -->
     </classes>

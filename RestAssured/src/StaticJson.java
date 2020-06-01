@@ -47,7 +47,7 @@ public class StaticJson {
 		JsonPath js = ReUsableMethods.rawToJson(response);
 		String msg = js.get("msg");
 		
-		System.out.println(id + " " + msg);
+		System.out.println(id + " " + msg); 
 	}
 	
 	public static String GenerareStringFromResource(String path) throws IOException {
