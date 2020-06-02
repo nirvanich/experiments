@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3031" started-at="2020-06-01T07:01:42 EET" finished-at="2020-06-01T07:01:45 EET">
+  <suite name="Default suite" duration-ms="5543" started-at="2020-06-02T06:05:45 EET" finished-at="2020-06-02T06:05:50 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3031" started-at="2020-06-01T07:01:42 EET" finished-at="2020-06-01T07:01:45 EET">
+    <test name="Default test" duration-ms="5543" started-at="2020-06-02T06:05:45 EET" finished-at="2020-06-02T06:05:50 EET">
       <class name="JiraTest">
-        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="createIssue" duration-ms="2647" started-at="2020-06-01T07:01:42 EET" data-provider="BooksData" finished-at="2020-06-01T07:01:44 EET">
+        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="createIssue" duration-ms="4742" started-at="2020-06-02T06:05:45 EET" data-provider="BooksData" finished-at="2020-06-02T06:05:50 EET">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIssue -->
-        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="createIssue" duration-ms="170" started-at="2020-06-01T07:01:44 EET" data-provider="BooksData" finished-at="2020-06-01T07:01:44 EET">
+        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="createIssue" duration-ms="297" started-at="2020-06-02T06:05:50 EET" data-provider="BooksData" finished-at="2020-06-02T06:05:50 EET">
           <params>
             <param index="0">
               <value>
@@ -39,22 +39,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIssue -->
-        <test-method status="PASS" signature="deleteIssue(java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="deleteIssue" duration-ms="79" started-at="2020-06-01T07:01:44 EET" data-provider="ListOfIds" finished-at="2020-06-01T07:01:44 EET">
+        <test-method status="PASS" signature="deleteIssue(java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="deleteIssue" duration-ms="351" started-at="2020-06-02T06:05:50 EET" data-provider="ListOfIds" finished-at="2020-06-02T06:05:50 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RAT-67]]>
+                <![CDATA[RAT-73]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteIssue -->
-        <test-method status="PASS" signature="deleteIssue(java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="deleteIssue" duration-ms="86" started-at="2020-06-01T07:01:44 EET" data-provider="ListOfIds" finished-at="2020-06-01T07:01:45 EET">
+        <test-method status="PASS" signature="deleteIssue(java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="deleteIssue" duration-ms="100" started-at="2020-06-02T06:05:50 EET" data-provider="ListOfIds" finished-at="2020-06-02T06:05:50 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RAT-68]]>
+                <![CDATA[RAT-74]]>
               </value>
             </param>
           </params>

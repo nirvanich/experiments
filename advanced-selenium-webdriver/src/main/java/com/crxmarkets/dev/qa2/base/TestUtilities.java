@@ -1,5 +1,7 @@
 package com.crxmarkets.dev.qa2.base;
 
+import static io.restassured.RestAssured.given;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,6 +14,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.testng.annotations.DataProvider;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 
 public class TestUtilities extends BaseTest {
 	
@@ -70,4 +75,85 @@ public class TestUtilities extends BaseTest {
 		List<LogEntry> logList = log.getAll();
 		return logList;
 	}
+	
+	public static String getSessionId()
+	{
+		RestAssured.baseURI = "http://localhost:8085";
+		
+		String response = given().header("Content-Type", "application/json")
+			.body("{ \r\n" + 
+					"\"username\": \"nirvanich\", \r\n" + 
+					"\"password\": \"Str4nGe-\"\r\n" + 
+					"}")
+			.when().post("/rest/auth/1/session")
+			.then().assertThat().statusCode(200)
+			.extract().response().asString();
+		
+		JsonPath js = new JsonPath(response);
+		String sessionId = js.get("session.value");
+		System.out.println(sessionId);
+		return sessionId;			
+	}
+	
+	public static String createIssue(String summary, String description) 
+	{
+		return "{\r\n" + 
+				"    \"fields\": {\r\n" + 
+				"        \"project\": {\r\n" + 
+				"            \"key\": \"RAT\"\r\n" + 
+				"        },\r\n" + 
+				"        \"summary\": \"" + summary + "\",\r\n" + 
+				"        \"issuetype\": {\r\n" + 
+				"            \"name\": \"Bug\"\r\n" + 
+				"        },\r\n" + 
+				"        \"reporter\": {\r\n" + 
+				"            \"name\": \"nirvanich\"\r\n" + 
+				"        },\r\n" + 
+				"        \"description\": \"" + description + "\"\r\n" + 
+				"    }\r\n" + 
+				"}";
+	}
+
+	public void createJiraIssue(String summary, String description, String sessionId)
+	{
+		RestAssured.baseURI = "http://localhost:8085";
+		
+		String response = given().header("Content-Type", "application/json").cookie("JSESSIONID", sessionId)
+			.body(createIssue(summary, description))
+			.when().post("/rest/api/2/issue")
+			.then().assertThat().statusCode(201)
+			.extract().response().asString();
+		
+		JsonPath js = new JsonPath(response);
+		String id = js.get("id");
+		String key = js.get("key");
+		
+		
+		System.out.println("Issue is successfully created. ID: " + id + ", issueKey is: " + key);
+		addComment(key, "Autocomment: technical ID of this issue is: " + id);
+	}
+	
+	public void addComment(String key, String comment)
+	{
+		RestAssured.baseURI = "http://localhost:8085";
+		//String id = "10130";
+		given().header("Content-Type", "application/json").pathParam("key", key).cookie("JSESSIONID",getSessionId())
+		.body("{\r\n" + 
+				"    \"body\": \"" + comment + "\",\r\n" + 
+				"    \"visibility\": {\r\n" + 
+				"        \"type\": \"role\",\r\n" + 
+				"        \"value\": \"Administrators\"\r\n" + 
+				"    }\r\n" + 
+				"}")
+		.when().post("/rest/api/2/issue/{key}/comment")
+		.then().assertThat().statusCode(201)
+		.extract().response().asString();
+
+		System.out.println("Comment to the Issue with key: " + key + " is succssfully added.");
+	}
+	
+	public String getBugDescription(String expectedURL, String actualURL) {
+		return "*Steps to reproduce:*\\n# Login to CRX Portal\\n\\n*Expected result:*\\n* Actual URL is coresponds to HomePage URL [ "+expectedURL+" ]\\n\\n*Actual result:*\\n* Wrong URL is observed - [ "+actualURL+" ]";
+	}
+
 }

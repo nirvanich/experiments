@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLoginTestSuite]">
   <test thread-count="5" name="PositiveLoginTest(failed)">
-    <parameter name="deviceName" value="iPhone X"/>
     <classes>
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
         <methods>

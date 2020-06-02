@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ShowViewDialog">
-		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.testng.eclipse.ResultView"/>
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.eclemma.ui.CoverageView"/>
 		<item key="DIALOG_X_ORIGIN" value="252"/>
 		<item key="DIALOG_Y_ORIGIN" value="141"/>
 		<item key="DIALOG_WIDTH" value="311"/>

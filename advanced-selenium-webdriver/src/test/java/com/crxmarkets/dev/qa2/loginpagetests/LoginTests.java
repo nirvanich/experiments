@@ -15,6 +15,12 @@ import com.crxmarkets.dev.qa2.pages.LogInPage;
 
 public class LoginTests extends TestUtilities {
 
+	@Test
+	public void logTheDefect() {
+	
+		createJiraIssue("Login test failed", "Actual message is not the same as expected", getSessionId());
+	}
+	
 	@Test(priority = 1, groups = { "positiveTests", "smokeTests" })
 	public void PositiveLoginTest() {
 
@@ -25,14 +31,20 @@ public class LoginTests extends TestUtilities {
 		logInPage.openPage();
 		takeScreenshot("LoginPage opened");
 //		execute log in
-		HomePage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd12");
+		HomePage homepage = logInPage.logIn("admin@crx.lu", "P@ssw0rd1");
 		takeScreenshot("HomePage opened");
 
 //		verifications:
 //		 URL
+		if (homepage.getCurrentUrl().contains(homepage.getHomePageUrl()) != true) {
+			createJiraIssue("Positive login test faised", getBugDescription(homepage.getHomePageUrl(),homepage.getCurrentUrl()), getSessionId());
+		}
+		
 		Assert.assertEquals(homepage.getCurrentUrl(), homepage.getHomePageUrl(),
 				"Actual page url is not the same as expected");
-
+		
+		
+		
 //		logout button is visible 
 		Assert.assertTrue(homepage.logOutButtonVisible(), "Logout button is not visible");
 
@@ -42,7 +54,8 @@ public class LoginTests extends TestUtilities {
 		Assert.assertTrue(actualMessage.contains(expectedMessage),
 				"Actual message is not the same as expected\nExpected message: [" + expectedMessage
 						+ "]\nActual message: [" + actualMessage + "]");
-
+		
+			
 //		Get logs
 		List<LogEntry> logs = getBrowserLogs();
 		

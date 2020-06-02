@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="OnboardingTestSuite" duration-ms="23675" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:25Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="14105" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:36Z">
     <groups>
+      <group name="positiveTests">
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+      </group> <!-- positiveTests -->
+      <group name="smokeTests">
+        <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
+      </group> <!-- smokeTests -->
     </groups>
-    <test name="verifyManageOnboardingPage-iOS" duration-ms="21247" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:22Z">
-      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="setUp" is-config="true" duration-ms="6337" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:08Z">
+    <test name="PositiveLoginTest" duration-ms="14105" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:36Z">
+      <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="setUp" is-config="true" duration-ms="5894" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage()]]>
+                <![CDATA[public void com.crxmarkets.dev.qa2.loginpagetests.LoginTests.PositiveLoginTest()]]>
               </value>
             </param>
             <param index="1">
@@ -23,33 +29,30 @@
               <value is-null="true"/>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[iPhone X]]>
-              </value>
+              <value is-null="true"/>
             </param>
             <param index="4">
               <value>
-                <![CDATA[org.testng.TestRunner@6ddf90b0]]>
+                <![CDATA[org.testng.TestRunner@11900483]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyManageOnboardingPage()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="verifyManageOnboardingPage" duration-ms="13723" started-at="2020-05-19T08:22:08Z" finished-at="2020-05-19T08:22:22Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" duration-ms="7085" started-at="2020-06-02T04:18:28Z" finished-at="2020-06-02T04:18:35Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id='mainMenu:crxSuppliersOnboardingItem'] (tried for 5 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=59]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id='mainMenu:crxSuppliersOnboardingItem'] (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at com.crxmarkets.dev.qa2.pages.BasePageObject.waitFor(BasePageObject.java:77)
-at com.crxmarkets.dev.qa2.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
-at com.crxmarkets.dev.qa2.pages.BasePageObject.click(BasePageObject.java:61)
-at com.crxmarkets.dev.qa2.pages.HomePage.openOnboardingPage(HomePage.java:34)
-at com.crxmarkets.dev.qa2.OnboardingTests.verifyManageOnboardingPage(OnboardingTests.java:68)
+              <![CDATA[java.lang.AssertionError: Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=59]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.crxmarkets.dev.qa2.loginpagetests.LoginTests.PositiveLoginTest(LoginTests.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -63,78 +66,29 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[@id='mainMenu:crxSuppliersOnboardingItem']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-U08CU62', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.util.Optional.orElseThrow(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 25 more
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyManageOnboardingPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6fd02e5]" name="tearDown" is-config="true" duration-ms="878" started-at="2020-05-19T08:22:22Z" finished-at="2020-05-19T08:22:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
-    </test> <!-- verifyManageOnboardingPage-iOS -->
-    <test name="checkingCrxActionRequired-Android" duration-ms="23675" started-at="2020-05-19T08:22:01Z" finished-at="2020-05-19T08:22:25Z">
-      <class name="com.crxmarkets.dev.qa2.OnboardingTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="setUp" is-config="true" duration-ms="6078" started-at="2020-05-19T08:22:02Z" finished-at="2020-05-19T08:22:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.crxmarkets.dev.qa2.OnboardingTests.searchingCrxActionRequired()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Pixel 2 XL]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[org.testng.TestRunner@5a8e6209]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchingCrxActionRequired()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="searchingCrxActionRequired" duration-ms="16443" started-at="2020-05-19T08:22:08Z" finished-at="2020-05-19T08:22:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchingCrxActionRequired -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.OnboardingTests@6093dd95]" name="tearDown" is-config="true" duration-ms="723" started-at="2020-05-19T08:22:24Z" finished-at="2020-05-19T08:22:25Z">
+        </test-method> <!-- PositiveLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="tearDown" is-config="true" duration-ms="681" started-at="2020-06-02T04:18:35Z" finished-at="2020-06-02T04:18:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crxmarkets.dev.qa2.OnboardingTests -->
-    </test> <!-- checkingCrxActionRequired-Android -->
-  </suite> <!-- OnboardingTestSuite -->
+      </class> <!-- com.crxmarkets.dev.qa2.loginpagetests.LoginTests -->
+    </test> <!-- PositiveLoginTest -->
+  </suite> <!-- PositiveLoginTestSuite -->
 </testng-results>
