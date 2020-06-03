@@ -2,28 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3373" started-at="2020-06-03T06:56:08 EET" finished-at="2020-06-03T06:56:11 EET">
+  <suite name="Default suite" duration-ms="2735" started-at="2020-06-03T13:23:54 EET" finished-at="2020-06-03T13:23:57 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3373" started-at="2020-06-03T06:56:08 EET" finished-at="2020-06-03T06:56:11 EET">
-      <class name="JiraTest">
-        <test-method status="PASS" signature="createIssue(java.lang.String, java.lang.String)[pri:0, instance:JiraTest@7a30d1e6]" name="createIssue" duration-ms="3318" started-at="2020-06-03T06:56:08 EET" data-provider="BooksData" finished-at="2020-06-03T06:56:11 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test issue 1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[This issue is created automatically]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="2735" started-at="2020-06-03T13:23:54 EET" finished-at="2020-06-03T13:23:57 EET">
+      <class name="JiraIssueTest">
+        <test-method status="PASS" signature="getLinkedIssue()[pri:0, instance:JiraIssueTest@6950e31]" name="getLinkedIssue" duration-ms="2701" started-at="2020-06-03T13:23:54 EET" finished-at="2020-06-03T13:23:57 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createIssue -->
-      </class> <!-- JiraTest -->
+        </test-method> <!-- getLinkedIssue -->
+      </class> <!-- JiraIssueTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
