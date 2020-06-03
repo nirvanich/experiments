@@ -1,5 +1,6 @@
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +36,7 @@ public class JiraTest {
 			
 			System.out.println("Issue is successfully created. ID: " + id + ", issueKey is: " + key);
 			addComment(key, "Autocomment: id of this issue is: " + id);
+			System.out.println(getIssue(key));
 		}
 		
 		
@@ -57,7 +59,7 @@ public class JiraTest {
 			System.out.println("Comment to the Issue with key: " + key + " is succssfully added.");
 		}
 		
-		@Test(dataProvider = "ListOfIds")
+		//@Test(dataProvider = "ListOfIds")
 		public void deleteIssue(String key)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
@@ -70,24 +72,50 @@ public class JiraTest {
 			System.out.println("Issue succssfully deleted. key: " + key);
 		}
 		
+		//Add attachment
+		public void addAttachment(String key)
+		{
+			RestAssured.baseURI = "http://localhost:8085";
+			
+			given().header("X-Atlassian-Token", "no-check").pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.header("Content-Type", "multipart/form-data")
+			.multiPart("file", new File("C:\\Gitstuff\\RestAssured\\test-output\\111809635 HomePage opened.png"))
+			.when().post("/rest/api/2/issue/{key}/attachments")
+			.then().assertThat().statusCode(200)
+			.extract().response().asString();
+			
+			System.out.println("Attachment to the Issue with key: " + key + " is succssfully added.");
+
+		}
+		//get Issue
+		public String getIssue(String key)
+		{
+			 RestAssured.baseURI = "http://localhost:8085";
+			 
+			 String response = given().pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+					 .queryParam("fields", "comment")
+			 .when().get("/rest/api/2/issue/{key}")
+			 .then().assertThat().statusCode(200).extract().response().asString();
+				
+			 return response;
+		}
 		
-		 
 		
-		  @DataProvider(name = "BooksData")
-		  public Object[][] getData() 
-		  { 
-			 return new Object[][] {{"Test issue 1","This issue is created automatically"},{"Test issue 2","This issue is created automatically"}}; 
+		@DataProvider(name = "BooksData")
+		public Object[][] getData() 
+		{ 
+			return new Object[][] {{"Test issue 1","This issue is created automatically"}}; 
 			  
-		  }
+		}
 		 
-		  @DataProvider(name = "ListOfIds")
-		  public Object[] getListOfIds() 
-		  { 
-			  Object[] listOfId;
-			    listOfId = ListOfIds.toArray();
+		@DataProvider(name = "ListOfIds")
+		public Object[] getListOfIds() 
+		{ 
+			Object[] listOfId;
+			listOfId = ListOfIds.toArray();
 			  
-			 return listOfId; 			  
-		  }
+		return listOfId; 			  
+		}
 		  
 		  
 	

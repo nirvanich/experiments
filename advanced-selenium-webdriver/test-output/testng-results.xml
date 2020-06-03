@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLoginTestSuite" duration-ms="14105" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:36Z">
+  <suite name="PositiveLoginTestSuite" duration-ms="18871" started-at="2020-06-02T08:17:56Z" finished-at="2020-06-02T08:18:14Z">
     <groups>
       <group name="positiveTests">
         <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
@@ -11,9 +11,9 @@
         <method signature="LoginTests.PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" class="com.crxmarkets.dev.qa2.loginpagetests.LoginTests"/>
       </group> <!-- smokeTests -->
     </groups>
-    <test name="PositiveLoginTest" duration-ms="14105" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:36Z">
+    <test name="PositiveLoginTest" duration-ms="18871" started-at="2020-06-02T08:17:56Z" finished-at="2020-06-02T08:18:14Z">
       <class name="com.crxmarkets.dev.qa2.loginpagetests.LoginTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="setUp" is-config="true" duration-ms="5894" started-at="2020-06-02T04:18:22Z" finished-at="2020-06-02T04:18:28Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="setUp" is-config="true" duration-ms="7327" started-at="2020-06-02T08:17:56Z" finished-at="2020-06-02T08:18:03Z">
           <params>
             <param index="0">
               <value>
@@ -40,13 +40,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" duration-ms="7085" started-at="2020-06-02T04:18:28Z" finished-at="2020-06-02T04:18:35Z">
+        <test-method status="FAIL" signature="PositiveLoginTest()[pri:1, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="PositiveLoginTest" duration-ms="10154" started-at="2020-06-02T08:18:03Z" finished-at="2020-06-02T08:18:14Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=59]]]>
+              <![CDATA[Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=64]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=59]
+              <![CDATA[java.lang.AssertionError: Actual page url is not the same as expected expected [https://qa2.dev.crxmarkets.com/crx-web/app/cockpits/crx-home] but found [https://login-qa2.dev.crxmarkets.com/login?error=TEMPORARY_LOCKED&time_to_unlock=64]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -84,7 +84,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PositiveLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="tearDown" is-config="true" duration-ms="681" started-at="2020-06-02T04:18:35Z" finished-at="2020-06-02T04:18:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crxmarkets.dev.qa2.loginpagetests.LoginTests@dc24521]" name="tearDown" is-config="true" duration-ms="741" started-at="2020-06-02T08:18:14Z" finished-at="2020-06-02T08:18:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -5,7 +5,7 @@
     <classes>
       <class name="JiraTest">
         <methods>
-          <include name="addComment"/>
+          <include name="createIssue" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- JiraTest -->
     </classes>

@@ -152,6 +152,17 @@ public class TestUtilities extends BaseTest {
 		System.out.println("Comment to the Issue with key: " + key + " is succssfully added.");
 	}
 	
+	public String getIssue(String key)
+	{
+		 RestAssured.baseURI = "http://localhost:8085";
+		 
+		 String response = given().pathParam("key", key).cookie("JSESSIONID", getSessionId())
+				 .queryParam("fields", "comment")
+		 .when().get("/rest/api/2/issue/{key}")
+		 .then().assertThat().statusCode(200).extract().response().asString();
+			
+		 return response;
+	}
 	public String getBugDescription(String expectedURL, String actualURL) {
 		return "*Steps to reproduce:*\\n# Login to CRX Portal\\n\\n*Expected result:*\\n* Actual URL is coresponds to HomePage URL [ "+expectedURL+" ]\\n\\n*Actual result:*\\n* Wrong URL is observed - [ "+actualURL+" ]";
 	}
