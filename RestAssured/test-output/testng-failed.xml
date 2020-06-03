@@ -5,7 +5,7 @@
     <classes>
       <class name="JiraIssueTest">
         <methods>
-          <include name="getIssue"/>
+          <include name="getLinkedIssue"/>
         </methods>
       </class> <!-- JiraIssueTest -->
     </classes>

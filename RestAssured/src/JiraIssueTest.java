@@ -68,8 +68,8 @@ public class JiraIssueTest {
 		 return flag;
 	}
 
-	@Test
-	public void getLinkedIssue() {
+	
+	public boolean getOpenLinkedIssue() {
 		// TODO Auto-generated method stub
 
 		RestAssured.baseURI = "http://localhost:8085";
@@ -86,16 +86,34 @@ public class JiraIssueTest {
 		 int linkedissuesCount = js.getInt("fields.issuelinks.size()");
 		 for (int i=0; i<linkedissuesCount;i++)
 		 {
-			 System.out.print("Defect summary: " + js.getString("fields.issuelinks["+i+"].inwardIssue.fields.summary")+" | ");
-			 System.out.println("Defect status: " + js.getString("fields.issuelinks["+i+"].inwardIssue.fields.status.name"));
-			 String linkedIssueStatus = js.getString("fields.issuelinks["+i+"].inwardIssue.fields.status.name");
-			 if (!linkedIssueStatus.contains("Done"))
-			 {
-				 openIssues = true;
+			 String issueType = js.getString("fields.issuelinks["+i+"].inwardIssue.fields.issuetype.name");
+			 if (issueType.contains("Bug"))
+			 {	 
 				 
+				 String linkedIssueStatus = js.getString("fields.issuelinks["+i+"].inwardIssue.fields.status.name");
+				 if (!linkedIssueStatus.contains("Done"))
+				 {
+					 openIssues = true;
+					 System.out.println("Defect summary: " + js.getString("fields.issuelinks["+i+"].inwardIssue.fields.summary"));
+					 System.out.println("Defect status: " + js.getString("fields.issuelinks["+i+"].inwardIssue.fields.status.name") + "\n");
+				 }
 			 }
 		 }
 		 System.out.println("Open issue presense: "+ openIssues);
-		 //return openIssues;
+		 return openIssues;
+	}
+	
+	@Test
+	public void startTestDecision() {
+		// TODO Auto-generated method stub
+		if (getOpenLinkedIssue())
+		{
+			System.out.println("Test skipped as there are open defects linked.");
+		}
+		else
+		{
+			System.out.println("Test started as there are no open defects linked.");
+		}
+		
 	}
 }
