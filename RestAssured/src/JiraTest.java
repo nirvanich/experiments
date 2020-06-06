@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import files.ReUsableMethods;
 import files.payload;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 
 public class JiraTest {
@@ -64,7 +65,7 @@ public class JiraTest {
 		{
 			RestAssured.baseURI = "http://localhost:8085";
 			
-			given().header("Content-Type", "application/json").pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			given().contentType(ContentType.JSON).pathParam("key", key).cookie("JSESSIONID", ReUsableMethods.getSessionId())
 			.when().delete("/rest/api/2/issue/{key}")
 			.then().assertThat().statusCode(204)
 			.extract().response().asString();

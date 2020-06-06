@@ -12,7 +12,7 @@ public class JiraIssueTest {
 	public void getComment() {
 		// TODO Auto-generated method stub
 
-		if (!getIssue()) {
+		if (!getIfLabelFixedIsPresentInTheIssue()) {
 		RestAssured.baseURI = "http://localhost:8085";
 		 
 		 String response = given().pathParam("key", "10504").cookie("JSESSIONID", ReUsableMethods.getSessionId())
@@ -41,7 +41,7 @@ public class JiraIssueTest {
 	}
 	
 	
-	public boolean getIssue() {
+	public boolean getIfLabelFixedIsPresentInTheIssue() {
 		// TODO Auto-generated method stub
 
 		RestAssured.baseURI = "http://localhost:8085";
