@@ -5513,3 +5513,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.sun:tools
 2020-06-04 05:43:36,151 [Worker-671: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-06-04 05:43:36,151 [Worker-671: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\DockerValidation\src\test\resources
 2020-06-04 05:44:53,021 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-06-06 07:28:46,553 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

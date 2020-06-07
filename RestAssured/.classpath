@@ -134,5 +134,9 @@
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/guava-22.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-annotations-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-databind-2.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

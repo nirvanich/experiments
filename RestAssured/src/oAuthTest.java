@@ -18,7 +18,7 @@ public class oAuthTest {
 //			driver.findElement(By.xpath("//input[@type='password']")).sendKeys(Keys.ENTER);
 //			Thread.sleep(4000);
 //			String url = driver.getCurrentUrl();
-			String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0gF8R5iu-Cz2Wf7-CTbEvYcD9DEmVGYe2vAubKm5E-Pv9JUib7RosH12KJ7342wpoxZ81mcRk_dCaQpBsmUd5vE&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent#";
+			String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0gE3mqK9InovDMBY5r6G9ZaAU0eFKmX8XxSYd1DV7ilOZIFEL9Z78p5FAsfH_UM2_rao7KuDsZoikXiySLrXdPw&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent#";
 			
 			String afterCode = url.split("code=")[1];
 			String code = afterCode.split("&scope")[0];
