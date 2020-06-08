@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6120" started-at="2020-06-03T16:08:33 EET" finished-at="2020-06-03T16:08:39 EET">
+  <suite name="Default suite" duration-ms="3516" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6120" started-at="2020-06-03T16:08:33 EET" finished-at="2020-06-03T16:08:39 EET">
+    <test name="Default test" duration-ms="3516" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
       <class name="JiraIssueTest">
-        <test-method status="PASS" signature="startTestDecision()[pri:0, instance:JiraIssueTest@6950e31]" name="startTestDecision" duration-ms="6044" started-at="2020-06-03T16:08:33 EET" finished-at="2020-06-03T16:08:39 EET">
+        <test-method status="PASS" signature="startTestDecision()[pri:0, instance:JiraIssueTest@51c8530f]" name="startTestDecision" duration-ms="3480" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestDecision -->

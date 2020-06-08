@@ -138,5 +138,6 @@
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-annotations-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-core-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/jackson-databind-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Olex Liubota/Downloads/slf4j-simple-1.7.30.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

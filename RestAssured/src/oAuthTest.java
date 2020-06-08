@@ -1,6 +1,14 @@
 import static io.restassured.RestAssured.given;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.testng.Assert;
+
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
+import pojo.GetCourse;
 
 public class oAuthTest {
 
@@ -18,11 +26,11 @@ public class oAuthTest {
 //			driver.findElement(By.xpath("//input[@type='password']")).sendKeys(Keys.ENTER);
 //			Thread.sleep(4000);
 //			String url = driver.getCurrentUrl();
-			String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0gE3mqK9InovDMBY5r6G9ZaAU0eFKmX8XxSYd1DV7ilOZIFEL9Z78p5FAsfH_UM2_rao7KuDsZoikXiySLrXdPw&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=3&prompt=consent#";
+			String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0gHxXnjlZTLkpvpFDEv4cjIclexZG1lafIJokppCbh3nsJ19B7nM0l-YEiHpKlzPv--7_lSiQRSyJAfaBaBRcM8&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=none#";
 			
 			String afterCode = url.split("code=")[1];
 			String code = afterCode.split("&scope")[0];
-			System.out.println(code);
+			//System.out.println(code);
 			
 		String accessTokenResponse = given().urlEncodingEnabled(false)
 		.queryParams("code", code)
@@ -36,11 +44,25 @@ public class oAuthTest {
 		JsonPath js = new JsonPath(accessTokenResponse);
 		String accessToken = js.getString("access_token");
 		
-		String response = given()
-		.queryParam("access_token", accessToken)
-		.when().get("https://rahulshettyacademy.com/getCourse.php").asString();
+		GetCourse response = 
+		given()
+			.queryParam("access_token", accessToken).expect().defaultParser(Parser.JSON)
+		.when()
+			.get("https://rahulshettyacademy.com/getCourse.php").as(GetCourse.class);
 		
-		System.out.println(response);
+		//System.out.println(response);
+				
+		String[] courseTitles = {"Selenium Webdriver Java", "Cypress", "Protractor"};
+		ArrayList<String> a = new ArrayList<String>();
+		
+		List<String> expectedList = Arrays.asList(courseTitles);
+		
+		for (int i = 0; i < response.getCourses().getWebAutomation().size();i++) {
+			a.add(response.getCourses().getWebAutomation().get(i).getCourseTitle());
+		}
+			
+		Assert.assertTrue(a.equals(expectedList));
+		System.out.println("Success!");
 	}
 
 }
