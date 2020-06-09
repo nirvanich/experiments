@@ -1,13 +1,17 @@
 import static io.restassured.RestAssured.given;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import files.ReUsableMethods;
-import files.payload;
 import io.restassured.RestAssured;
 import jiraPojo.Fields;
 import jiraPojo.IssueType;
 import jiraPojo.NewIssue;
+import jiraPojo.Priority;
 import jiraPojo.Project;
 import jiraPojo.Reporter;
+import jiraPojo.Versions;
 
 public class SerializeJiraTicketCreation {
 
@@ -22,14 +26,25 @@ public class SerializeJiraTicketCreation {
 		Project project = new Project();
 		IssueType issuetype = new IssueType();
 		Reporter reporter = new Reporter();
+		Priority priority = new Priority();
+		Versions affectedVersion = new Versions();
+		List<Versions> versions = new ArrayList<Versions>();
+		
 		reporter.setName("nirvanich");
 		issuetype.setName("Bug");
 		project.setKey("RAT");
+		priority.setName("Highest");
+		affectedVersion.setName("1.0");
+		versions.add(affectedVersion);
+		versions.add(affectedVersion);
+		
 		fields.setReporter(reporter);
 		fields.setIssuetype(issuetype);
 		fields.setProject(project);
 		fields.setSummary("Defect made of Serialized Json");
 		fields.setDescription("Test description");
+		fields.setPriority(priority);
+		fields.setVersions(versions);
 		bug.setFields(fields);
 		
 		

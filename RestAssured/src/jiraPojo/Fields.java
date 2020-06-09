@@ -1,5 +1,7 @@
 package jiraPojo;
 
+import java.util.List;
+
 public class Fields {
 
 	private Project project;
@@ -7,6 +9,21 @@ public class Fields {
 	private IssueType issuetype;
 	private Reporter reporter;
 	private String description;
+	private Priority priority;
+	private List<Versions> versions;
+	
+	public Priority getPriority() {
+		return priority;
+	}
+	public void setPriority(Priority priority) {
+		this.priority = priority;
+	}
+	public List<Versions> getVersions() {
+		return versions;
+	}
+	public void setVersions(List<Versions> versions) {
+		this.versions = versions;
+	}
 	
 	public Project getProject() {
 		return project;
