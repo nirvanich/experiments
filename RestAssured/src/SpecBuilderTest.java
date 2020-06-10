@@ -5,6 +5,12 @@ import java.util.List;
 
 import files.ReUsableMethods;
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import jiraPojo.Fields;
 import jiraPojo.IssueType;
 import jiraPojo.NewIssue;
@@ -13,7 +19,7 @@ import jiraPojo.Project;
 import jiraPojo.Reporter;
 import jiraPojo.Versions;
 
-public class SerializeJiraTicketCreation {
+public class SpecBuilderTest {
 
 	
 	public static void main(String[] args) {
@@ -47,13 +53,17 @@ public class SerializeJiraTicketCreation {
 		bug.setFields(fields);
 		
 		
-		String response = given().header("Content-Type", "application/json").cookie("JSESSIONID", ReUsableMethods.getSessionId())
-				.body(bug)
-				.when().post("/rest/api/2/issue")
-				.then().assertThat().statusCode(201)
-				.extract().response().asString();
+		RequestSpecification jiraSpec = new RequestSpecBuilder().setBaseUri("http://localhost:8085").setContentType(ContentType.JSON).addCookie("JSESSIONID", ReUsableMethods.getSessionId()).build();
+		RequestSpecification jiraBugRequest = given().spec(jiraSpec).body(bug);
+		ResponseSpecification json201 = new ResponseSpecBuilder().expectStatusCode(201).expectContentType(ContentType.JSON).build();
 		
-		System.out.println(response);
+		Response response = 
+				jiraBugRequest.when().post("/rest/api/2/issue")
+				.then().spec(json201).extract().response();
+		
+		String responseString = response.asString();
+		
+		System.out.println(responseString);
 	}
 
 	
