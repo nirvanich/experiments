@@ -68,13 +68,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.herokuapp.theinternet"/>
 		</list>
 		<list key="name">
-			<item value="Selenium For Beginners"/>
 		</list>
 		<list key="artifactId">
-			<item value="selenium-for-beginners"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
