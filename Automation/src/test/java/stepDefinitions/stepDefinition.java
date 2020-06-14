@@ -11,29 +11,34 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 public class stepDefinition {
 
- 
-@Given("^User is on landing page$")
-    public void user_is_on_landing_page() 
-    {
-       System.out.println("Landing Page is opened");
-    }
+	@Given("^User is on login page$")
+	public void user_is_on_login_page() throws Throwable {
+		System.out.println("Login page is opened");
 
-    @When("^User login into application with username and password$")
-    public void user_login_into_application_with_username_and_password()  
-    { 
-        System.out.println("User successfully logged in");
-    }
+	}
 
-    @Then("^Home page is populated$")
-    public void home_page_is_populated()  
-    {
-    	System.out.println("Home Page is opened with correct URL");
-    }
+	@When("^User login with \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_login_with_something_and_something(String strArg1, String strArg2) throws Throwable {
+		System.out.println("User is logging in with username:[" + strArg1 + "] and password:[" + strArg2 + "]");
 
-    @And("^logout button is visible$")
-    public void logout_button_is_visible() 
-    {
-        System.out.println("Log out button is visible");
-    }
+	}
+
+	@Then("^Page is opened with correct URL - \"([^\"]*)\"$")
+	public void page_is_opened_with_correct_url_something(String strArg1) throws Throwable {
+		System.out.println("Page URL is corresponding to expected: " + strArg1);
+
+	}
+
+	@And("^logout button is visible$")
+	public void logout_button_is_visible() throws Throwable {
+		System.out.println("Logout Button is visible");
+
+	}
+
+	@And("^Correct error message is displayed - \"([^\"]*)\"$")
+	public void correct_error_message_is_displayed_something(String strArg1) throws Throwable {
+		System.out.println("Error message is corresponding to expected: " + strArg1);
+
+	}
 
 }

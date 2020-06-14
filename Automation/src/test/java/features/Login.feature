@@ -1,7 +1,13 @@
 Feature: Application Login
 
-Scenario: Home page default login
-Given User is on landing page
-When User login into application with username and password
-Then Home page is populated
-And logout button is visible
+  Scenario: Positive login test
+    Given User is on login page
+    When User login with "correctUserName" and "correctPassword"
+    Then Page is opened with correct URL - "http://homepageURL"
+    And logout button is visible
+
+  Scenario: Negative login test
+    Given User is on login page
+    When User login with "incorrectUserName" and "incorrectPassword"
+    Then Page is opened with correct URL - "http://errorPageURL"
+    And Correct error message is displayed - "incorrectCredentialsErrorMessage"
