@@ -29,7 +29,7 @@ public class stepDefinition {
 
 	}
 
-	@And("^logout button is visible$")
+	@And("^Logout button is visible$")
 	public void logout_button_is_visible() throws Throwable {
 		System.out.println("Logout Button is visible");
 
