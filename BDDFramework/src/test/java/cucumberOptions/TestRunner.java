@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features",
+		features = "src/test/java/features/JiraAPIInteractions.feature",
 		glue = "stepDefinitions",
 		stepNotifications = true)
 

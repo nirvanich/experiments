@@ -1,15 +1,40 @@
 package stepDefinitions;
 
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.runner.RunWith;
 
+import Cucumber.Automation.ReUsableMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import jiraPojo.Fields;
+import jiraPojo.IssueType;
+import jiraPojo.NewIssue;
+import jiraPojo.Priority;
+import jiraPojo.Project;
+import jiraPojo.Reporter;
+import jiraPojo.Versions;
 
 @RunWith(Cucumber.class)
 public class stepDefinition {
+	
+	RequestSpecification jiraBugRequest;
+	ResponseSpecification jsonStatus;
+	Response response;
 
 	@Given("^User is on login page$")
 	public void user_is_on_login_page() throws Throwable {
@@ -40,5 +65,59 @@ public class stepDefinition {
 		System.out.println("Error message is corresponding to expected: " + strArg1);
 
 	}
+
+	 @Given("^Add defect payload$")
+	    public void add_defect_payload() throws Throwable {
+			//RestAssured.baseURI = "http://localhost:8085";
+			
+			NewIssue bug = new NewIssue();
+			Fields fields = new Fields();
+			Project project = new Project();
+			IssueType issuetype = new IssueType();
+			Reporter reporter = new Reporter();
+			Priority priority = new Priority();
+			Versions affectedVersion = new Versions();
+			List<Versions> versions = new ArrayList<Versions>();
+			
+			reporter.setName("nirvanich");
+			issuetype.setName("Bug");
+			project.setKey("RAT");
+			priority.setName("Highest");
+			affectedVersion.setName("1.0");
+			versions.add(affectedVersion);
+					
+			fields.setReporter(reporter);
+			fields.setIssuetype(issuetype);
+			fields.setProject(project);
+			fields.setSummary("Defect made of Serialized Json");
+			fields.setDescription("Test description");
+			fields.setPriority(priority);
+			fields.setVersions(versions);
+			bug.setFields(fields);
+			
+			
+			RequestSpecification jiraSpec = new RequestSpecBuilder().setBaseUri("http://localhost:8085").setContentType(ContentType.JSON).addCookie("JSESSIONID", ReUsableMethods.getSessionId()).build();
+			jiraBugRequest = given().spec(jiraSpec).body(bug);
+			jsonStatus = new ResponseSpecBuilder().expectStatusCode(201).expectContentType(ContentType.JSON).build();
+	    }
+
+	    @When("^User calls \"([^\"]*)\" with post http request$")
+	    public void user_calls_something_with_post_http_request(String strArg1) throws Throwable {
+	    	response = 
+					jiraBugRequest.when().post("/rest/api/2/issue")
+					.then()./*spec(jsonStatus).*/extract().response();
+	    }
+
+	    @Then("^the API call is success with status code \"([^\"]*)\"$")
+	    public void the_api_call_is_success_with_status_code_something(String strArg1) throws Throwable {
+	       // assertEquals(response.getStatusCode(),201);
+	    }
+
+	    @And("^\"([^\"]*)\" in response body is \"([^\"]*)\"$")
+	    public void something_in_response_body_is_something(String strArg1, String strArg2) throws Throwable {
+	        String resp = response.asString();
+	        JsonPath js = ReUsableMethods.rawToJson(resp);
+	       // assertEquals(js.get(strArg1).toString(),strArg2);
+	    }
 
 }
