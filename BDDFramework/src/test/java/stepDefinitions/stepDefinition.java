@@ -1,7 +1,8 @@
 package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,11 +14,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -105,19 +104,14 @@ public class stepDefinition {
 	    public void user_calls_something_with_post_http_request(String strArg1) throws Throwable {
 	    	response = 
 					jiraBugRequest.when().post("/rest/api/2/issue")
-					.then()./*spec(jsonStatus).*/extract().response();
+					.then().spec(jsonStatus).extract().response();
 	    }
 
 	    @Then("^the API call is success with status code \"([^\"]*)\"$")
-	    public void the_api_call_is_success_with_status_code_something(String strArg1) throws Throwable {
-	       // assertEquals(response.getStatusCode(),201);
+	    public void the_api_call_is_success_with_status_code_something(int strArg1) throws Throwable {
+	    	System.out.println(response.asString());
+	    	assertEquals(response.getStatusCode(),strArg1);
 	    }
 
-	    @And("^\"([^\"]*)\" in response body is \"([^\"]*)\"$")
-	    public void something_in_response_body_is_something(String strArg1, String strArg2) throws Throwable {
-	        String resp = response.asString();
-	        JsonPath js = ReUsableMethods.rawToJson(resp);
-	       // assertEquals(js.get(strArg1).toString(),strArg2);
-	    }
 
 }
