@@ -54,10 +54,10 @@ public class stepDefinition extends Utilities {
 
 	}
 
-	 @Given("^Add defect payload$")
-	    public void add_defect_payload() throws Throwable {
+	 @Given("^Add issue payload: \\\"([^\\\"]*)\\\", \\\"([^\\\"]*)\\\", \\\"([^\\\"]*)\\\"$")
+	    public void add_issue_payload(String priority, String summary, String version) throws Throwable {
 			
-		 	jiraBugRequest = given().spec(requestSpecification()).body(data.addDefectPayload());
+		 	jiraBugRequest = given().spec(requestSpecification()).body(data.addIssuePayload(priority, summary, version));
 			
 	    }
 

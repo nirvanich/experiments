@@ -13,7 +13,7 @@ import jiraPojo.Versions;
 
 public class TestDataBuild {
 
-	public NewIssue addDefectPayload() {
+	public NewIssue addIssuePayload(String priorityString, String summaryString, String versionString) {
 		NewIssue bug = new NewIssue();
 		Fields fields = new Fields();
 		Project project = new Project();
@@ -26,14 +26,14 @@ public class TestDataBuild {
 		reporter.setName("nirvanich");
 		issuetype.setName("Bug");
 		project.setKey("RAT");
-		priority.setName("Highest");
-		affectedVersion.setName("1.0");
+		priority.setName(priorityString);
+		affectedVersion.setName(versionString);
 		versions.add(affectedVersion);
 				
 		fields.setReporter(reporter);
 		fields.setIssuetype(issuetype);
 		fields.setProject(project);
-		fields.setSummary("Defect made of Serialized Json");
+		fields.setSummary(summaryString);
 		fields.setDescription("Test description");
 		fields.setPriority(priority);
 		fields.setVersions(versions);
