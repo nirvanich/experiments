@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import files.ReUsableMethods;
 import files.payload;
@@ -19,7 +18,7 @@ public class JiraTest {
 		public String key;
 		public List<String> ListOfIds = new ArrayList<String>();
 		
-		@Test(dataProvider = "BooksData")
+		//@Test(dataProvider = "BooksData")
 		public void createIssue(String summary, String description)
 		{
 			RestAssured.baseURI = "http://localhost:8085";
@@ -101,11 +100,43 @@ public class JiraTest {
 			 return response;
 		}
 		
+		//get automation status
+		public static boolean getAutomationStatus(String issueKey) {
+			// TODO Auto-generated method stub
+
+			RestAssured.baseURI = "http://localhost:8085";
+			 
+			 String response = given().pathParam("key", issueKey).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+					 			.queryParam("fields", "customfield_10200")
+					 			.when().get("/rest/api/2/issue/{key}")
+					 			.then().assertThat().statusCode(200).extract().response().asString();
+			 		 
+			 JsonPath js = new JsonPath(response);
+			 
+			 boolean automated = true;
+			 System.out.println("Start checking automation status of " + issueKey + "..");
+			 String automationStatus = js.getString("fields.customfield_10200.value");
+								 
+					 if (!automationStatus.startsWith("Automated"))
+					 {
+						 automated = false;
+					 }
+				 
+			 System.out.println("Automation status: "+ automationStatus);
+			 return automated;
+		}
 		
 		@DataProvider(name = "BooksData")
 		public Object[][] getData() 
 		{ 
 			return new Object[][] {{"Test issue 1","This issue is created automatically"}}; 
+			  
+		}
+		
+		@DataProvider(name = "TestCases")
+		public Object[] getTestCases() 
+		{ 
+			return new Object[] {"RAT-90","RAT-134"}; 
 			  
 		}
 		 

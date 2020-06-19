@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3516" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
+  <suite name="Default suite" duration-ms="2901" started-at="2020-06-19T06:53:53 EET" finished-at="2020-06-19T06:53:56 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3516" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
+    <test name="Default test" duration-ms="2901" started-at="2020-06-19T06:53:53 EET" finished-at="2020-06-19T06:53:56 EET">
       <class name="JiraIssueTest">
-        <test-method status="PASS" signature="startTestDecision()[pri:0, instance:JiraIssueTest@51c8530f]" name="startTestDecision" duration-ms="3480" started-at="2020-06-08T12:52:22 EET" finished-at="2020-06-08T12:52:25 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="2585" started-at="2020-06-19T06:53:53 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:55 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RAT-90]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTestDecision -->
+        </test-method> <!-- automationStatusCheck -->
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="83" started-at="2020-06-19T06:53:55 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RAT-134]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationStatusCheck -->
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="66" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RAT-135]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationStatusCheck -->
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="61" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RAT-136]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationStatusCheck -->
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="60" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RAT-137]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- automationStatusCheck -->
       </class> <!-- JiraIssueTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

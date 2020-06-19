@@ -13,6 +13,7 @@ import io.cucumber.junit.Cucumber;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import resources.APIResources;
 import resources.TestDataBuild;
 import resources.Utilities;
 
@@ -62,7 +63,8 @@ public class stepDefinition extends Utilities {
 	    }
 
 	    @When("^User calls \"([^\"]*)\" with post http request$")
-	    public void user_calls_something_with_post_http_request(String strArg1) throws Throwable {
+	    public void user_calls_something_with_post_http_request(String resource) throws Throwable {
+	    	APIResources.valueOf(resource);
 	    	response = jiraBugRequest.when().post("/rest/api/2/issue")
 						.then().extract().response();
 	    }

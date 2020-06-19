@@ -7,7 +7,123 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=732D55D26BB78573785B61973B2BDDB3
+Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "RAT"
+        },
+        "summary": "New Blocker Defect",
+        "issuetype": {
+            "name": "Bug"
+        },
+        "reporter": {
+            "name": "nirvanich"
+        },
+        "description": "Test description",
+        "priority": {
+            "name": "Blocker"
+        },
+        "versions": [
+            {
+                "name": "1.4"
+            }
+        ]
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 393x1982x1
+X-ASESSIONID: 10zasb9
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15524787
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_80fef336dc8c7a9cdd3aff4a5e7c90b2877bc5f2_lin; Path=/
+X-AUSERNAME: nirvanich
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 03:33:22 GMT
+
+{
+    "id": "10834",
+    "key": "RAT-131",
+    "self": "http://localhost:8085/rest/api/2/issue/10834"
+}
+Request method:	POST
+Request URI:	http://localhost:8085/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "RAT"
+        },
+        "summary": "Summary from examples",
+        "issuetype": {
+            "name": "Bug"
+        },
+        "reporter": {
+            "name": "nirvanich"
+        },
+        "description": "Test description",
+        "priority": {
+            "name": "Regular"
+        },
+        "versions": [
+            {
+                "name": "1.2"
+            }
+        ]
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 393x1983x1
+X-ASESSIONID: 10zasb9
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-ASEN: SEN-L15524787
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_90a4dbdf1cbb965b8ec82bbe60542d2613276220_lin; Path=/
+X-AUSERNAME: nirvanich
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 18 Jun 2020 03:33:22 GMT
+
+{
+    "id": "10835",
+    "key": "RAT-132",
+    "self": "http://localhost:8085/rest/api/2/issue/10835"
+}
+Request method:	POST
+Request URI:	http://localhost:8085/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
 Multiparts:		<none>
 Body:
 {
@@ -34,25 +150,25 @@ Body:
     }
 }
 HTTP/1.1 201 
-X-AREQUESTID: 372x1944x1
-X-ASESSIONID: iyr6t6
+X-AREQUESTID: 393x1984x1
+X-ASESSIONID: 10zasb9
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15524787
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_ef359621d1ab089ab7df96e050f5a2b943dd65c6_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_51f8c549394e39d912f326f8c574e122b7249e88_lin; Path=/
 X-AUSERNAME: nirvanich
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 03:12:38 GMT
+Date: Thu, 18 Jun 2020 03:33:22 GMT
 
 {
-    "id": "10830",
-    "key": "RAT-127",
-    "self": "http://localhost:8085/rest/api/2/issue/10830"
+    "id": "10836",
+    "key": "RAT-133",
+    "self": "http://localhost:8085/rest/api/2/issue/10836"
 }

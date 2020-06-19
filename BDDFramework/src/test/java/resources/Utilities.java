@@ -15,16 +15,20 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utilities {
 
-	RequestSpecification jiraRequestSpec;
+	public static RequestSpecification jiraRequestSpec;
 	
 	public RequestSpecification requestSpecification() throws IOException {
-
+		
+		if (jiraRequestSpec == null) 
+		{
 		PrintStream log = new PrintStream(new FileOutputStream("Log.txt"));
 		jiraRequestSpec = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl"))
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
 				.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				.setContentType(ContentType.JSON).addCookie("JSESSIONID", ReUsableMethods.getSessionId()).build();
 
+		return jiraRequestSpec;
+		}
 		return jiraRequestSpec;
 	}
 

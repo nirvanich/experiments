@@ -2,7 +2,7 @@ Feature: Jira API Interactions
 
   Scenario Outline: Add issue test
     Given Add issue payload: "<priority>", "<summary>", "<version>"
-    When User calls "AddDefectAPI" with post http request
+    When User calls "CreateIssueAPI" with post http request
     Then Response status code "201"
 
     Examples: 
