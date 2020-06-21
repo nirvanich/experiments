@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.runner.RunWith;
 
+import Cucumber.Automation.ReUsableMethods;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -20,7 +21,7 @@ import resources.Utilities;
 @RunWith(Cucumber.class)
 public class stepDefinition extends Utilities {
 	
-	RequestSpecification jiraBugRequest;
+	RequestSpecification jiraCreateIssue;
 	ResponseSpecification jsonStatus;
 	Response response;
 	TestDataBuild data = new TestDataBuild();
@@ -58,15 +59,26 @@ public class stepDefinition extends Utilities {
 	 @Given("^Add issue payload: \\\"([^\\\"]*)\\\", \\\"([^\\\"]*)\\\", \\\"([^\\\"]*)\\\"$")
 	    public void add_issue_payload(String priority, String summary, String version) throws Throwable {
 			
-		 	jiraBugRequest = given().spec(requestSpecification()).body(data.addIssuePayload(priority, summary, version));
+		 	jiraCreateIssue = given().spec(requestSpecification()).body(data.addIssuePayload(priority, summary, version));
 			
 	    }
 
-	    @When("^User calls \"([^\"]*)\" with post http request$")
-	    public void user_calls_something_with_post_http_request(String resource) throws Throwable {
-	    	APIResources.valueOf(resource);
-	    	response = jiraBugRequest.when().post("/rest/api/2/issue")
-						.then().extract().response();
+	 @When("User calls {string} resource for issue {string} with {string} http request")
+	    public void user_calls_something_with_post_http_request(String resource, String issueKey, String method) throws Throwable {
+		 
+		 if (method.equalsIgnoreCase("POST")) {
+			APIResources resourceAPI = APIResources.valueOf(resource);
+			response = jiraCreateIssue.when().post(resourceAPI.getResource());
+		 } 
+		 else if (method.equalsIgnoreCase("GET")) {
+			 APIResources resourceAPI = APIResources.valueOf(resource);
+			 response = given().spec(requestSpecification()).when().get(resourceAPI.getResource() + "/" + issueKey);
+		 }
+		 else if (method.equalsIgnoreCase("DELETE")) {
+			 APIResources resourceAPI = APIResources.valueOf(resource);
+			 response = given().spec(requestSpecification()).when().delete(resourceAPI.getResource() + "/" + issueKey);
+		 }
+		 
 	    }
 
 	    @Then("^Response status code \"([^\"]*)\"$")

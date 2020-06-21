@@ -7,7 +7,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
+Cookies:		JSESSIONID=A2B176487A529EB36771452943403556
 Multiparts:		<none>
 Body:
 {
@@ -34,141 +34,25 @@ Body:
     }
 }
 HTTP/1.1 201 
-X-AREQUESTID: 393x1982x1
-X-ASESSIONID: 10zasb9
+X-AREQUESTID: 437x4570x1
+X-ASESSIONID: 146m26h
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self'
 X-ASEN: SEN-L15524787
 X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_80fef336dc8c7a9cdd3aff4a5e7c90b2877bc5f2_lin; Path=/
+Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_600c941fb2a3ae685f29aff824576639ea61805f_lin; Path=/
 X-AUSERNAME: nirvanich
 Cache-Control: no-cache, no-store, no-transform
 Content-Encoding: gzip
 Vary: User-Agent
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 03:33:22 GMT
+Date: Sun, 21 Jun 2020 04:17:18 GMT
 
 {
-    "id": "10834",
-    "key": "RAT-131",
-    "self": "http://localhost:8085/rest/api/2/issue/10834"
-}
-Request method:	POST
-Request URI:	http://localhost:8085/rest/api/2/issue
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
-Multiparts:		<none>
-Body:
-{
-    "fields": {
-        "project": {
-            "key": "RAT"
-        },
-        "summary": "Summary from examples",
-        "issuetype": {
-            "name": "Bug"
-        },
-        "reporter": {
-            "name": "nirvanich"
-        },
-        "description": "Test description",
-        "priority": {
-            "name": "Regular"
-        },
-        "versions": [
-            {
-                "name": "1.2"
-            }
-        ]
-    }
-}
-HTTP/1.1 201 
-X-AREQUESTID: 393x1983x1
-X-ASESSIONID: 10zasb9
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-Content-Security-Policy: frame-ancestors 'self'
-X-ASEN: SEN-L15524787
-X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_90a4dbdf1cbb965b8ec82bbe60542d2613276220_lin; Path=/
-X-AUSERNAME: nirvanich
-Cache-Control: no-cache, no-store, no-transform
-Content-Encoding: gzip
-Vary: User-Agent
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 03:33:22 GMT
-
-{
-    "id": "10835",
-    "key": "RAT-132",
-    "self": "http://localhost:8085/rest/api/2/issue/10835"
-}
-Request method:	POST
-Request URI:	http://localhost:8085/rest/api/2/issue
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C052689E138DE85090AE36D1ED8803A3
-Multiparts:		<none>
-Body:
-{
-    "fields": {
-        "project": {
-            "key": "RAT"
-        },
-        "summary": "CLOSE IT NOW",
-        "issuetype": {
-            "name": "Bug"
-        },
-        "reporter": {
-            "name": "nirvanich"
-        },
-        "description": "Test description",
-        "priority": {
-            "name": "Dust"
-        },
-        "versions": [
-            {
-                "name": "2.0"
-            }
-        ]
-    }
-}
-HTTP/1.1 201 
-X-AREQUESTID: 393x1984x1
-X-ASESSIONID: 10zasb9
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-Content-Security-Policy: frame-ancestors 'self'
-X-ASEN: SEN-L15524787
-X-Seraph-LoginReason: OK
-Set-Cookie: atlassian.xsrf.token=B1UE-K9QY-1X3K-SL54_51f8c549394e39d912f326f8c574e122b7249e88_lin; Path=/
-X-AUSERNAME: nirvanich
-Cache-Control: no-cache, no-store, no-transform
-Content-Encoding: gzip
-Vary: User-Agent
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Date: Thu, 18 Jun 2020 03:33:22 GMT
-
-{
-    "id": "10836",
-    "key": "RAT-133",
-    "self": "http://localhost:8085/rest/api/2/issue/10836"
+    "id": "10841",
+    "key": "RAT-138",
+    "self": "http://localhost:8085/rest/api/2/issue/10841"
 }

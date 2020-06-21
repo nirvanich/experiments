@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2901" started-at="2020-06-19T06:53:53 EET" finished-at="2020-06-19T06:53:56 EET">
+  <suite name="Default suite" duration-ms="6849" started-at="2020-06-19T06:58:25 EET" finished-at="2020-06-19T06:58:32 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2901" started-at="2020-06-19T06:53:53 EET" finished-at="2020-06-19T06:53:56 EET">
+    <test name="Default test" duration-ms="6849" started-at="2020-06-19T06:58:25 EET" finished-at="2020-06-19T06:58:32 EET">
       <class name="JiraIssueTest">
-        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="2585" started-at="2020-06-19T06:53:53 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:55 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="6092" started-at="2020-06-19T06:58:25 EET" data-provider="TestCases" finished-at="2020-06-19T06:58:31 EET">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automationStatusCheck -->
-        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="83" started-at="2020-06-19T06:53:55 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="170" started-at="2020-06-19T06:58:31 EET" data-provider="TestCases" finished-at="2020-06-19T06:58:31 EET">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automationStatusCheck -->
-        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="66" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="185" started-at="2020-06-19T06:58:31 EET" data-provider="TestCases" finished-at="2020-06-19T06:58:32 EET">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automationStatusCheck -->
-        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="61" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="158" started-at="2020-06-19T06:58:32 EET" data-provider="TestCases" finished-at="2020-06-19T06:58:32 EET">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automationStatusCheck -->
-        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="60" started-at="2020-06-19T06:53:56 EET" data-provider="TestCases" finished-at="2020-06-19T06:53:56 EET">
+        <test-method status="PASS" signature="automationStatusCheck(java.lang.String)[pri:0, instance:JiraIssueTest@2a70a3d8]" name="automationStatusCheck" duration-ms="136" started-at="2020-06-19T06:58:32 EET" data-provider="TestCases" finished-at="2020-06-19T06:58:32 EET">
           <params>
             <param index="0">
               <value>
