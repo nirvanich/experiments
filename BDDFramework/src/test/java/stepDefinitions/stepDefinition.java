@@ -28,31 +28,32 @@ public class stepDefinition extends Utilities {
 
 	@Given("User is on login page")
 	public void user_is_on_login_page() throws Throwable {
-		System.out.println("Login page is opened");
+		//System.out.println("Login page is opened");
 
 	}
 
 	@When("User login with {string} and {string}")
 	public void user_login_with_something_and_something(String strArg1, String strArg2) throws Throwable {
-		System.out.println("User is logging in with username:[" + strArg1 + "] and password:[" + strArg2 + "]");
+		//System.out.println("User is logging in with username:[" + strArg1 + "] and password:[" + strArg2 + "]");
 
 	}
 
 	@Then("Page is opened with correct URL - {string}")
 	public void page_is_opened_with_correct_url_something(String strArg1) throws Throwable {
-		System.out.println("Page URL is corresponding to expected: " + strArg1);
+		//System.out.println("Page URL is corresponding to expected: " + strArg1);
+		System.out.println("test executed");
 
 	}
 
 	@And("Logout button is visible")
 	public void logout_button_is_visible() throws Throwable {
-		System.out.println("Logout Button is visible");
+		//System.out.println("Logout Button is visible");
 
 	}
 
 	@And("Correct error message is displayed - {string}")
 	public void correct_error_message_is_displayed_something(String strArg1) throws Throwable {
-		System.out.println("Error message is corresponding to expected: " + strArg1);
+		//System.out.println("Error message is corresponding to expected: " + strArg1);
 
 	}
 

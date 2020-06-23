@@ -7,10 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/java/features/JiraAPIInteractions.feature",
+		features = "src/test/java/features/Login.feature",
 		glue = "stepDefinitions",
-		stepNotifications = true,
-		tags = "@GetDefect"
+		stepNotifications = true
 		)
 
 public class TestRunner {
