@@ -9,7 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/features/JiraAPIInteractions.feature",
 		glue = "stepDefinitions",
-		stepNotifications = true)
+		stepNotifications = true,
+		tags = "@GetDefect"
+		)
 
 public class TestRunner {
 	

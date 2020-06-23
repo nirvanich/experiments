@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.omg.CORBA.CTX_RESTRICT_SCOPE"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.OnboardingPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.HomePage"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.AuctionBundlingTests"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.AuctionBundlingPage"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.pages.ManageOnboardingPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-<fullyQualifiedTypeName name="com.crxmarkets.dev.qa2.base.TestUtilities"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="javax.swing.text.Document"/>
@@ -53,11 +40,24 @@
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
 <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
-<fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
-<fullyQualifiedTypeName name="io.cucumber.java.PendingException"/>
-<fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
 <fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
 <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
 <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
 <fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
+<fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+<fullyQualifiedTypeName name="io.cucumber.java.PendingException"/>
+<fullyQualifiedTypeName name="Cucumber.Automation.ReUsableMethods"/>
+<fullyQualifiedTypeName name="resources.TestDataBuild"/>
+<fullyQualifiedTypeName name="io.restassured.filter.log.RequestLoggingFilter"/>
+<fullyQualifiedTypeName name="java.io.PrintStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="io.restassured.filter.log.ResponseLoggingFilter"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="resources.APIResources"/>
+<fullyQualifiedTypeName name="io.restassured.response.Response"/>
+<fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
+<fullyQualifiedTypeName name="resources.Utilities"/>
 </qualifiedTypeNameHistroy>
