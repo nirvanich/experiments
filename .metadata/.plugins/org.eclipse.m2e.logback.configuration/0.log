@@ -19416,3 +19416,124 @@ Caused by: java.io.FileNotFoundException: C:\Gitstuff\advanced-selenium-webdrive
 2020-06-24 15:45:41,263 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-06-24 15:45:41,263 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
 2020-06-24 15:45:41,265 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:45:41,265 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:49:37,446 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:49:37,446 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:49:37,447 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:49:37,448 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:50:56,800 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:50:56,800 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:50:56,802 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:50:56,802 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:50:57,529 [Worker-38: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.herokuapp.theinternet:selenium-for-beginners:0.0.1-SNAPSHOT @ C:\Gitstuff\advanced-selenium-webdriver\pom.xml.
+2020-06-24 15:50:58,120 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-24 15:50:58,131 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2020-06-24 15:50:58,209 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-24 15:50:58,220 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2020-06-24 15:50:59,320 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:50:59,320 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:50:59,322 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:50:59,322 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:52:50,076 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:52:50,077 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:52:50,078 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:52:50,078 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:52:51,784 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:52:51,785 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:52:51,787 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:52:51,787 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:53:15,209 [Worker-28: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:53:15,210 [Worker-28: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:53:15,211 [Worker-28: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:53:15,211 [Worker-28: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:53:15,343 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:53:15,344 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:53:15,346 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:53:15,346 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:54:37,772 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:54:37,772 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:54:37,774 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:54:37,774 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:55:05,098 [Worker-42: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:55:05,099 [Worker-42: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:55:05,101 [Worker-42: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:55:05,101 [Worker-42: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:55:05,230 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:55:05,231 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:55:05,232 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:55:05,232 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:56:46,204 [Worker-38: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:56:46,204 [Worker-38: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:56:46,207 [Worker-38: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:56:46,208 [Worker-38: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:56:46,341 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:56:46,341 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:56:46,343 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:56:46,343 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:58:48,413 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:48,413 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:58:48,414 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:48,415 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:58:51,188 [Worker-44: Launching BDDFramework] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:51,189 [Worker-44: Launching BDDFramework] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:58:51,190 [Worker-44: Launching BDDFramework] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:51,190 [Worker-44: Launching BDDFramework] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:58:51,326 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:51,326 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:58:51,328 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:58:51,328 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:59:18,569 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:18,569 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:59:18,570 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:18,570 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:59:35,378 [Worker-44: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:35,378 [Worker-44: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:59:35,379 [Worker-44: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:35,379 [Worker-44: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:59:35,506 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:35,507 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:59:35,508 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:35,508 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 15:59:37,997 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:37,998 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 15:59:37,998 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 15:59:37,999 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:00:22,354 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-06-24 16:01:08,678 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:01:08,680 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:01:08,684 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:01:08,685 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:03:14,041 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-06-24 16:03:15,066 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Cucumber:Automation:0.0.1-SNAPSHOT @ C:\Gitstuff\BDDFramework\pom.xml.
+2020-06-24 16:03:15,647 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BDDFramework/src/main/java
+2020-06-24 16:03:15,649 [Worker-8: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BDDFramework/src/test/java
+2020-06-24 16:03:15,981 [Worker-8: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2020-06-24 16:03:38,359 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:03:38,359 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:03:38,367 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:03:38,369 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:03:39,484 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:03:39,484 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:03:39,488 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:03:39,488 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:02,031 [Worker-4: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:02,032 [Worker-4: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:04:02,035 [Worker-4: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:02,036 [Worker-4: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:02,240 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:02,241 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:04:02,243 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:02,243 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:27,819 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:27,820 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:04:27,823 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:27,823 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:29,297 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:29,298 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:04:29,301 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:29,301 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:34,380 [Worker-13: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:34,380 [Worker-13: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\main\resources
+2020-06-24 16:04:34,383 [Worker-13: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-24 16:04:34,383 [Worker-13: Launching TestRunner (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Gitstuff\BDDFramework\src\test\resources
+2020-06-24 16:04:34,577 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
