@@ -86,7 +86,7 @@ public class stepDefinition extends Utilities {
 
 	    @Then("Response status code {int}")
 	    public void the_api_call_is_success_with_status_code_something(int strArg1) throws Throwable {
-	    	System.out.println(response.asString());
+	    	//System.out.println(response.asString());
 	    	assertEquals(response.getStatusCode(),strArg1);
 	    }
 

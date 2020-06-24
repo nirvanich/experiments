@@ -16,13 +16,14 @@ public class Hooks {
 		String tag;
 		Collection<String> tags = sc.getSourceTagNames();
 		if(tags!=null){
-
 			for(int i=0; i<tags.size(); i++) {
-				tag = tags.iterator().next().split("@")[1];
-				if (tag.startsWith("RAT")) {
+				tag = (String) tags.toArray()[i];
+				if (tag.startsWith("@Issue")) {
+				tag = tag.split("#")[1].split("\"")[0];
 				System.out.println(tag);
-				}
 				Assume.assumeTrue(Utilities.getAutomationStatus(tag));
+				}
+				
 			}
 			
 		}		

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f587e4d0-2677-4038-978e-81f14a2de8e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/9c85125678604c8a608192dbcd99d4a5/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/9c85125678604c8a608192dbcd99d4a5/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_14_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-for-beginners.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/base/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/base/BrowserDriverFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/base/CsvDataProviders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/base/TestListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/base/TestUtilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/AuctionBundlingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/BasePageObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/LogInPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/ManageOnboardingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crxmarkets/dev/qa2/pages/OnboardingPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/Proposals.Import1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/Proposals.Import2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4J2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crxmarkets/dev/qa2/AuctionBundlingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crxmarkets/dev/qa2/ExceptionsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crxmarkets/dev/qa2/OnboardingTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crxmarkets/dev/qa2/loginpagetests/LoginTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crxmarkets/dev/qa2/uploadtests/UploadTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/AuctionBundlingTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/CreateJiraTicket.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/ExceptionsTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/NegativeLoginTestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/OnboardingTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/OnboardingTestsMobile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/PositiveLoginTestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/SmokeTestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestSuits/UploadTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/dataproviders/LoginTests/negativeLoginTest.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/AllTests/NegativeTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/AllTests/NegativeTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/AllTests/PositiveTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/AllTests/PositiveTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Debug/positivLoginTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Debug/positivLoginTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Debug/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Exceptions Test Suite/Exceptions Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Exceptions Test Suite/Exceptions Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Exceptions Test Suite/notVisibleTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Exceptions Test Suite/notVisibleTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Exceptions Test Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/NegativePasswordTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/NegativePasswordTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/NegativeUsernameTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/NegativeUsernameTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/PositiveLoginTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoginTestsSuite/PositiveLoginTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeLoginTest-CH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeLoginTest-CH.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativePasswordTest-CH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativePasswordTest-CH.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativePasswordTest-FF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativePasswordTest-FF.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeUsernameTest-CH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeUsernameTest-CH.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeUsernameTest-FF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/NegativeUsernameTest-FF.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeLoginTestSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativePasswordTest-CH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativePasswordTest-CH.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativePasswordTest-FF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativePasswordTest-FF.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativeUsernameTest-CH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativeUsernameTest-CH.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativeUsernameTest-FF.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/NegativeUsernameTest-FF.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativePasswordTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativePasswordTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativeTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativeTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativeUsernameTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/NegativeUsernameTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/PositiveTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/PositiveTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/NegativeTestsSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/checkingCrxActionRequired-Android.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/checkingCrxActionRequired-Android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/checkingCrxActionRequired.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/checkingCrxActionRequired.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/verifyManageOnboardingPage-iOS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/verifyManageOnboardingPage-iOS.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/verifyManageOnboardingPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/OnboardingTestSuite/verifyManageOnboardingPage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/LoginTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/LoginTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/OnboardingTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/OnboardingTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest-WithProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest-WithProfile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/PositiveLoginTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/Upload New supplier Proposal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/Upload New supplier Proposal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/checkingCrxActionRequired.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/checkingCrxActionRequired.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/settingPlannedAuctionDateToToday.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/settingPlannedAuctionDateToToday.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/verifyManageOnboardingPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PositiveLoginTestSuite/verifyManageOnboardingPage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.AuctionBundlingTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.ExceptionsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.ExceptionsTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.LoginTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.NegativeTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.OnboardingTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.PositiveTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.loginpagetests.LoginTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.crxmarkets.dev.qa2.uploadtests.UploadTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/NegativeTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/PositiveTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/AllTests/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/positivLoginTest.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Debug/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/Default test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/Exceptions Test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/notVisibleTest.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/Exceptions Test Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/NegativePasswordTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/NegativeUsernameTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/PositiveLoginTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/LoginTestsSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/NegativeLoginTest-CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/NegativePasswordTest-CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/NegativePasswordTest-FF.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/NegativeUsernameTest-CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/NegativeUsernameTest-FF.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeLoginTestSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/NegativePasswordTest-CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/NegativePasswordTest-FF.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/NegativeUsernameTest-CH.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/NegativeUsernameTest-FF.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/NegativePasswordTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/NegativeTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/NegativeUsernameTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/PositiveTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/NegativeTestsSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/checkingCrxActionRequired-Android.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/checkingCrxActionRequired.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/verifyManageOnboardingPage-iOS.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/OnboardingTestSuite/verifyManageOnboardingPage.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/LoginTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/OnboardingTests.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/PositiveLoginTest-WithProfile.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/PositiveLoginTest.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/Upload New supplier Proposal.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/checkingCrxActionRequired.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/settingPlannedAuctionDateToToday.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/PositiveLoginTestSuite/verifyManageOnboardingPage.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200514/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064007477 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200514/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064021422 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200514/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064422808 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200514/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064445072 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200516/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/060017697 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200516/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/060022199 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200516/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/061641090 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200516/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/061645313 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/060853940 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/060858643 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073246866 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073249119 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073340558 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073345283 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073449063 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073452306 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073607864 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073611804 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073808195 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/LoginTests/PositiveLoginTest/073813159 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/053337760 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/053342735 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/055628056 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200517/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/055632289 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile/PositiveLoginTest/105343249 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile/PositiveLoginTest/105401578 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile/PositiveLoginTest/105659157 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithOutProfile/PositiveLoginTest/105704184 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105319367 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105328397 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105647608 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105650551 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105735828 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200518/PositiveLoginTestSuite/PositiveLoginTest-WithProfile/PositiveLoginTest/105739701 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064048483 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064052324 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064119562 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064123688 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064527367 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064533212 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064807597 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064811727 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064945296 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064948952 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065043309 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065049408 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065612137 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065615928 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065646834 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200519/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065650622 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/Default suite/Default test/PositiveLoginTest/160106990 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/Default suite/Default test/PositiveLoginTest/160110896 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/112728851 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/112732790 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/114918139 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/114923151 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160504680 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160513382 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160608450 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160612546 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160817005 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160821646 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160931477 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/160935628 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161155514 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161159179 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161313159 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161321179 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161528688 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161537494 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161945201 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200601/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/161949077 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/060916985 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/060920778 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/063557829 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/063605539 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/063648694 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/063650794 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064426564 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064428629 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064618286 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/064621380 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065129009 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065131109 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065241229 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065243502 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065459285 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065501420 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065603189 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065605291 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065823756 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065825977 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065932705 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/065934769 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/070331449 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/070333826 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/071643622 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/071646319 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/071831161 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/071833392 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/111806951 LoginPage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/20200602/PositiveLoginTestSuite/PositiveLoginTest/PositiveLoginTest/111809635 HomePage opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1byKA9Lh1EE6gC0m7t7vwuJZ2ZS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../qa-automation-master" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Gitstuff/advanced-selenium-webdriver/src/test/resources/TestSuits/PositiveLoginTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-for-beginners" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestSuits/PositiveLoginTestSuite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Gitstuff/advanced-selenium-webdriver/src/test/resources/TestSuits/PositiveLoginTestSuite.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f587e4d0-2677-4038-978e-81f14a2de8e3" name="Default Changelist" comment="" />
+      <created>1589598746461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589598746461</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1592906725042">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860/-150.900.1600.860@0.0.1440.860" timestamp="1592906725042" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589601470573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589601470573" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589601470573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589601470573" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589601470573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589601470573" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589601470573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589601470573" />
+  </component>
+</project>
