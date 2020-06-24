@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="OnboardingTestSuite" verbose="1" parallel="tests" thread-count="2">
+
+
+	<test name="checkingCrxActionRequired">
+		<parameter name="browser" value="firefox"></parameter>
+		<!-- <groups> <run> <include name="positiveTests"></include> </run> </groups> -->
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.OnboardingTests">
+				<methods>
+					<include name="searchingCrxActionRequired"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="verifyManageOnboardingPage">
+		<parameter name="browser" value="chrome"></parameter>
+		<!-- <groups> <run> <include name="positiveTests"></include> </run> </groups> -->
+		<classes>
+			<class name="com.crxmarkets.dev.qa2.OnboardingTests">
+				<methods>
+					<include name="verifyManageOnboardingPage"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

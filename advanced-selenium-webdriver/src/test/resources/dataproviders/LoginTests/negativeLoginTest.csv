@@ -1,0 +1,6 @@
+no,username,password,expectedMessage,description
+1,IncorrectUsername,P@ssw0rd12,"Authentication failed, please try again.",Incorrect UserName Test
+2,admin@crx.lu,P@ssw0rd123,Authentication failed,Incorrect Password Test
+3,IncorrectUsername,IncorrectPassword,"Authentication failed, please try again.",Incorrect UserName and Password Test
+4,,P@ssw0rd12,"User Name may not be empty",Empty UserName Test
+5,admin@crx.lu,,"Password may not be empty",Empty Password Test
