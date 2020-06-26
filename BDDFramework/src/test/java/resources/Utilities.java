@@ -22,7 +22,7 @@ public class Utilities {
 
 	public static RequestSpecification jiraRequestSpec;
 	
-	public RequestSpecification requestSpecification() throws IOException {
+	public static RequestSpecification requestSpecification() throws IOException {
 		
 		if (jiraRequestSpec == null) 
 		{
@@ -51,12 +51,12 @@ public class Utilities {
 		return js.getString(key);		
 	}
 	
-	public static boolean getAutomationStatus(String issueKey) {
+	public static boolean getAutomationStatus(String issueKey) throws IOException {
 		// TODO Auto-generated method stub
 
-		RestAssured.baseURI = "http://localhost:8085";
+		
 		 
-		 String response = given().pathParam("key", issueKey).cookie("JSESSIONID", ReUsableMethods.getSessionId())
+		String response = given().spec(requestSpecification()).pathParam("key", issueKey)
 				 			.queryParam("fields", "customfield_10200")
 				 			.when().get("/rest/api/2/issue/{key}")
 				 			.then().assertThat().statusCode(200).extract().response().asString();
@@ -74,5 +74,44 @@ public class Utilities {
 			 
 		 //System.out.println("Automation status: "+ automationStatus);
 		 return automated;
+	}
+	
+	public static void transitIssueToInProgress(String issueKey) {
+		RestAssured.baseURI = "http://localhost:8085";
+		given().header("Content-Type", "application/json").pathParam("key", issueKey)
+		.cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.body("{\r\n" + 
+					"    \"transition\": {\r\n" + 
+					"        \"id\": \"31\"\r\n" + 
+					"    }\r\n" + 
+					"}")
+			.when().post("rest/api/2/issue/{key}/transitions")
+			.then().assertThat().statusCode(204);
+	}
+	
+	public static void transitIssueToPassed(String issueKey) {
+		RestAssured.baseURI = "http://localhost:8085";
+		given().header("Content-Type", "application/json").pathParam("key", issueKey)
+		.cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.body("{\r\n" + 
+					"    \"transition\": {\r\n" + 
+					"        \"id\": \"71\"\r\n" + 
+					"    }\r\n" + 
+					"}")
+			.when().post("rest/api/2/issue/{key}/transitions")
+			.then().assertThat().statusCode(204);
+	}
+	
+	public static void transitIssueToFailed(String issueKey) {
+		RestAssured.baseURI = "http://localhost:8085";
+		given().header("Content-Type", "application/json").pathParam("key", issueKey)
+		.cookie("JSESSIONID", ReUsableMethods.getSessionId())
+			.body("{\r\n" + 
+					"    \"transition\": {\r\n" + 
+					"        \"id\": \"81\"\r\n" + 
+					"    }\r\n" + 
+					"}")
+			.when().post("rest/api/2/issue/{key}/transitions")
+			.then().assertThat().statusCode(204);
 	}
 }

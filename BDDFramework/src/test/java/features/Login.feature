@@ -28,6 +28,7 @@ Feature: Application Login
     When User login with "incorrectUserName" and "incorrectPassword"
     Then Page is opened with correct URL - "http://errorPageURL"
     And Correct error message is displayed - "incorrectCredentialsErrorMessage"
+    And Response status code 201
     
 @Issue("#RAT-137")
   Scenario: Negative login test
