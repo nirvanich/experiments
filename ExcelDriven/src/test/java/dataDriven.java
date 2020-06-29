@@ -44,22 +44,22 @@ public class dataDriven {
 				while (rows.hasNext()) {
 					Row row = rows.next();
 					cells = row.cellIterator();
-					String currenRowName;
-					String currenColumnName;
-					String currenCellValue;
+					String currentRowName;
+					String currentColumnName;
+					String currentCellValue;
 					rowName.add(cells.next().getStringCellValue());
-					currenRowName = rowName.get(b);
+					currentRowName = rowName.get(b);
 										
 						while (cells.hasNext()) {
 							Cell cell = cells.next();
 							CellName.add(cell.getStringCellValue());
-							currenColumnName = CellName.get(a);
-							currenCellValue = cell.getStringCellValue();
+							currentColumnName = CellName.get(a);
+							currentCellValue = cell.getStringCellValue();
 																				
-							if (currenCellValue.equals("4-4")) {
-								System.out.println("Given cell value: " + currenCellValue);
-								System.out.println("Given cell's row: " + currenRowName);
-								System.out.println("Given cell's column: " + currenColumnName);
+							if (currentCellValue.equals("4-4")) {
+								System.out.println("Given cell value: " + currentCellValue);
+								System.out.println("Given cell's row: " + currentRowName);
+								System.out.println("Given cell's column: " + currentColumnName);
 							}
 							a++;
 						}

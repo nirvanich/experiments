@@ -33,7 +33,7 @@ public class SerializeJiraTicketCreation {
 		reporter.setName("nirvanich");
 		issuetype.setName("Bug");
 		project.setKey("RAT");
-		priority.setName("Highest");
+		priority.setName("Blocker");
 		affectedVersion.setName("1.0");
 		versions.add(affectedVersion);
 				
@@ -48,9 +48,9 @@ public class SerializeJiraTicketCreation {
 		
 		
 		String response = given().header("Content-Type", "application/json").cookie("JSESSIONID", ReUsableMethods.getSessionId())
-				.body(bug)
+				.body(bug).log().all()
 				.when().post("/rest/api/2/issue")
-				.then().assertThat().statusCode(201)
+				.then().log().all().assertThat().statusCode(201)
 				.extract().response().asString();
 		
 		System.out.println(response);
