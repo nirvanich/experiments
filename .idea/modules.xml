@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Gitstuff.iml" filepath="$PROJECT_DIR$/.idea/Gitstuff.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java-sdet/Java-sdet.iml" filepath="$PROJECT_DIR$/Java-sdet/Java-sdet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-sdet/Java-SDET.iml" filepath="$PROJECT_DIR$/Java-sdet/Java-SDET.iml" />
     </modules>
   </component>
 </project>
