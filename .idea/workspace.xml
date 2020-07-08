@@ -6,37 +6,55 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:development" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8cc87a4-4abc-4598-ae70-464a3af0b6f9" name="Default Changelist" comment="new udemy project Java 8 for SDET">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-sdet/Java-sdet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/java/datatype/PrimitiveType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/java/datatype/ReferenceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-SDET/target/classes/com/udemy/java/datatype/PrimitiveType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-SDET/target/classes/com/udemy/java/datatype/ReferenceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gitstuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gitstuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-sdet/Java-SDET.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-SDET/Java-SDET.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-sdet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-SDET/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/nirvanich/experiments" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1dszUGATMrWOGhWXsOVabVsNGWH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,7 +69,44 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="Application.ReferenceType">
+    <configuration name="PrimitiveType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udemy.java.datatype.PrimitiveType" />
+      <module name="Java-SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udemy.java.datatype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReferenceType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udemy.java.datatype.ReferenceType" />
+      <module name="Java-SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udemy.java.datatype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReferenceType" />
+        <item itemvalue="Application.PrimitiveType" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594176698538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new udemy project Java 8 for SDET">
+      <created>1594176962178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594176962178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,7 +147,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="development" />
                       </list>
                     </value>
                   </entry>
@@ -107,18 +169,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="new udemy project Java 8 for SDET" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-58" y="992" width="1416" height="676" key="DiffContextDialog" timestamp="1594176831883">
+    <state x="-58" y="992" width="1416" height="676" key="DiffContextDialog" timestamp="1594177250193">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
-    <state x="-58" y="992" width="1416" height="676" key="DiffContextDialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594176831883" />
-    <state x="151" y="975" key="SettingsEditor" timestamp="1594176387478">
+    <state x="-58" y="992" width="1416" height="676" key="DiffContextDialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594177250193" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1594191550242">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
-    <state x="151" y="975" key="SettingsEditor/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594176387478" />
-    <state x="459" y="1244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594176821755">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594191550242" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1594191550242">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
-    <state x="459" y="1244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594176821755" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594191550242" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1594191550242">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594191550242" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1594191550242">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594191550242" />
+    <state x="318" y="929" key="SettingsEditor" timestamp="1594191546145">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state x="318" y="929" key="SettingsEditor/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594191546145" />
+    <state x="242" y="1063" key="Vcs.Push.Dialog.v2" timestamp="1594177012477">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state x="242" y="1063" key="Vcs.Push.Dialog.v2/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594177012477" />
+    <state x="459" y="1244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594178003889">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state x="459" y="1244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594178003889" />
+    <state x="376" y="1118" key="git4idea.merge.GitPullDialog" timestamp="1594177515392">
+      <screen x="-150" y="900" width="1600" height="860" />
+    </state>
+    <state x="376" y="1118" key="git4idea.merge.GitPullDialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594177515392" />
     <state x="32" y="991" key="new project wizard" timestamp="1594176512352">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
