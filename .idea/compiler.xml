@@ -9,8 +9,8 @@
         <module name="Java-SDET" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14">
-      <module name="Java-SDET" target="14" />
+    <bytecodeTargetLevel target="8">
+      <module name="Java-SDET" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
