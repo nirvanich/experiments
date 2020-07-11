@@ -1,35 +1,30 @@
 package com.udemy.java;
 
-import com.udemy.java.interfacepolymorphism.Alarm;
-import com.udemy.java.interfacepolymorphism.Clock;
-import com.udemy.java.interfacepolymorphism.GoogleMini;
-import com.udemy.java.interfacepolymorphism.IPhone;
-import com.udemy.java.polymorphism.*;
-
-import java.util.HashMap;
+import java.util.Arrays;
 
 public class TestMain {
     public static void main(String[] args) {
 
-/*        //reference123
-        Dog d = new Dog();
-        Cat c = new Cat();
-        Horse h = new Horse();
-        test(d);
-        test(c);
-        test(h);
-*/
-
-        GoogleMini g = new GoogleMini();
-        IPhone i = new IPhone();
-        Clock c = new Clock();
-        alarmTest(g);
-        alarmTest(i);
-        alarmTest(c);
-
+        int[] a = {10, 9, 7, 6, 4, 5, 2, 8, 3, 1};
+        String array = Arrays.toString(a);
+        System.out.println(array);
+        sortArray(a);
     }
-        private static void alarmTest(Alarm i){
-            i.setAlarm();
+
+    private static void sortArray(int[] a) {
+        int n = a.length;
+        for (int j = 0; j < n-1; j++) {
+            for (int i = 0; i < n - 1; i++) {
+                int temp;
+                if (a[i] > a[i + 1]) {
+                    temp = a[i];
+                    a[i] = a[i + 1];
+                    a[i + 1] = temp;
+                }
+            }
         }
+        System.out.println(Arrays.toString(a));
+    }
+
 
 }
