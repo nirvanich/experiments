@@ -16,7 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8cc87a4-4abc-4598-ae70-464a3af0b6f9" name="Default Changelist" comment="LeetCode problems: Number of Good Pairs">
+    <list default="true" id="c8cc87a4-4abc-4598-ae70-464a3af0b6f9" name="Default Changelist" comment="LeetCode problems: Shuffle the Array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/algorithms/Solutions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/algorithms/Solutions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/algorithms/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-SDET/src/main/java/com/udemy/algorithms/TestMain.java" afterDir="false" />
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594954353941</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="LeetCode problems: Shuffle the Array">
+      <created>1594956869581</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594956869581</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +252,8 @@
     <MESSAGE value="Implementing simple calculator using functional interfaces (hardcoded task2 implementation)" />
     <MESSAGE value="LeetCode problems: Running Sum of 1d Array" />
     <MESSAGE value="LeetCode problems: Number of Good Pairs" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode problems: Number of Good Pairs" />
+    <MESSAGE value="LeetCode problems: Shuffle the Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode problems: Shuffle the Array" />
   </component>
   <component name="WindowStateProjectService">
     <state x="130" y="904" key="#Project_Structure" timestamp="1594693551999">
@@ -260,41 +268,41 @@
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state x="-58" y="992" width="1416" height="676" key="DiffContextDialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594176831883" />
-    <state width="1557" height="221" key="GridCell.Tab.0.bottom" timestamp="1594956610379">
+    <state width="1557" height="221" key="GridCell.Tab.0.bottom" timestamp="1594957854301">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1594572799032">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1594572799032" />
-    <state width="1557" height="221" key="GridCell.Tab.0.bottom/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956610379" />
+    <state width="1557" height="221" key="GridCell.Tab.0.bottom/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594957854301" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594527685593" />
-    <state width="1557" height="221" key="GridCell.Tab.0.center" timestamp="1594956610379">
+    <state width="1557" height="221" key="GridCell.Tab.0.center" timestamp="1594957854301">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1594572799031">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1594572799031" />
-    <state width="1557" height="221" key="GridCell.Tab.0.center/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956610379" />
+    <state width="1557" height="221" key="GridCell.Tab.0.center/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594957854301" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594527685592" />
-    <state width="1557" height="221" key="GridCell.Tab.0.left" timestamp="1594956610379">
+    <state width="1557" height="221" key="GridCell.Tab.0.left" timestamp="1594957854301">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1594572799031">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1594572799031" />
-    <state width="1557" height="221" key="GridCell.Tab.0.left/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956610379" />
+    <state width="1557" height="221" key="GridCell.Tab.0.left/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594957854301" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594527685592" />
-    <state width="1557" height="221" key="GridCell.Tab.0.right" timestamp="1594956610379">
+    <state width="1557" height="221" key="GridCell.Tab.0.right" timestamp="1594957854301">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1594572799031">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1594572799031" />
-    <state width="1557" height="221" key="GridCell.Tab.0.right/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956610379" />
+    <state width="1557" height="221" key="GridCell.Tab.0.right/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594957854301" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594527685593" />
     <state width="1557" height="263" key="GridCell.Tab.1.bottom" timestamp="1594953963207">
       <screen x="-150" y="900" width="1600" height="860" />
@@ -320,10 +328,10 @@
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
     <state x="151" y="975" key="SettingsEditor/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594695413415" />
-    <state x="226" y="1051" key="Vcs.Push.Dialog.v2" timestamp="1594954369967">
+    <state x="226" y="1051" key="Vcs.Push.Dialog.v2" timestamp="1594956877631">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
-    <state x="226" y="1051" key="Vcs.Push.Dialog.v2/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594954369967" />
+    <state x="226" y="1051" key="Vcs.Push.Dialog.v2/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956877631" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594469237068" />
     <state x="459" y="1244" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594783221260">
       <screen x="-150" y="900" width="1600" height="860" />
@@ -333,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="337" y="141" width="861" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1594441712210" />
-    <state x="370" y="1070" key="extract.method.dialog" timestamp="1594956383260">
+    <state x="370" y="1070" key="extract.method.dialog" timestamp="1594957891721">
       <screen x="-150" y="900" width="1600" height="860" />
     </state>
-    <state x="370" y="1070" key="extract.method.dialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594956383260" />
+    <state x="370" y="1070" key="extract.method.dialog/0.0.1440.860/-150.900.1600.860@-150.900.1600.860" timestamp="1594957891721" />
     <state x="499" y="163" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1594440831452" />
     <state x="32" y="991" key="new project wizard" timestamp="1594176512352">
       <screen x="-150" y="900" width="1600" height="860" />

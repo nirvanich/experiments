@@ -2,6 +2,7 @@ package com.udemy.algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Solutions {
 
@@ -41,4 +42,26 @@ public class Solutions {
         return nums;
     }
 
+//    Given the array candies and the integer extraCandies, where candies[i] represents the number
+//    of candies that the ith kid has.
+//    For each kid check if there is a way to distribute extraCandies among the kids such
+//    that he or she can have the greatest number of candies among them.
+//    Notice that multiple kids can have the greatest number of candies.
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        int greatest = 0;
+        for (int candy : candies) {
+            if (candy > greatest) {
+                greatest = candy;
+            }
+        }
+        List<Boolean> result = new ArrayList<>();
+        for (int candy : candies) {
+            if (candy + extraCandies >= greatest) {
+                result.add(true);
+            } else {
+                result.add(false);
+            }
+        }
+        return result;
+    }
 }
