@@ -1,5 +1,8 @@
 package com.udemy.algorithms;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Solutions {
 
     public static int[] runningSum(int[] nums) {
@@ -23,4 +26,19 @@ public class Solutions {
         }
         return count;
     }
+
+    //    Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+    //    Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+    public static int[] shuffle(int[] nums, int n) {
+        int[] nums1 = Arrays.copyOfRange(nums,0, n);
+        int[] nums2 = Arrays.copyOfRange(nums, n, nums.length);
+        ArrayList<Integer> numss = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            numss.add(nums1[i]);
+            numss.add(nums2[i]);
+        }
+        nums = numss.stream().mapToInt(i->i).toArray();
+        return nums;
+    }
+
 }
