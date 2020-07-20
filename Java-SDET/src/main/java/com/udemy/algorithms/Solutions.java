@@ -133,4 +133,16 @@ public class Solutions {
         }
         return list;
     }
+
+    //Given an array nums of integers, return how many of them contain an even number of digits.
+    public static int findNumbers(int[] nums) {
+        int result = 0;
+        for (int num: nums){
+            int count = String.valueOf(num).length();
+            if (count % 2 == 0){
+                result++;
+            }
+        }
+        return result;
+    }
 }
