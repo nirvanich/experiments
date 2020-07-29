@@ -173,4 +173,19 @@ public class Solutions {
         }
         return sum;
     }
+
+    //Given a string s and an integer array indices of the same length.
+    //The string s will be shuffled such that the character at the ith position moves to indices[i] in the shuffled string.
+    //Return the shuffled string.
+    public static String restoreString(String s, int[] indices) {
+        String result = "";
+        for (int i = 0; i < indices.length; i++) {
+            for (int j = 0; j < indices.length; j++) {
+                if (indices[j]==i) {
+                    result = result + s.charAt(j);
+                }
+            }
+        }
+        return result;
+    }
 }
