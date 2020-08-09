@@ -201,4 +201,20 @@ public class Solutions {
         }
         return result.stream().mapToInt(i -> i).toArray();
     }
+
+    //Given an array of numbers arr. A sequence of numbers is called an arithmetic progression if the difference
+    // between any two consecutive elements is the same.
+    //Return true if the array can be rearranged to form an arithmetic progression, otherwise, return false.
+    public static boolean canMakeArithmeticProgression(int[] arr) {
+        Arrays.sort(arr);
+        int diff = arr[1] - arr[0];
+        boolean flag = true;
+        for (int i = 0; i < arr.length-1; i++) {
+            if (arr[i+1] - arr[i] != diff) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
 }
